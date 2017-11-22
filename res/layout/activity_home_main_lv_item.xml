@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/home_item_background"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_listview_item"
+    android:orientation="horizontal" >
+    <!-- 主体item -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fragment_commont_item_height" >
+        <View
+            style="@style/viewlinestyle"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/dimen_70_dip" />
+        <!-- 头像 -->
+        <FrameLayout
+            android:id="@+id/frame_head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_10_dip" >
+            <!-- 头像 -->
+            <com.yey.kindergaten.widget.CircleImageView
+                android:id="@id/iv_head"
+                android:layout_width="@dimen/fragment_commont_item_head_height"
+                android:layout_height="@dimen/fragment_commont_item_head_height"
+                android:src="@drawable/defaulticon"
+                app:border_color="@color/white"
+                app:border_width="@dimen/dimen_0.5_dip" />
+            <!-- 气泡 -->
+            <TextView
+                android:id="@id/tv_message_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:background="@drawable/common_numtips"
+                android:gravity="center"
+                android:text="1"
+                android:textColor="#fff"
+                android:textSize="@dimen/txtSize_10_sp"
+                android:visibility="invisible" />
+        </FrameLayout>
+        <!-- 头像右边部分 -->
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_10_dip"
+            android:layout_toRightOf="@id/frame_head" >
+            <!-- 标题 -->
+            <TextView
+                android:id="@id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="古天乐"
+                 android:ellipsize="end"
+                android:textColor="#000"
+                android:textSize="16sp" />
+            <!-- 时间 -->
+            <TextView
+                android:id="@id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/tv_name"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dimen_5_dip"
+                android:text="昨天 晚上"
+                android:textColor="#999999"
+                android:textSize="12sp" />
+            <!-- 详情 -->
+            <TextView
+                android:id="@id/tv_lastcontent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_name"
+                android:layout_marginBottom="@dimen/dimen_5_dip"
+                android:layout_marginRight="@dimen/dimen_10_dip"
+                android:layout_marginTop="@dimen/dimen_2_dip"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="en"
+                android:textColor="#999999"
+                android:textSize="14sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <!-- 横划删除的部分 -->
+    <RelativeLayout
+        android:id="@+id/item_right"
+        android:layout_width="@dimen/dimen_60_dip"
+        android:layout_height="match_parent"
+        android:background="@color/schedule_right_delete_bg" >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:src="@drawable/swipe_delete_service" />
+        <!-- <TextView
+                android:id="@+id/item_right_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawableLeft="@drawable/swipe_delete_service"
+                android:gravity="center"
+                android:text="删除"
+                android:textColor="@color/light_grey"/>
+        !-->
+    </RelativeLayout>
+
+</LinearLayout>

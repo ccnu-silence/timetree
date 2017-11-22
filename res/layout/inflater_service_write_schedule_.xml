@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_100_dip" >
+
+        <TextView
+            android:id="@id/id_inflater_service_schedule_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/id_inflater_service_schedule_iv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dimen_10_dip"
+            android:text="sb" />
+
+        <ImageView
+            android:id="@id/id_inflater_service_schedule_iv"
+            android:layout_width="@dimen/dimen_50_dip"
+            android:layout_height="@dimen/dimen_50_dip"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dimen_10_dip"
+            android:src="@drawable/defaulticon" />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="@dimen/dimen_60_dip" >
+
+        <ImageView
+            android:id="@+id/id_show_image_state_iv"
+            android:layout_width="@dimen/dimen_50_dip"
+            android:layout_height="@dimen/dimen_50_dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_10_dip"
+            android:src="@drawable/dotask_btnpress" />
+
+        <ProgressBar
+            android:id="@+id/id_show_upload_progress_pb"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_7_dip"
+            android:layout_marginRight="@dimen/dimen_7_dip"
+            android:layout_toLeftOf="@+id/id_pause_start_upload_btn"
+            android:layout_toRightOf="@+id/id_show_image_state_iv" />
+
+  
+
+        <TextView
+            android:id="@+id/id_show_image_path_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/id_show_upload_progress_pb"
+            android:layout_marginTop="@dimen/dimen_3_dip"
+            android:textSize="@dimen/txtSize_10_sp"
+            android:layout_marginLeft="@dimen/dimen_7_dip"
+            android:layout_toRightOf="@+id/id_show_image_state_iv"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/id_show_upload_percent_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_3_dip"
+            android:layout_marginRight="@dimen/dimen_7_dip"
+            android:layout_alignBaseline="@+id/id_show_image_path_tv"
+            android:layout_alignBottom="@+id/id_show_image_path_tv"
+            android:layout_toLeftOf="@+id/id_pause_start_upload_btn"
+            android:textSize="@dimen/txtSize_10_sp"
+            android:text="TextView" />
+
+        <Button
+            android:id="@+id/id_pause_start_upload_btn"
+            android:layout_width="@dimen/dimen_10_dip"
+            android:layout_height="@dimen/dimen_10_dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dimen_10_dip"
+            android:textSize="@dimen/txtSize_13_sp"         
+            android:background="@drawable/selector_yz_button"
+            android:text="删除" />
+  <View  style="@style/viewlinestyle" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+</LinearLayout>

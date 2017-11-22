@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    <!-- 标题栏 -->
+    <include android:id="@+id/activity_contacts_main_titlely" layout="@layout/header_layout"/>
+    <com.yey.kindergaten.widget.PullToRefreshHeaderView
+        android:id="@+id/pull_torefresh_contact"
+        android:background="@android:color/white"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <com.yey.kindergaten.widget.PinnedSectionListView
+            android:id="@+id/activity_contacts_main_puaclistview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:headerDividersEnabled="false"
+            android:footerDividersEnabled="false"
+            android:divider="@null"/>
+
+    </com.yey.kindergaten.widget.PullToRefreshHeaderView>
+
+</LinearLayout>

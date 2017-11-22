@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tab="http://schemas.android.com/apk/res/com.yey.kindergaten"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    
+       <ScrollView 
+       android:id="@+id/group_sc"
+       android:layout_width="fill_parent"
+       android:layout_height="match_parent" 
+       >
+       <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"  
+        android:orientation="vertical"  
+        >
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_11_dip"
+        android:layout_marginTop="@dimen/dimen_11_dip"
+        android:orientation="horizontal"
+        >
+        <TextView 
+            android:layout_width="wrap_content"  android:layout_height="wrap_content" 
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/txtSize_17_sp"  android:text="群名字" />
+
+        <EditText
+            android:id="@+id/groupedit_nameet"
+            android:maxLength="10"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/dimen_100_dip"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:minWidth="@dimen/dimen_200_dip"
+            android:layout_marginRight="@dimen/dimen_11_dip"
+             >
+            <requestFocus />
+        </EditText>
+    </RelativeLayout>
+        
+    <RelativeLayout 
+        android:id="@+id/edit_coderl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_11_dip"
+        android:layout_marginTop="@dimen/dimen_11_dip"
+        android:orientation="horizontal"
+        >
+        <TextView 
+            android:layout_width="wrap_content"  android:layout_height="wrap_content" 
+             android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/txtSize_17_sp"  android:text="允许加入群" />
+
+             <LinearLayout 
+                 android:layout_marginLeft="@dimen/dimen_110_dip" 
+                 android:layout_width="@dimen/dimen_64_dip"
+                 android:layout_height="@dimen/dimen_35_dip"  
+                 android:layout_alignParentRight="true"
+                 android:layout_alignParentLeft="true"
+                 android:layout_centerVertical="true"
+                  >
+
+               <com.yey.kindergaten.widget.SlipButton
+                 android:id="@+id/slipButton"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                />
+               </LinearLayout>
+
+     </RelativeLayout>
+    
+    
+     <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_11_dip"
+        android:layout_marginTop="@dimen/dimen_11_dip"
+        android:orientation="horizontal"
+        >
+        <TextView 
+            android:layout_width="wrap_content"  android:layout_height="wrap_content" 
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/txtSize_17_sp"  android:text="加入口令" />
+
+        <EditText
+            android:id="@+id/groupedit_addcodeet"
+            android:maxLength="10"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/dimen_100_dip"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:minWidth="@dimen/dimen_200_dip"
+            android:layout_marginRight="@dimen/dimen_11_dip"
+             >
+            <requestFocus />
+        </EditText>
+    </RelativeLayout>
+    
+    
+    
+   <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_11_dip"
+        android:layout_marginTop="@dimen/dimen_11_dip"
+        android:orientation="horizontal"
+        >
+        <TextView 
+            android:layout_width="wrap_content"  android:layout_height="wrap_content" 
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/txtSize_17_sp"  android:text="年级" />
+
+        <EditText
+            android:id="@+id/groupedit_gradeet"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/dimen_100_dip"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:minWidth="@dimen/dimen_200_dip"
+            android:layout_marginRight="@dimen/dimen_11_dip"
+             >
+            <requestFocus />
+        </EditText>
+    </RelativeLayout>
+    
+    
+
+    
+   <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_11_dip"
+        android:layout_marginTop="@dimen/dimen_11_dip"
+        android:orientation="horizontal"
+        >
+        <TextView 
+            android:layout_width="wrap_content"  android:layout_height="wrap_content" 
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/txtSize_17_sp"  android:text="群介绍" />
+
+        <EditText
+            android:id="@+id/groupedit_miaoshuet"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/dimen_100_dip"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:minWidth="@dimen/dimen_200_dip"
+            android:layout_marginRight="@dimen/dimen_11_dip"
+             >
+            <requestFocus />
+        </EditText>
+    </RelativeLayout>
+    
+     </LinearLayout>
+    </ScrollView>
+    
+
+</LinearLayout>

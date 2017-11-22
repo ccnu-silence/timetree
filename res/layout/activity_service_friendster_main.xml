@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/friendster_main_activity"
+    android:layout_gravity="center"
+    android:background="@color/white">
+    <!-- 标题栏 -->
+    <include layout="@layout/header_layout" android:id="@+id/head_layout" />
+    <!--<LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent"  android:id="@+id/ll_activity_service_friendster_main"  android:orientation="vertical" android:layout_below="@+id/head_layout">-->
+    <!--</LinearLayout>-->
+
+    <!-- 主体listview -->
+    <com.yey.kindergaten.widget.PullToRefreshHeaderView
+        android:layout_below="@+id/head_layout"
+        android:id="@+id/ll_activity_service_friendster_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.yey.kindergaten.widget.PullToRefreshListView
+            android:id="@+id/pull_to_refresh_lv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </com.yey.kindergaten.widget.PullToRefreshHeaderView>
+
+   <!--<FrameLayout-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:clipToPadding="false" -->
+    <!--android:layout_below="@+id/head_layout"-->
+    <!--android:id="@+id/rl_friendster_head"-->
+    <!--android:background="@drawable/title_banji">-->
+    <!--<RelativeLayout android:layout_width="fill_parent"-->
+    			<!--android:layout_height="wrap_content"-->
+    			<!--android:clipToPadding="false" -->
+    			<!--android:scrollY="@dimen/dimen_24_dip">-->
+    <!--<ImageView-->
+        <!--android:id="@+id/circleprogress_true"-->
+        <!--android:layout_width="@dimen/dimen_24_dip"-->
+        <!--android:layout_height="@dimen/dimen_24_dip"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_marginLeft="@dimen/dimen_40_dip"-->
+        <!--android:scaleType="fitCenter"-->
+        <!--android:src="@drawable/progress" />-->
+    <!--<com.yey.kindergaten.widget.CircleImageView-->
+        <!--android:id="@+id/iv_activity_friendster_head"-->
+        <!--android:layout_marginTop="@dimen/dimen_40_dip"-->
+        <!--android:layout_width="@dimen/dimen_73_dip"-->
+        <!--android:layout_height="@dimen/dimen_73_dip"-->
+        <!--app:border_width="@dimen/dimen_0.5_dip" -->
+        <!--app:border_color="@color/white"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:src="@drawable/icon_group_class" />-->
+        <!--<RelativeLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_below="@+id/iv_activity_friendster_head">-->
+            <!--<TextView-->
+                <!--android:id="@+id/tv_friendster_user"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="UserName"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_marginTop="@dimen/dimen_5_dip"-->
+                <!--android:textSize="@dimen/txtSize_22_sp"-->
+                <!--android:textColor="@color/headtext_color" />-->
+            <!--<ImageView-->
+                <!--android:id="@+id/iv_friendster_down"-->
+                <!--android:layout_toRightOf="@+id/tv_friendster_user"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_marginLeft="@dimen/dimen_3_dip"-->
+                <!--android:background="@drawable/friendster_down"/>-->
+        <!--</RelativeLayout>-->
+
+    <!--</RelativeLayout>-->
+     <!--<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_alignParentBottom="true" android:background="#40ffffff" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_35_dip" android:visibility="gone" android:id="@+id/activity_service_title_true" android:layout_gravity="bottom">-->
+              <!--<LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/layout_balance_title" android:background="@drawable/selector_click" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" >-->
+                    <!--<ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/friendster_gonggao"/>-->
+                    <!--<TextView android:textSize="@dimen/txtSize_16_sp" android:textColor="@color/headtext_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="班级公告"  android:drawablePadding="@dimen/dimen_10_dip" android:layout_marginLeft="@dimen/dimen_5_dip"/>-->
+              <!--</LinearLayout>-->
+                <!--<View android:background="@color/text_dark_gray" android:layout_width="1.0px" android:layout_height="fill_parent" android:layout_marginTop="@dimen/dimen_10_dip" android:layout_marginBottom="@dimen/dimen_10_dip" />-->
+             <!--<LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/layout_coupon_title" android:background="@drawable/selector_click" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">-->
+                    <!--<ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/friendster_xiangce"/>-->
+                    <!--<TextView android:textSize="@dimen/txtSize_16_sp" android:textColor="@color/headtext_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="班级相册"  android:drawablePadding="10.0dip" android:layout_marginLeft="@dimen/dimen_5_dip"/>-->
+              <!--</LinearLayout>-->
+               <!--<View android:background="@color/text_dark_gray" android:layout_width="1.0px" android:layout_height="fill_parent" android:layout_marginTop="@dimen/dimen_10_dip" android:layout_marginBottom="@dimen/dimen_10_dip" />-->
+                <!--<LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/layout_contact_title" android:background="@drawable/selector_click" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">-->
+                    <!--<ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/friendster_jiaoxue"/>-->
+                    <!--<TextView android:textSize="@dimen/txtSize_16_sp" android:textColor="@color/headtext_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="教学安排"  android:drawablePadding="@dimen/dimen_10_dip" android:layout_marginLeft="@dimen/dimen_5_dip"/>-->
+                <!--</LinearLayout>-->
+     <!--</LinearLayout>-->
+   <!--</FrameLayout>-->
+    <!--<LinearLayout android:layout_width="fill_parent" android:layout_height="@dimen/dimen_50_dip" android:gravity="center" android:orientation="vertical" android:layout_below="@+id/rl_friendster_head" android:id="@+id/tv_friendster_nodata" android:visibility="gone">-->
+       <!--<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="该群暂时没有任何动态\n赶快记下此时你身边发生的点点滴滴吧!" android:gravity="center"/>-->
+    <!--</LinearLayout>-->
+
+    <!-- 发送 -->
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal"  android:visibility="gone" android:id="@+id/ll_activity_service_friendster_item_input"  android:background="@drawable/base_comment_emo_bar" android:gravity="center_vertical" android:minHeight="@dimen/dimen_45_dip" android:layout_above="@+id/service_publishspeak_facely">
+
+        <ImageButton  android:layout_width="0dp" android:layout_height="wrap_content" android:src="@drawable/friendster_biaoqing"  android:background="@null" android:id="@+id/biaoqing_activity_service_friendster_item" android:layout_weight="0.1"   />
+
+        <com.yey.kindergaten.widget.EmoticonsEditText android:layout_width="0dp" android:layout_height="wrap_content"  android:id="@+id/input_activity_service_friendster_item"  android:layout_weight="0.5" android:background="@drawable/base_edit_input" android:imeOptions="flagNoExtractUi"  android:minHeight="@dimen/dimen_25_dip" android:padding="@dimen/dimen_5_dip"  android:layout_marginLeft="@dimen/dimen_6_dip"  android:layout_marginRight="@dimen/dimen_6_dip"/>
+
+        <Button  android:layout_width="0dp" android:layout_height="@dimen/dimen_33_dip" android:text="发送" android:textSize="@dimen/txtSize_12_sp" android:id="@+id/btn_activity_service_friendster_item" android:layout_weight="0.1" android:background="@drawable/btnsend_friendster" android:layout_marginRight="@dimen/dimen_6_dip"/>
+    </LinearLayout>
+
+    <!-- 表情 -->
+    <LinearLayout
+        android:id="@+id/service_publishspeak_facely"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:background="@drawable/layout_gry_bg"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"  >
+        <android.support.v4.view.ViewPager
+            android:id="@+id/service_publishspeak_face"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_140_dip"  />
+    </LinearLayout>
+
+</RelativeLayout>

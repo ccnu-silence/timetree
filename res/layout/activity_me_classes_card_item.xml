@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white" >
+
+    <TextView
+        android:id="@+id/mecard_nametv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="@dimen/dimen_20_dip"
+        android:layout_gravity="center_horizontal"
+        android:text="小二班"
+        android:textColor="@color/black"
+        android:textSize="@dimen/txtSize_20_sp" />
+
+    <ImageView
+        android:id="@+id/me_classescard_bariv"
+        android:layout_width="@dimen/dimen_210_dip"
+        android:layout_height="@dimen/dimen_210_dip"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center"
+        android:layout_below="@+id/mecard_nametv"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_launcher" />
+    <TextView
+        android:id="@+id/mecard_miaoshutv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/me_classescard_bariv"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="(扫一扫)"
+        android:textColor="@color/contact_mainlvitemtv"
+        android:textSize="@dimen/txtSize_15_sp" />
+    <TextView
+        android:id="@+id/down_to_phone_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/mecard_miaoshutv"
+        android:textColor="@color/contact_mainlvitemtv"
+        android:textSize="@dimen/txtSize_16_sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dimen_10_dip"
+        android:layout_marginBottom="@dimen/dimen_10_dip"
+        android:text="扫描上面的二维码加入班级" />
+    <LinearLayout android:layout_height="wrap_content" android:layout_width="fill_parent"
+        android:id="@+id/sharr_weixin_ll" android:orientation="vertical" android:layout_marginTop="@dimen/dimen_20_dip">
+        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content"
+            android:layout_gravity="center" android:textColor="@color/purple" android:id="@+id/sharr_weixin_tv"
+            android:text="分享时光树" android:textSize="@dimen/dimen_18_dip"/>
+        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content"
+            android:layout_gravity="center" android:textColor="@color/contact_mainlvitemtv" android:layout_marginBottom="@dimen/dimen_20_dip"
+            android:text="http://sgs.yey.com/" android:textSize="@dimen/dimen_12_dip"/>
+    </LinearLayout>
+
+</LinearLayout>

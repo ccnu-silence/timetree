@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    <include layout="@layout/header_layout"/>
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/dimen_40_dip"
+        android:background="@drawable/commont_white_button"
+        android:layout_marginLeft="@dimen/dimen_20_dip"
+        android:layout_marginRight="@dimen/dimen_20_dip"
+        android:layout_marginTop="@dimen/dimen_20_dip"
+        android:gravity="top"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/setaddtokindercode_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_20_dip"
+        android:layout_marginRight="@dimen/dimen_20_dip"
+        android:layout_marginTop="@dimen/dimen_20_dip"
+        android:textColor="@color/black"
+        android:textSize="@dimen/txtSize_18_sp"
+        android:text="老师或者园长加入时，需要输入正确的口令。如果不需要输入口令可以选择清空上面的口令框" />
+
+</LinearLayout>

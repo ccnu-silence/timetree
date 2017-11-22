@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="@dimen/dimen_8_dip"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:background="@color/white">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" >
+        <!-- 头像 -->
+        <com.yey.kindergaten.widget.CircleImageView
+            android:layout_width="@dimen/dimen_45_dip"
+            android:layout_height="@dimen/dimen_45_dip"
+            android:layout_marginTop="@dimen/dimen_8_dip"
+            android:layout_marginLeft="@dimen/dimen_8_dip"
+            android:id="@+id/iv_activity_service_friendster_item"
+            android:src="@drawable/friendster_itemhead"
+            app:border_width="@dimen/dimen_0.5_dip"
+            app:border_color="@color/white" />
+        <View
+            android:layout_width="@dimen/dimen_8_dip"
+            android:layout_height="fill_parent" />
+        <!-- 头像右边布局 -->
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent"
+            android:layout_height="wrap_content" android:id="@+id/ll_activity_friendster_item"
+            android:gravity="center_vertical">
+            <!-- 姓名、重新发送 -->
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/rl_friendster_headview">
+                <!-- 姓名 -->
+                <TextView
+                    android:id="@+id/tv_activity_service_friendster_item_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SomeBody"
+                    android:textColor="#8e7fdc"
+                    android:layout_marginTop="@dimen/dimen_21_dip"
+                    android:textSize="@dimen/txtSize_16_sp"/>
+                <!-- 重新发送 -->
+                <TextView
+                    android:id="@+id/tv_activity_service_friendster_agin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="重新发送"
+                    android:layout_alignParentRight="true"
+                    android:textSize="@dimen/txtSize_12_sp"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/black"
+                    android:visibility="gone"/>
+            </RelativeLayout>
+            <!-- 评论 -->
+            <LinearLayout
+                android:id="@+id/ll_activity_service_friendster_item_discuss"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_17_dip"
+                android:layout_marginRight="@dimen/dimen_10_dip"
+                android:background="@drawable/friendster_discuss_bg"
+                >
+                <TextView
+                    android:id="@+id/tv_activity_service_friendster_item_discuss"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dimen_10_dip"
+                    android:layout_below="@+id/ll_activity_friendster_item"
+                    android:text="你的影子在每一个角落, 好像是在提醒着我"
+                    android:textSize="@dimen/txtSize_16_sp"
+                    android:layout_marginRight="@dimen/dimen_3_dip"
+                    android:textColor="@color/content_color"/>
+            </LinearLayout>
+            <!-- 照片 -->
+            <com.yey.kindergaten.widget.NoScrollGridView
+                android:layout_below="@+id/tv_activity_service_friendster_item_discuss"
+                android:id="@+id/gv_activity_service_friendster_item"
+                android:layout_marginTop="@dimen/dimen_10_dip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:verticalSpacing="@dimen/dimen_5_dip"
+                android:horizontalSpacing="@dimen/dimen_5_dip"
+                android:layout_marginRight="@dimen/dimen_3_dip"
+                android:numColumns="3"
+                android:visibility="gone"/>
+            <!-- 张数、更多 -->
+            <LinearLayout
+                android:id="@+id/ll_activity_service_friendster_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10_dip"
+                android:layout_below="@+id/gv_activity_service_friendster_item"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tv_friendster_photonum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="共28张"/>
+                <TextView
+                    android:id="@+id/tv_friendster_photonum_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_10_dip"
+                    android:textColor="@color/main_blue"
+                    android:text="更多"/>
+            </LinearLayout>
+            <!-- 赞、评论按钮 -->
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/ll_activity_service_friendster_discuss"
+                android:layout_below="@+id/ll_activity_service_friendster_item">
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/dimen_16_dip">
+                    <!-- 时间 -->
+                    <TextView
+                        android:id="@+id/tv_activity_service_friendster_item_time"
+                        android:focusable="false"
+                        android:layout_alignParentLeft="true"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="2天前"
+                        android:textColor="@color/time_color"
+                        android:textSize="@dimen/txtSize_15_sp"
+                        android:visibility="visible"/>
+                    <!-- 删除 -->
+                    <TextView
+                        android:id="@+id/ivbtn_activity_service_friendster_delete"
+                        android:focusable="false"
+                        android:layout_toRightOf="@+id/tv_activity_service_friendster_item_time"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="删除"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/main_blue"
+                        android:textSize="@dimen/txtSize_15_sp"
+                        android:layout_marginLeft="@dimen/dimen_10_dip"
+                        android:visibility="gone"/>
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/dimen_3_dip">
+                        <!-- 赞 -->
+                        <LinearLayout
+                            android:id="@+id/ll_friendster_zan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:gravity="center"
+                            android:layout_toLeftOf="@+id/ll_friendster_discuss"
+                            android:orientation="horizontal">
+                            <CheckBox
+                                android:id="@+id/ivbtn_activity_service_friendster_zan"
+                                android:focusable="false"
+                                android:layout_height="@dimen/dimen_18_dip"
+                                android:layout_width="@dimen/dimen_18_dip"
+                                android:gravity="center_vertical"
+                                android:layout_gravity="center_vertical"
+                                android:checked="false"
+                                android:button="@null"
+                                android:clickable="false"
+                                android:background="@drawable/btn_friendster_zan"/>
+                            <TextView
+                                android:id="@+id/tv_activity_service_friendster_item"
+                                android:layout_marginLeft="@dimen/dimen_5_dip"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:text="赞"
+                                android:layout_marginRight="@dimen/dimen_3_dip"
+                                android:textColor="#999999"
+                                android:textSize="@dimen/txtSize_15_sp"/>
+                        </LinearLayout>
+                        <!-- 评论 -->
+                        <LinearLayout
+                            android:id="@+id/ll_friendster_discuss"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dimen_10_dip"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="center"
+                            android:visibility="visible"
+                            android:orientation="horizontal">
+                            <ImageButton
+                                android:id="@+id/ivbtn_activity_service_friendster_item"
+                                android:focusable="false"
+                                android:layout_height="@dimen/dimen_18_dip"
+                                android:layout_width="@dimen/dimen_18_dip"
+                                android:gravity="center_vertical"
+                                android:layout_gravity="center_vertical"
+                                android:background="@drawable/comment_disscuss" />
+                            <TextView
+                                android:id="@+id/tv_activity_service_friendster_discuss"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:layout_marginLeft="@dimen/dimen_5_dip"
+                                android:text="评论"
+                                android:textColor="#999999"
+                                android:textSize="@dimen/txtSize_15_sp"/>
+                        </LinearLayout>
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+            <RelativeLayout
+                android:id="@+id/rl_icon_triangle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10_dip"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="@dimen/dimen_20_dip"
+                    android:layout_height="@dimen/dimen_8_dip"
+                    android:background="@drawable/firendster_icon_triangle_"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/dimen_20_dip"/>
+            </RelativeLayout>
+            <!-- 点赞后显示 -->
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:id="@+id/ll_activity_zan"
+                android:orientation="vertical" android:layout_marginRight="@dimen/dimen_5_dip"
+                android:background="#f0f0f0"
+                android:layout_below="@+id/ll_activity_service_friendster_discuss">
+                <RelativeLayout
+                    android:id="@+id/rl_friendster_zan"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dimen_26_dip"
+                    android:layout_marginTop="@dimen/dimen_8_dip"
+                    android:layout_marginLeft="@dimen/dimen_8_dip"
+                    android:layout_marginBottom="@dimen/dimen_4_dip">
+                    <ImageView
+                        android:layout_centerVertical="true"
+                        android:id="@+id/iv_friendster_zan"
+                        android:layout_height="@dimen/dimen_18_dip"
+                        android:layout_width="@dimen/dimen_18_dip"
+                        android:background="@drawable/comment_zan_true"/>
+                    <TextView
+                        android:layout_centerVertical="true"
+                        android:id="@+id/tv_actvity_service_friendster_zan"
+                        android:layout_toRightOf="@+id/iv_friendster_zan"
+                        android:layout_marginLeft="@dimen/dimen_5_dip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/txtSize_15_sp"
+                        android:textColor="#7267b1"
+                        android:maxEms="12"
+                        android:singleLine="true"
+                        android:ellipsize="end"
+                        android:text=""/>
+                </RelativeLayout>
+                <View android:id="@+id/firendster_comment_line"
+                    android:layout_height="@dimen/dimen_1_dip" android:layout_width="fill_parent" android:background="#d8d8d8" android:layout_marginLeft="@dimen/dimen_8_dip" android:layout_marginRight="@dimen/dimen_8_dip"/>
+                <com.yey.kindergaten.widget.NoScrollListView android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" android:scrollbars="none" android:cacheColorHint="#00000000"
+                    android:divider="@null" android:id="@+id/lv_activity_service_friendster_item"
+                    android:visibility="gone" android:layout_below="@+id/ll_activity_service_friendster_discuss"
+                    android:layout_marginTop="@dimen/dimen_2_dip" android:layout_marginLeft="@dimen/dimen_8_dip" android:layout_marginBottom="@dimen/dimen_8_dip"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

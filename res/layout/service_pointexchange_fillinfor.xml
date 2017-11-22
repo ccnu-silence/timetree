@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+     <include   layout="@layout/header_layout"/>
+     
+     
+     <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"    
+        android:gravity="center"
+        android:orientation="vertical" >
+            <View style="@style/viewlinestyle"/>
+          <RelativeLayout
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/dimen_50_dip"
+              android:orientation="horizontal" >
+
+              <TextView            
+                  style="@style/service_addressbook_item"    
+                  android:layout_centerVertical="true"    
+                  android:layout_alignParentLeft="true"       
+                  android:layout_marginLeft="@dimen/dimen_11_dip"    
+                  android:textColor="@color/black"                
+                  android:text="@string/service_recievepeople" />
+              
+              <EditText
+         		android:id="@id/service_pointexchange_fillinfor_et1"       		
+                android:hint="请填写收货人名字"
+                android:background="@null"
+                android:textSize="@dimen/txtSize_16_sp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"  
+                android:gravity="center_vertical|right"  
+                android:layout_centerVertical="true"      
+                android:layout_alignParentRight="true"         
+                android:layout_marginRight="@dimen/dimen_11_dip"  
+                />             
+          </RelativeLayout>
+          <View style="@style/viewlinestyle"/>
+          <RelativeLayout
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/dimen_50_dip"
+              android:orientation="horizontal" >
+               <TextView            
+                  style="@style/service_addressbook_item" 
+                  android:layout_centerVertical="true"       
+                  android:layout_alignParentLeft="true"    
+                  android:textColor="@color/black"    
+                  android:layout_marginLeft="@dimen/dimen_11_dip"               
+                  android:text="@string/service_recieveaddress" />
+               
+                <EditText
+      			   android:id="@id/service_pointexchange_fillinfor_et2"         		  
+        		   android:textSize="@dimen/txtSize_16_sp"      		   
+                   android:hint="请填写收货人地址"
+                   android:background="@null"
+                   android:layout_width="wrap_content"
+                   android:layout_height="match_parent"  
+                   android:gravity="center_vertical|right"  
+         		   android:layout_alignParentRight="true"
+        		   android:layout_centerVertical="true" 
+        		   android:layout_marginRight="@dimen/dimen_11_dip"     
+         		    />
+               
+             
+          </RelativeLayout>
+           <View style="@style/viewlinestyle"/>
+           <RelativeLayout
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/dimen_50_dip"
+              android:orientation="horizontal" >
+                <TextView            
+                  style="@style/service_addressbook_item"     
+                  android:layout_centerVertical="true"    
+                  android:layout_alignParentLeft="true"  
+                   android:textColor="@color/black"       
+                  android:layout_marginLeft="@dimen/dimen_11_dip"             
+                  android:text="@string/service_recieveaphone" />
+                
+                
+                
+          <EditText
+        		 android:id="@id/service_pointexchange_fillinfor_et3"        		
+         		 android:hint="请填写收货人电话"
+         		 android:textSize="@dimen/txtSize_16_sp"
+         		 android:layout_width="wrap_content"
+         		 android:layout_height="match_parent"  
+                 android:gravity="center_vertical"  
+         		 android:background="@null"         	
+         		 android:layout_centerVertical="true"    
+         		 android:layout_alignParentRight="true"  
+         		 android:layout_marginRight="@dimen/dimen_11_dip"       
+         		  />
+                
+            
+          </RelativeLayout>
+           <View style="@style/viewlinestyle"/>
+          <RelativeLayout
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/dimen_50_dip"
+              android:orientation="horizontal" >
+                <TextView            
+                  style="@style/service_addressbook_item"   
+                  android:layout_centerVertical="true"    
+                  android:layout_alignParentLeft="true"  
+                  android:textColor="@color/black"        
+                  android:layout_marginLeft="@dimen/dimen_11_dip"              
+                  android:text="@string/service_recieveyoubian" />
+                
+                
+                 <EditText
+        		  	android:id="@id/service_pointexchange_fillinfor_et4"         				
+         			android:hint="请填写邮编"
+         			android:textSize="@dimen/txtSize_16_sp"
+         			android:layout_width="wrap_content"
+         		    android:layout_height="match_parent"  
+                    android:gravity="center_vertical|right"  
+         			android:background="@null"
+         			android:layout_centerVertical="true"     
+         			android:layout_alignParentRight="true"
+         			android:layout_marginRight="@dimen/dimen_11_dip"  
+         			 />
+            
+          </RelativeLayout>
+          <View style="@style/viewlinestyle"/> 
+          
+          <LinearLayout  android:id="@id/service_addressbook_itemrecdelly"     
+              android:layout_width="fill_parent" android:layout_height="wrap_content" 
+              android:orientation="vertical" android:visibility="gone">
+           <TextView 
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_50_dip"
+                android:gravity="center"
+                android:textSize="@dimen/txtSize_18_sp"
+                android:textColor="@color/purple"
+                android:text="@string/service_del" />
+           
+           <View style="@style/viewlinestyle"/> 
+           </LinearLayout>
+    </LinearLayout>
+     
+     
+</LinearLayout>

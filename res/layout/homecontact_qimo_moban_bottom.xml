@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+    android:layout_width="match_parent"  
+    android:layout_height="match_parent"  
+    android:orientation="horizontal" >  
+      <Button android:id="@+id/bt_load" android:layout_height="wrap_content" android:layout_width="fill_parent" android:text="加载更多数据"    android:textColor="#285373" android:textSize="@dimen/dimen_20_dip"   android:gravity="center" android:visibility="gone"/>
+  	<ProgressBar  
+      android:id="@+id/pg"  
+      android:layout_width="wrap_content"  
+      android:layout_height="wrap_content"  
+      android:layout_gravity="center_horizontal" 
+      android:layout_marginLeft="50dp"
+      />  
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="加载中...请稍后" android:gravity="center_vertical"  android:layout_marginTop="13dp" />
+</LinearLayout>  

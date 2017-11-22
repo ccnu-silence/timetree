@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <!-- 选项栏 -->
+    <LinearLayout
+        android:id="@+id/main_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50_dip"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:background="@drawable/bg_tab" >
+        <!-- 消息 -->
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+            <Button
+                android:id="@+id/btn_home"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_tab"
+                android:drawablePadding="-5dip"
+                android:drawableTop="@drawable/tab_home_selector"
+                android:onClick="onTabSelect"
+                android:paddingBottom="@dimen/dimen_2_dip"
+                android:paddingTop="@dimen/dimen_6_dip"
+                android:scaleType="matrix"
+                android:text="@string/main_buttom_tab_home"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/txtSize_14_sp" />
+            <ImageView
+                android:id="@+id/iv_recent_tips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="@dimen/dimen_32_dip"
+                android:layout_marginTop="@dimen/dimen_7_dip"
+                android:background="@drawable/msg_tips"
+                android:contentDescription="@string/action_settings"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                android:visibility="gone" />
+        </RelativeLayout>
+        <!-- 幼儿园 -->
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+            <Button
+                android:id="@+id/btn_service"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_tab"
+                android:drawableTop="@drawable/tab_service_selector"
+                android:drawablePadding="-5dip"
+                android:onClick="onTabSelect"
+                android:paddingBottom="@dimen/dimen_2_dip"
+                android:paddingTop="@dimen/dimen_6_dip"
+                android:scaleType="matrix"
+                android:text="@string/main_buttom_tab_kindergarten"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/txtSize_14_sp" />
+            <ImageView
+                android:id="@+id/iv_contact_tips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="@dimen/dimen_30_dip"
+                android:layout_marginTop="@dimen/dimen_7_dip"
+                android:background="@drawable/msg_tips"
+                android:contentDescription="@string/action_settings"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/txtSize_12_sp"
+                android:visibility="gone" />
+        </RelativeLayout>
+        <!-- 通讯录 -->
+        <Button
+            android:id="@+id/btn_contact"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_tab"
+            android:drawableTop="@drawable/tab_contact_selector"
+            android:drawablePadding="-5dip"
+            android:onClick="onTabSelect"
+            android:paddingBottom="@dimen/dimen_2_dip"
+            android:paddingTop="@dimen/dimen_6_dip"
+            android:scaleType="matrix"
+            android:text="@string/main_buttom_tab_contacts"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/txtSize_14_sp" />
+        <!-- 我 -->
+        <Button
+            android:id="@+id/btn_me"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_tab"
+            android:drawableTop="@drawable/tab_me_selector"
+            android:drawablePadding="-5dip"
+            android:onClick="onTabSelect"
+            android:paddingBottom="@dimen/dimen_2_dip"
+            android:paddingTop="@dimen/dimen_6_dip"
+            android:scaleType="matrix"
+            android:text="@string/main_buttom_tab_me"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/txtSize_14_sp" />
+    </LinearLayout>
+
+    <!-- 消息列表 -->
+    <RelativeLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/main_bottom" >
+    </RelativeLayout>
+
+</RelativeLayout>
+
+
+<!--<com.yey.kindergaten.widget.SlidingMenu xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:id="@+id/id_menu"-->
+    <!--xmlns:zhy="http://schemas.android.com/apk/res-auto"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="fill_parent"-->
+    <!--android:background="@drawable/wheel_val"-->
+    <!--android:scrollbars="none"-->
+    <!--zhy:rightPadding="100dp" >-->
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="fill_parent"-->
+        <!--android:orientation="horizontal" >-->
+
+        <!--<include layout="@layout/layout_menu" />-->
+
+
+    <!--</LinearLayout>-->
+
+<!--</com.yey.kindergaten.widget.SlidingMenu>-->

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tab="http://schemas.android.com/apk/res/com.yey.kindergaten"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    
+      <include  android:id="@id/activity_contacts_main_titlely" layout="@layout/header_layout"/>
+
+      
+       <RelativeLayout
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"  
+              android:layout_marginLeft="@dimen/dimen_11_dip"  
+              android:layout_marginRight="@dimen/dimen_11_dip"
+              android:layout_marginTop="@dimen/dimen_50_dip"    
+              android:layout_marginBottom="@dimen/dimen_50_dip"  
+              android:gravity="center"         
+              android:orientation="horizontal" >  
+            
+          <Button 
+                android:id="@+id/addfriend_sreachbtn"
+                android:layout_width="wrap_content"
+                android:layout_alignParentRight="true"               
+                android:layout_height="@dimen/dimen_40_dip"
+                android:background="@drawable/toastselector"
+                android:textColor="@color/white"
+                android:text="搜索"
+                />          
+        
+        <LinearLayout
+              android:layout_width="wrap_content"
+              android:layout_height="@dimen/dimen_40_dip"               
+              android:background="@drawable/addfriend_lineicon" 
+              android:layout_alignParentLeft="true"    
+              android:layout_toLeftOf="@id/addfriend_sreachbtn"
+              android:layout_marginRight="@dimen/dimen_10_dip" 
+              android:gravity="center_vertical"           
+              android:orientation="horizontal"                 
+              >
+
+             <ImageView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_11_dip"  
+                android:layout_marginRight="@dimen/dimen_11_dip"  
+                android:src="@drawable/addfriend_sreachicon"/>
+            
+            <EditText
+                android:id="@+id/addfriend_sreachet"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"     
+                android:background="@null"   
+                android:hint="输入查询条件"         
+                android:ems="9" >
+                <requestFocus />
+            </EditText>
+       </LinearLayout>                     
+       </RelativeLayout>
+       
+        <View style="@style/viewlinestyle"/>
+        <LinearLayout 
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"  
+             android:orientation="vertical"
+            >
+           <LinearLayout 
+             android:id="@+id/addfriend_sao"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"  
+             android:orientation="horizontal"
+             android:background="@drawable/listview_select_item"
+              >
+            
+            <ImageView 
+                android:layout_width="@dimen/dimen_44_dip"
+                android:layout_height="@dimen/dimen_44_dip"
+                android:layout_marginTop="@dimen/dimen_10_dip"
+                android:layout_marginBottom="@dimen/dimen_10_dip"
+                android:layout_marginLeft="@dimen/dimen_11_dip"  
+                android:layout_marginRight="@dimen/dimen_11_dip"  
+                android:src="@drawable/addfriend_saoicon"
+                />
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="@dimen/txtSize_19_sp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:text="扫一扫"
+                />
+             </LinearLayout>
+                 <View style="@style/viewlinestyle"  android:layout_marginLeft="@dimen/dimen_66_dip"  />
+            
+         
+            <LinearLayout 
+             android:id="@+id/addfriend_sreachpuac"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"  
+             android:orientation="horizontal"
+             android:background="@drawable/listview_select_item"
+              >
+            
+            <ImageView 
+                android:layout_width="@dimen/dimen_44_dip"
+                android:layout_height="@dimen/dimen_44_dip"
+                android:layout_marginTop="@dimen/dimen_10_dip"
+                android:layout_marginBottom="@dimen/dimen_10_dip"
+                android:layout_marginLeft="@dimen/dimen_11_dip"  
+                android:layout_marginRight="@dimen/dimen_11_dip"  
+                android:src="@drawable/addfriend_puacicon"
+                />
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="@dimen/txtSize_19_sp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:text="查找公众号"
+                />
+             </LinearLayout>
+                 <View style="@style/viewlinestyle"   />
+           </LinearLayout>
+
+</LinearLayout>

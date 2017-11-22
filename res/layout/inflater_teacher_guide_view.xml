@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:paddingRight="@dimen/dimen_8_dip"
+    android:background="#90000000"
+    android:visibility="gone"
+    android:layout_height="match_parent">
+
+    <!--android:background="@drawable/layout_gry_bg"-->
+    <LinearLayout
+        android:layout_width="@dimen/dimen_147_dip" android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:orientation="vertical">
+        <!--<ListView android:id="@+id/more_shortcut_key"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_width="fill_parent" />-->
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="@dimen/dimen_16_dip"
+                android:layout_height="@dimen/dimen_10_dip"
+                android:background="@drawable/home_menu_img_triangle"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dimen_6_dip"/>
+        </RelativeLayout>
+        <ListView android:id="@+id/lv_home_menu_unified_entrance"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:divider="@color/listviewline"
+            android:dividerHeight="1dp"
+            android:listSelector="@drawable/selector_home_menu_listview"
+            android:background="@drawable/home_menu_main_bg">
+            <!--<ImageView-->
+                <!--android:layout_width="@dimen/dimen_30_dip"-->
+                <!--android:layout_height="@dimen/dimen_30_dip"-->
+                <!--android:layout_marginLeft="@dimen/dimen_1_dip"-->
+                <!--android:src="@drawable/home_menu_icon_notice"/>-->
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:gravity="center"-->
+                <!--android:text="发通知"/>-->
+        </ListView>
+    </LinearLayout>
+
+    <!--<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">-->
+        <!--<LinearLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="horizontal" android:minHeight="@dimen/dimen_33_dip">-->
+            <!--<LinearLayout android:gravity="center" android:id="@+id/home_news_ll" android:background="@drawable/home_button_bg_selector" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" android:layout_marginRight="@dimen/dimen_10_dip">-->
+                <!--<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">-->
+                    <!--<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"  android:gravity="center">-->
+                        <!--<ImageView android:background="@drawable/icon_notice" android:layout_width="@dimen/dimen_80_dip" android:layout_height="@dimen/dimen_80_dip"/>-->
+                        <!--<TextView  android:layout_marginTop="@dimen/dimen_5_dip" android:text="发通知" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="@dimen/txtSize_18_sp" android:textColor="@color/base_color_text_black"  />-->
+                    <!--</LinearLayout>-->
+                <!--</FrameLayout>-->
+            <!--</LinearLayout>-->
+
+            <!--<LinearLayout android:gravity="center" android:id="@+id/home_repord_ll" android:background="@drawable/home_button_bg_selector" android:clickable="true"  android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">-->
+                <!--<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">-->
+                    <!--<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"  android:gravity="center">-->
+                        <!--<ImageView  android:background="@drawable/icon_triwter"   android:layout_width="@dimen/dimen_80_dip" android:layout_height="@dimen/dimen_80_dip" />-->
+                        <!--<TextView android:text="发动态" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="@dimen/txtSize_18_sp" android:textColor="@color/base_color_text_black" android:layout_marginTop="@dimen/dimen_5_dip" />-->
+                    <!--</LinearLayout>-->
+                <!--</FrameLayout>-->
+            <!--</LinearLayout>-->
+        <!--</LinearLayout>-->
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">-->
+        <!--<LinearLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="horizontal" android:minHeight="@dimen/dimen_33_dip">-->
+            <!--<LinearLayout android:gravity="center" android:id="@+id/guide_item_lifephoto" android:background="@drawable/home_button_bg_selector" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" android:layout_marginRight="@dimen/dimen_10_dip">-->
+                <!--<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">-->
+                    <!--<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"  android:gravity="center">-->
+                        <!--<ImageView android:background="@drawable/icon_lifephoto"  android:layout_width="@dimen/dimen_80_dip" android:layout_height="@dimen/dimen_80_dip" />-->
+                        <!--<TextView android:layout_marginTop="@dimen/dimen_5_dip" android:text="生活剪影" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="@dimen/txtSize_18_sp" android:textColor="@color/base_color_text_black"  />-->
+                    <!--</LinearLayout>-->
+                <!--</FrameLayout>-->
+            <!--</LinearLayout>-->
+
+            <!--<LinearLayout android:gravity="center" android:id="@+id/guide_item_workphoto" android:background="@drawable/home_button_bg_selector" android:clickable="true"  android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">-->
+                <!--<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">-->
+                    <!--<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"  android:gravity="center">-->
+                        <!--<ImageView  android:background="@drawable/icon_workphoto"  android:layout_width="@dimen/dimen_80_dip" android:layout_height="@dimen/dimen_80_dip" />-->
+                        <!--<TextView android:text="手工作品" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="@dimen/txtSize_18_sp" android:textColor="@color/base_color_text_black" android:layout_marginTop="@dimen/dimen_5_dip" />-->
+                    <!--</LinearLayout>-->
+                <!--</FrameLayout>-->
+            <!--</LinearLayout>-->
+        <!--</LinearLayout>-->
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">-->
+        <!--<LinearLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="horizontal" android:minHeight="@dimen/dimen_33_dip">-->
+            <!--<LinearLayout android:gravity="center" android:id="@+id/guide_item_homebook" android:background="@drawable/home_button_bg_selector" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" android:layout_marginRight="@dimen/dimen_10_dip">-->
+                <!--<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">-->
+                    <!--<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"  android:gravity="center">-->
+                        <!--<ImageView android:background="@drawable/icon_homebook"  android:layout_width="@dimen/dimen_80_dip" android:layout_height="@dimen/dimen_80_dip" />-->
+                        <!--<TextView android:layout_marginTop="@dimen/dimen_5_dip" android:text="家园联系" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="@dimen/txtSize_18_sp" android:textColor="@color/base_color_text_black"  />-->
+                    <!--</LinearLayout>-->
+                <!--</FrameLayout>-->
+            <!--</LinearLayout>-->
+
+            <!--<LinearLayout android:gravity="center" android:id="@+id/guide_item_classvideo" android:background="@drawable/home_button_bg_selector" android:clickable="true"  android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">-->
+                <!--<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">-->
+                    <!--<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"  android:gravity="center">-->
+                        <!--<ImageView  android:background="@drawable/icon_classvideo"   android:layout_width="@dimen/dimen_80_dip" android:layout_height="@dimen/dimen_80_dip" />-->
+                        <!--<TextView android:text="班级视频" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="@dimen/txtSize_18_sp" android:textColor="@color/base_color_text_black" android:layout_marginTop="@dimen/dimen_5_dip" />-->
+                    <!--</LinearLayout>-->
+                <!--</FrameLayout>-->
+            <!--</LinearLayout>-->
+        <!--</LinearLayout>-->
+    <!--</LinearLayout>-->
+
+    <!--<FrameLayout android:clickable="true" android:id="@+id/guide_item_classphoto"   android:layout_width="fill_parent" android:background="@drawable/home_button_bg_selector" android:layout_height="wrap_content">-->
+        <!--<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"  android:gravity="center">-->
+            <!--<ImageView android:background="@drawable/icon_classphoto" android:layout_width="@dimen/dimen_80_dip" android:layout_height="@dimen/dimen_80_dip" />-->
+            <!--<TextView android:layout_marginTop="@dimen/dimen_5_dip" android:text="班级相册" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="@dimen/txtSize_18_sp" android:textColor="@color/base_color_text_black"  />-->
+        <!--</LinearLayout>-->
+
+    <!--</FrameLayout>-->
+
+
+</RelativeLayout>

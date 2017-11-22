@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <SurfaceView
+        android:id="@+id/preview_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+
+    <com.zxing.barcode.util.ViewfinderView
+        android:id="@+id/viewfinder_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+             
+        />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"     
+        android:orientation="vertical" >
+
+        
+    
+        
+        
+       <RelativeLayout
+        android:id="@+id/toplout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50_dip"
+         >
+
+        <include  android:id="@+id/activity_contacts_main_titlely"  layout="@layout/header_layout"/>
+    </RelativeLayout>
+ 
+       
+        <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toplout"
+        android:layout_marginTop="@dimen/dimen_20_dip"
+        android:background="@null" >
+        <RelativeLayout 
+            
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_centerInParent="true"
+            >
+        <ImageView
+            android:id="@+id/scan_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:src="@drawable/scan_icon_nor"
+           android:layout_centerVertical="true"
+             
+            />
+       
+      
+        <TextView
+            android:id="@+id/acti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_10_dip" 
+            android:layout_toRightOf="@id/scan_iv" 
+            android:layout_centerVertical="true"   
+            android:text="@string/scan_text"
+            android:textColor="#fff"
+             android:textSize="@dimen/txtSize_14_sp"
+         />
+        </RelativeLayout>
+       </RelativeLayout>
+        
+    </RelativeLayout>
+
+</FrameLayout>

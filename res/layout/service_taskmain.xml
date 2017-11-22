@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    <include    layout="@layout/header_layout"/>
+    
+       <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:gravity="center"
+        >
+        <ScrollView 
+       android:id="@+id/activity_contacts_main_scrollview"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content" 
+       >
+     <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+   
+     <com.yey.kindergaten.widget.MyListViewWithScrollView
+        android:id="@id/service_taskmain_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        style="@style/contactsexpandlistview"
+        />
+    <View  android:layout_width="fill_parent" android:layout_height="0.5dp" android:layout_marginBottom="@dimen/dimen_10_dip" android:background="@color/contactbackgroud"/>
+   </LinearLayout>
+     </ScrollView>
+       <TextView  
+           android:id="@+id/nodatatv"
+           android:layout_width="match_parent"
+   		   android:layout_height="match_parent" 
+   		   android:visibility="gone"
+   		   android:textColor="@color/contact_mainlvitemtv"
+   		   android:gravity="center"
+   		   android:textSize="@dimen/txtSize_17_sp"  		
+   		   />
+       
+        <include layout="@layout/common_network_disable" />
+        <include layout="@layout/common_loading" />
+        <include layout="@layout/common_error" />
+        <include layout="@layout/common_empty" />
+    </FrameLayout>
+    
+     
+</LinearLayout>

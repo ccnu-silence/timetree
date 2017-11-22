@@ -1,0 +1,86 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" android:background="#f0eff4"
+    tools:context=".MainActivity">
+    <!-- 头部 -->
+    <!--<RelativeLayout-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="45dp" android:background="#a383f0" >-->
+        <!--<ImageView-->
+            <!--android:layout_width="wrap_content" android:src="@drawable/header_layout_top_left_white"-->
+            <!--android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginLeft="10dp"/>-->
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" android:text="开通健康服务包" android:textSize="20dp"-->
+            <!--android:textColor="#ffffff" android:layout_centerInParent="true"/>-->
+    <!--</RelativeLayout>-->
+
+    <!-- 头部 -->
+    <include layout="@layout/header_layout"/>
+
+    <LinearLayout android:layout_height="wrap_content" android:layout_width="fill_parent" android:orientation="vertical">
+        <TextView android:id="@+id/tv_pay_result"
+            android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="支付成功！交易订单号为：" android:textSize="@dimen/dimen_18_dip" android:textColor="#4a4a4a"
+            android:gravity="center_horizontal" android:layout_marginTop="@dimen/dimen_36_dip"/>
+        <TextView android:id="@+id/tv_order_number"
+            android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="0000000000000000000000" android:textSize="@dimen/dimen_18_dip" android:textColor="#a285ef"
+            android:gravity="center_horizontal" android:layout_marginTop="@dimen/dimen_18_dip" android:layout_marginBottom="@dimen/dimen_20_dip"/>
+    </LinearLayout>
+
+    <!-- 服务名称 -->
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp" android:background="@color/white">
+        <TextView
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="服务名称" android:layout_centerVertical="true" android:layout_marginLeft="10dp"
+            android:textSize="18dp" android:textColor="#4a4a4a"/>
+        <TextView android:id="@+id/tv_service_name"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="幼儿园健康服务包" android:layout_centerVertical="true" android:layout_alignParentRight="true"
+            android:textSize="16dp" android:textColor="#aaaaaa" android:layout_marginRight="10dp"/>
+    </RelativeLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp" android:background="#EAEAEA"/>
+
+    <!-- 付款小朋友 -->
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp" android:background="@color/white">
+        <TextView
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="服务价格" android:layout_centerVertical="true" android:layout_marginLeft="10dp"
+            android:textSize="18dp" android:textColor="#4a4a4a"/>
+        <TextView android:id="@+id/tv_service_price"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="¥1.00" android:layout_centerVertical="true" android:layout_alignParentRight="true"
+            android:textSize="16dp" android:textColor="#aaaaaa" android:layout_marginRight="10dp"/>
+    </RelativeLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp" android:background="#EAEAEA"/>
+
+    <!-- 幼儿园 -->
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp" android:background="@color/white">
+        <TextView
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="支付方式" android:layout_centerVertical="true" android:layout_marginLeft="10dp"
+            android:textSize="18dp" android:textColor="#4a4a4a"/>
+        <TextView android:id="@+id/tv_pay_style"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="支付宝" android:layout_centerVertical="true" android:layout_alignParentRight="true"
+            android:textSize="16dp" android:textColor="#aaaaaa" android:layout_marginRight="10dp"/>
+    </RelativeLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp" android:background="#EAEAEA"/>
+    <Button android:id="@+id/btn_result_back"
+        android:layout_width="fill_parent" android:layout_height="@dimen/dimen_45_dip" android:layout_marginTop="@dimen/dimen_30_dip"
+        android:layout_marginLeft="@dimen/dimen_20_dip" android:layout_marginRight="@dimen/dimen_20_dip"
+        android:text="返  回" android:textColor="@color/white" style="@style/mainBtn"/>
+
+</LinearLayout>

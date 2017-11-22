@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    
+    
+     <LinearLayout android:id="@+id/sreachkinder_addtokinderly"  android:layout_width="fill_parent" android:layout_height="@dimen/dimen_50_dip" android:layout_alignParentBottom="true"  android:background="@color/white" android:orientation="vertical">
+          <View style="@style/meinfoviewlinestyle" />  
+<!--         <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/meinfo_inviaddicon"/> -->
+        <TextView  android:layout_width="match_parent" android:layout_height="match_parent" android:textSize="@dimen/txtSize_17_sp" android:textColor="@color/purple" android:text="加入群" android:gravity="center"/>
+    </LinearLayout>
+    
+     <ScrollView 
+       android:layout_above="@id/sreachkinder_addtokinderly"
+       android:layout_width="fill_parent"
+       android:layout_height="match_parent"  
+       >
+       <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"  
+        android:orientation="vertical"  
+        >
+          <FrameLayout 
+               android:layout_width="fill_parent"
+               android:layout_height="@dimen/dimen_200_dip" 
+               android:background="@drawable/group_cover"
+               >
+                
+           <LinearLayout 
+               android:layout_width="fill_parent"
+               android:layout_height="wrap_content"  
+               android:layout_gravity="left|bottom"                                 
+               android:layout_marginLeft="@dimen/dimen_11_dip"  
+               android:layout_marginTop="@dimen/dimen_7_dip"      
+               android:layout_marginBottom="@dimen/dimen_7_dip"      
+               android:orientation="horizontal"  >
+               
+            <com.yey.kindergaten.widget.CircleImageView
+                android:id="@id/contact_puacitemiv"          
+                android:layout_width="@dimen/dimen_56_dip"
+                android:layout_height="@dimen/dimen_56_dip"
+                android:src="@drawable/group_defaluteicon"
+                app:border_width="0.5dp" 
+                app:border_color="@color/white" 
+                />
+              <LinearLayout 
+               android:layout_width="wrap_content"
+               android:layout_height="match_parent"  
+               android:layout_marginLeft="@dimen/dimen_10_dip"
+               android:layout_marginTop="@dimen/dimen_10_dip"
+               android:gravity="center_vertical"
+               android:orientation="vertical"  >
+               
+                  <TextView 
+                      android:id="@+id/sreachclass_classnametv"
+                      android:textSize="@dimen/txtSize_17_sp"
+                      android:textColor="@color/white"
+                      android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"  
+                       android:text="因为爱所以爱"
+                    />
+             </LinearLayout>
+               
+                
+               </LinearLayout>
+          </FrameLayout>
+
+      <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="center_vertical"  android:orientation="vertical">
+         <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/dimen_51_dip" android:orientation="vertical" >
+             <TextView android:layout_marginLeft="@dimen/dimen_11_dip"  android:layout_alignParentLeft="true" android:layout_centerVertical="true"  android:layout_width="wrap_content" android:layout_height="wrap_content"  android:text="班级群号" android:textSize="@dimen/txtSize_17_sp"/>   
+             <TextView android:id="@+id/sreachclass_classnumtv"  android:layout_alignParentRight="true" android:layout_marginRight="@dimen/dimen_11_dip" android:layout_centerVertical="true"  style="@style/meinfotextstyle"  android:layout_height="@dimen/dimen_50_dip"  /> 
+        </RelativeLayout>         
+         <View style="@style/meinfoviewlinestyle" />  
+      </LinearLayout>
+          
+ 
+      <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="center_vertical"  android:orientation="vertical">
+         <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/dimen_51_dip" android:orientation="vertical" >
+             <TextView android:layout_marginLeft="@dimen/dimen_11_dip"  android:layout_alignParentLeft="true" android:layout_centerVertical="true"  android:layout_width="wrap_content" android:layout_height="wrap_content"  android:text="年级" android:textSize="@dimen/txtSize_17_sp"/>   
+             <TextView android:id="@+id/sreachclass_gradenametv"  android:layout_alignParentRight="true" android:layout_marginRight="@dimen/dimen_11_dip" android:layout_centerVertical="true"  style="@style/meinfotextstyle"  android:layout_height="@dimen/dimen_50_dip"  /> 
+        </RelativeLayout>         
+         <View style="@style/meinfoviewlinestyle" />  
+      </LinearLayout>
+
+      
+     <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="center_vertical"  android:orientation="vertical">
+         <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/dimen_51_dip" android:orientation="vertical" >
+             <TextView android:layout_marginLeft="@dimen/dimen_11_dip"  android:layout_alignParentLeft="true" android:layout_centerVertical="true"  android:layout_width="wrap_content" android:layout_height="wrap_content"  android:text="幼儿园" android:textSize="@dimen/txtSize_17_sp"/>   
+             <TextView android:id="@+id/sreachclass_kindertv"  android:layout_alignParentRight="true" android:layout_marginRight="@dimen/dimen_11_dip" android:layout_centerVertical="true"  style="@style/meinfotextstyle"  android:layout_height="@dimen/dimen_50_dip"  /> 
+        </RelativeLayout>         
+         <View style="@style/meinfoviewlinestyle" />  
+      </LinearLayout>
+      
+       
+      <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="center_vertical"  android:orientation="vertical">
+         <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/dimen_51_dip" android:orientation="vertical" >
+             <TextView android:layout_marginLeft="@dimen/dimen_11_dip"  android:layout_alignParentLeft="true" android:layout_centerVertical="true"  android:layout_width="wrap_content" android:layout_height="wrap_content"  android:text="班级老师" android:textSize="@dimen/txtSize_17_sp"/>   
+             <TextView android:id="@+id/sreachclass_classteachertv"  android:layout_alignParentRight="true" android:layout_marginRight="@dimen/dimen_11_dip" android:layout_centerVertical="true"  style="@style/meinfotextstyle"  android:layout_height="@dimen/dimen_50_dip"  /> 
+        </RelativeLayout>         
+         <View style="@style/meinfoviewlinestyle" />  
+      </LinearLayout>
+      
+      
+      
+  
+     <LinearLayout  android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="center_vertical"  android:orientation="vertical">
+         <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/dimen_51_dip" android:orientation="vertical" >
+             <TextView android:id="@+id/serviceedit_kindmiaoshu" android:layout_marginLeft="@dimen/dimen_11_dip"  android:layout_alignParentLeft="true" android:layout_centerVertical="true"  android:layout_width="wrap_content" 
+                 android:layout_height="wrap_content"  android:text="群介绍" android:textSize="@dimen/txtSize_17_sp"/>   
+             <TextView android:id="@+id/sreachclass_miaoshutv"   android:layout_alignParentRight="true"  android:layout_toRightOf="@id/serviceedit_kindmiaoshu" android:layout_marginRight="@dimen/dimen_11_dip" android:layout_marginLeft="@dimen/dimen_11_dip" android:gravity="center_vertical|right" android:layout_centerVertical="true"  style="@style/meinfotextstyle"  android:layout_height="@dimen/dimen_50_dip"  /> 
+        </RelativeLayout>         
+         <View style="@style/meinfoviewlinestyle" />  
+      </LinearLayout>
+      
+      
+
+        </LinearLayout>
+    </ScrollView>
+       
+
+</RelativeLayout>

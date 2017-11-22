@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/header_layout"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:background="@color/white"
+        android:id="@+id/show_no_child_leave_ll"
+        android:visibility="gone"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/base_color_text_black"
+            android:textSize="@dimen/txtSize_18_sp"
+            android:text="小朋友们都已经离园咯"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="@color/light_grey"
+            android:weightSum="10"
+            android:orientation="horizontal"
+            android:layout_height="@dimen/dimen_30_dip">
+            <View
+                android:layout_width="0.0dip"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="3.5"
+                android:layout_height="@dimen/dimen_0.5_dip"
+                android:layout_marginRight="@dimen/dimen_15_dip"
+                android:layout_marginLeft="@dimen/dimen_11_dip"
+                android:background="@color/gray"></View>
+            <TextView
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:textColor="@color/base_color_text_black"
+                android:gravity="center"
+                android:layout_gravity="center_vertical"
+                android:text="未离园名单"/>
+            <View
+                android:layout_width="0.0dip"
+                android:layout_marginLeft="@dimen/dimen_15_dip"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="3.5"
+                android:layout_height="@dimen/dimen_0.5_dip"
+                android:layout_marginRight="@dimen/dimen_11_dip"
+                android:background="@color/gray"></View>
+        </LinearLayout>
+
+        <GridView
+            android:id="@+id/leave_school_child_detail_gv"
+            android:divider="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dimen_10_dip"
+            android:verticalSpacing="15dp"
+            android:horizontalSpacing="15dp"
+            android:numColumns="3">
+        </GridView>
+    </LinearLayout>
+
+</LinearLayout>

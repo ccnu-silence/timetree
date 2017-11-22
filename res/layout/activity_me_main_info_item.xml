@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/white">
+   
+    <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:background="@null" android:minHeight="@dimen/dimen_45_dip">
+        <TextView  android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/tv_activity_main_info_name"  android:text="name" android:layout_marginLeft="20dp" android:layout_centerVertical="true" android:textColor="@color/black" android:textSize="@dimen/txtSize_18_sp"/>
+        <TextView  android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/tv_activity_main_info_value" android:layout_toRightOf="@id/tv_activity_main_info_name" android:layout_marginLeft="@dimen/dimen_10_dip" android:layout_marginRight="@dimen/dimen_10_dip" android:padding="@dimen/dimen_8_dip" android:text="value"    android:layout_centerVertical="true" android:textColor="@color/black" android:textSize="@dimen/txtSize_18_sp"/>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_right"  android:layout_centerVertical="true" android:layout_marginRight="@dimen/dimen_10_dip" android:scaleType="matrix" android:layout_alignParentRight="true"/>
+	</RelativeLayout>
+	
+</LinearLayout>

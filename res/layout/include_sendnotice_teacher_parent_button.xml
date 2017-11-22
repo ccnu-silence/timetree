@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" 
+    android:layout_margin="@dimen/dimen_10_dip">
+    
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        
+         <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+             <Button android:id="@+id/id_sendmsg_teacher_btn" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/sendmsg_addcontact_teacher" android:textSize="@dimen/txtSize_18_sp" android:textColor="@drawable/button_txt_chart_list_txt_color" android:background="@drawable/btn_selector_report_left_list" android:layout_weight="1" android:layout_gravity="left"/>
+             <Button android:id="@+id/id_sendmsg_parent_btn" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/sendmsg_addcontact_parent" android:textSize="@dimen/txtSize_18_sp" android:textColor="@drawable/button_txt_chart_list_txt_color" android:background="@drawable/btn_selector_report_right_list"  android:layout_weight="1" android:layout_gravity="right"/>
+       
+       </LinearLayout>
+    </FrameLayout>
+    
+</LinearLayout>
+

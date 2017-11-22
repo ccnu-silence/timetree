@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    >
+    <!-- 标题栏 -->
+    <include  android:id="@+id/activity_contacts_main_titlely"  layout="@layout/header_layout"/>
+    <!-- 网络提示 -->
+    <include  android:id="@+id/network_listener_ll" layout="@layout/include_common_network_commind"/>
+    <!-- 主体listview -->
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <!-- 消息列表 -->
+        <com.yey.kindergaten.widget.xlist.XListView
+            android:id="@+id/home_Message_lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@null"
+            android:fadingEdgeLength="0dp"
+            android:fastScrollEnabled="true"
+            android:listSelector="@drawable/btn_gry_selector_bg"
+            android:transcriptMode="normal" />
+        <!-- 弹出框 -->
+        <include android:id="@+id/menu_btn" layout="@layout/inflater_teacher_guide_view" />
+   </FrameLayout>
+  
+</LinearLayout>

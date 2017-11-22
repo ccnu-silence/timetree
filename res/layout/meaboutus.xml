@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    <include layout="@layout/header_layout"/>
+      <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical" android:gravity="center" android:layout_marginTop="@dimen/dimen_20_dip" android:layout_marginBottom="@dimen/dimen_20_dip">
+          <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_launcher"/>
+          <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center">
+          <TextView  android:id="@+id/appname_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="@dimen/txtSize_16_sp" android:text="@string/app_title" android:textColor="@color/gray_80807c" android:layout_marginTop="5dip"/>
+          <TextView  android:id="@+id/version_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="@dimen/txtSize_16_sp" android:text="" android:textColor="@color/gray_80807c" android:layout_marginTop="5dip" android:layout_marginLeft="5dip"/>
+          </LinearLayout>
+          <TextView  android:id="@+id/desc_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="@dimen/txtSize_15_sp" android:text="@string/app_desc" android:textColor="@color/gray_80807c" android:layout_marginTop="5dip" android:layout_marginLeft="10dip" android:layout_marginRight="10dip"/>
+      </LinearLayout>
+       <View style="@style/viewlinestyle"/>
+      <ListView 
+        android:id="@+id/meaboutus_lv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        style="@style/contactslistview"
+        />
+    <View style="@style/viewlinestyle"/>
+
+</LinearLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/dimen_13_dip" >
+
+    <TextView
+        android:id="@+id/tv_time"
+        style="@style/chat_text_date_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_chat_top" >
+
+        <ImageView
+            android:id="@+id/iv_avatar"
+            android:layout_width="@dimen/base_scrollview_top_height"
+            android:layout_height="@dimen/base_scrollview_top_height"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:contentDescription="@string/add_avator"
+            android:layout_marginLeft="@dimen/margin_chat_top"
+            android:background="@drawable/defaulticon"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/tv_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_toRightOf="@id/iv_avatar"
+            android:background="@drawable/chat_left_qp2"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="left|center"
+            android:lineSpacingExtra="@dimen/dimen_2_dip"
+            android:maxWidth="@dimen/dimen_225_dip"
+            android:minWidth="@dimen/dimen_50_dip"
+            android:minHeight="@dimen/dimen_50_dip"
+            android:paddingTop="@dimen/dimen_11_dip"
+            android:paddingLeft="@dimen/dimen_18_dip"
+            android:paddingRight="@dimen/dimen_11_dip"
+            android:paddingBottom="@dimen/dimen_11_dip"
+            android:textColor="#ff000000"
+            android:textSize="@dimen/txtSize_13_sp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

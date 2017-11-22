@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    
+    <include layout="@layout/header_layout"/>
+    
+    
+     <View   style="@style/viewlinestyle" />
+     <LinearLayout        
+            android:id="@+id/servicecompleteinfo_namely"    
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dimen_56_dip"         
+            android:orientation="horizontal" 
+            android:gravity="center_vertical"
+            >
+               <TextView            
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"       
+                android:layout_gravity="center" 
+                android:layout_marginLeft="@dimen/dimen_11_dip"   
+                android:textSize="@dimen/txtSize_17_sp"
+                android:textColor="@color/black"
+                android:text="真实姓名:" />     
+                    
+               
+                 <EditText
+      			   android:id="@+id/servicecompleteinfo_nametv"  
+       			   android:layout_width="fill_parent"
+        		   android:layout_height="match_parent"
+        		   android:layout_marginLeft="@dimen/dimen_10_dip"       
+                   android:textColor="@color/contact_mainlvitemtv"
+                   android:textSize="@dimen/txtSize_14_sp"
+                   android:hint="请输入真实姓名,方便别人称呼与查找"
+                   android:singleLine="true"
+                   android:background="@null"
+                   android:maxLength="12"
+        		   android:ems="13" >
+               <requestFocus />
+                  </EditText>
+        </LinearLayout>   
+     
+      <View   style="@style/viewlinestyle" />
+        <LinearLayout        
+            android:id="@+id/servicecompleteinfo_phonely"     
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dimen_56_dip"         
+            android:orientation="horizontal" 
+            android:gravity="center_vertical"
+            >
+               <TextView            
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"    
+                android:textColor="@color/black"   
+                android:textSize="@dimen/txtSize_17_sp"
+                android:layout_gravity="center"  
+                android:layout_marginLeft="@dimen/dimen_11_dip"                  
+                android:text="电话:" />     
+                
+                 <EditText
+      			   android:id="@+id/servicecompleteinfo_phonetv"    
+       			   android:layout_width="match_parent"
+        		   android:layout_height="match_parent"
+        		   android:layout_marginLeft="@dimen/dimen_10_dip"
+        		   android:textSize="@dimen/txtSize_14_sp"
+        		   android:inputType="number"
+                   android:textColor="@color/contact_mainlvitemtv"
+                   android:background="@null"
+                   android:singleLine="true"
+                   android:maxLength="12"
+                   android:hint="请输入联系电话,方便别人及时的联系"
+        		   android:ems="13" >  
+                  </EditText>          
+          </LinearLayout>   
+     <View   style="@style/viewlinestyle" />
+     
+     
+     
+     <LinearLayout 
+       android:id="@+id/servicecompleteinfo_finish"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content" 
+       android:orientation="vertical"
+       android:layout_marginTop="@dimen/dimen_20_dip"
+       android:background="@drawable/listview_select_item"
+       >
+             <View   style="@style/viewlinestyle" />
+        <TextView         
+                android:id="@id/contact_frienddatacard_kgtv"                      
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_50_dip"
+                android:text="完成"
+                android:gravity="center"
+                android:textColor="@color/purple"
+                android:textSize="@dimen/txtSize_18_sp"
+                />  
+         <View   style="@style/viewlinestyle" />
+    </LinearLayout>
+
+</LinearLayout>

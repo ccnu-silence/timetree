@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout android:orientation="vertical" android:layout_width="150dip" android:layout_height="150dip"
+        android:background="@drawable/albumcover_bg" >
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="@dimen/dimen_5_dip">
+            <!-- 相册封面 -->
+            <ImageView android:id="@id/classphoto_gv_album_iv" android:layout_width="fill_parent"
+                android:layout_height="fill_parent"  android:layout_marginBottom="7dip"
+                android:src="@drawable/icon_image_loading_default"/>
+            <!-- 相册名称 -->
+            <LinearLayout android:id="@id/ll_bottom_block" android:layout_width="fill_parent"
+                android:layout_height="wrap_content" android:gravity="center"
+                android:background="@drawable/transparent_black" android:layout_alignParentBottom="true"
+                android:layout_marginBottom="7dip" android:layout_marginLeft="4dip" android:layout_marginRight="4dip">
+                <TextView  android:id="@id/classphoto_gv_count_tv" android:layout_width="wrap_content"
+                    android:layout_height="fill_parent" android:textSize="@dimen/dimen_16_dip" android:text="班级相册"
+                    android:textColor="@color/white" android:layout_margin="5.0dip"
+                    android:ellipsize="end" android:singleLine="true" android:gravity="center"/>
+            </LinearLayout>
+            <!-- 勾选 -->
+            <FrameLayout android:layout_height="wrap_content" android:layout_width="wrap_content"
+                android:layout_alignParentRight="true" android:layout_alignParentTop="true">
+                <ImageView android:id="@+id/select"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_5_dip" android:layout_marginRight="@dimen/dimen_5_dip"
+                    android:background="@drawable/album_choice" android:visibility="gone" />
+                <ImageView
+                    android:id="@+id/unselect"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_5_dip" android:layout_marginRight="@dimen/dimen_5_dip"
+                    android:background="@drawable/album_nochoice" android:visibility="gone" />
+            </FrameLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/white">
+    <include layout="@layout/header_layout"/>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical" android:layout_marginLeft="10dp" android:layout_marginTop="@dimen/dimen_10_dip" android:layout_marginRight="@dimen/dimen_10_dip">
+    	<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="您的账号之前未绑定过手机号，因此不支持通过手机来找回密码，请联系我们的客服，让客服帮您重置密码。" android:layout_marginTop="@dimen/dimen_10_dip" android:textColor="@color/black"/>
+    	<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="客服QQ：891342334234" android:layout_marginTop="@dimen/dimen_10_dip" android:textColor="@color/black"/>
+    	<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="客服电话：400343454545" android:layout_marginTop="@dimen/dimen_10_dip" android:textColor="@color/black"/>
+    	<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="成功重置密码后请在“设置”-“账号安全”-“绑定手机”中重新绑定为您的当前号码。" android:layout_marginTop="@dimen/dimen_10_dip" android:textColor="@color/black"/>
+    	<Button android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="返回登录" android:layout_marginTop="@dimen/dimen_10_dip" android:id="@+id/btn_activity_login_inphone_back"/>
+    </LinearLayout>
+
+</LinearLayout>

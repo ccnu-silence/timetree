@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <include layout="@layout/header_layout"/>
+     
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ListView
+            android:id="@+id/id_show_upload_lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:scrollbars="none"
+            android:layout_alignParentTop="true">
+        </ListView>
+       <!--  <LinearLayout android:layout_height="50dip" android:layout_width="fill_parent" android:orientation="horizontal" android:layout_alignParentBottom="true">
+            <Button android:id="@+id/upload_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="全部继续"/>
+            <Button android:id="@+id/cancel_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="全部取消"/>
+        </LinearLayout> -->
+    </RelativeLayout>
+
+</LinearLayout>

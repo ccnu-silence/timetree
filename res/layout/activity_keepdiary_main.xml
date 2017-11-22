@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    <include layout="@layout/header_layout"/>
+    <!-- 网络提示 -->
+    <include android:id="@+id/network_listener_ll" layout="@layout/include_common_network_commind"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_5_dip"
+                android:orientation="vertical" >
+	            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:id="@+id/ll_publishspeak_input">
+                    <com.yey.kindergaten.widget.EmoticonsEditText
+                        android:id="@+id/service_keepdairy_ed"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/dimen_5_dip"
+                        android:layout_weight="0.95"
+                        android:background="@null"
+                        android:ems="10"
+                        android:gravity="top"
+                        android:hint="记录孩子成长的瞬间！"
+                        android:imeOptions="flagNoExtractUi"
+                        android:minHeight="@dimen/dimen_100_dip">
+                        <requestFocus />
+                    </com.yey.kindergaten.widget.EmoticonsEditText>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="@dimen/dimen_5_dip"
+                        android:orientation="vertical"
+                        android:layout_weight="0.1">
+                        <Button
+                            android:id="@+id/service_publishspeak_facebtn"
+                            android:layout_width="@dimen/dimen_30_dip"
+                            android:layout_height="@dimen/dimen_30_dip"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="@dimen/dimen_5_dip"
+                            android:background="@drawable/friendster_biaoqing"
+                            android:visibility="gone"/>
+                        <Button
+                            android:id="@+id/service_publishspeak_photobtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignLeft="@+id/service_publishspeak_facebtn"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@+id/service_publishspeak_facebtn"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="@dimen/dimen_5_dip"
+                            android:visibility="gone"
+                            android:background="@drawable/friendster_uploading" />
+                    </RelativeLayout>
+                </LinearLayout>
+                <!-- </FrameLayout> -->
+                <LinearLayout
+                    android:id="@+id/service_publishspeak_facely"
+                    android:layout_below="@+id/ll_publishspeak_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    android:background="@drawable/layout_gry_bg"
+                    android:orientation="vertical">
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/service_publishspeak_face"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dip"  />
+                </LinearLayout>
+            </RelativeLayout>
+    <!--<LinearLayout-->
+            <!--android:id="@+id/service_publishspeak_gridviewly"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="fill_parent"-->
+            <!--android:padding="@dimen/dimen_5_dip"-->
+            <!--android:layout_marginLeft="@dimen/dimen_5_dip"-->
+            <!--android:layout_marginRight="@dimen/dimen_5_dip"-->
+            <!--android:background="@drawable/layout_gry_bg"-->
+            <!--android:visibility="visible"-->
+            <!--android:gravity="center">-->
+
+        <!--<com.yey.kindergaten.widget.MyGridviewWithScrollView-->
+            <!--android:id="@+id/service_publishspeak_gv"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:horizontalSpacing="6dp"-->
+            <!--android:stretchMode="columnWidth"-->
+            <!--android:verticalSpacing="6dp"-->
+            <!--android:scrollbars="none"-->
+            <!--android:numColumns="4" />-->
+     <!--</LinearLayout>-->
+        </LinearLayout>
+    </ScrollView>
+
+    <View style="@style/viewlinestyle" />
+
+    <LinearLayout
+        android:id="@+id/ll_add_all"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/ll_add_photo"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dimen_140_dip"
+            android:orientation="vertical"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/iv_full_add"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_140_dip"
+                android:visibility="gone"
+                android:scaleType="centerCrop"/>
+            <ImageView
+                android:id="@+id/iv_add_grow_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/iv_addphoto_grow"/>
+            <TextView
+                android:id="@+id/tv_add_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_5_dip"
+                android:textSize="@dimen/txtSize_17_sp"
+                android:textColor="@color/gray"
+                android:text="添加图片"/>
+        </LinearLayout>
+
+        <View style="@style/viewlinestyle_heng" />
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dimen_140_dip"
+            android:orientation="vertical"
+            android:textSize="@dimen/txtSize_17_sp"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/iv_add_grow_voice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/iv_addvoice_grow"/>
+            <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/iv_show_voice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:visibility="gone"
+                    android:background="@drawable/grow_voice_show"/>
+                <ImageView
+                    android:id="@+id/iv_delet_voice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/delete"
+                    android:visibility="gone"
+                    android:layout_marginRight="@dimen/dimen_5_dip"
+                    android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/tv_add_voice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_5_dip"
+                android:textSize="@dimen/txtSize_17_sp"
+                android:textColor="@color/gray"
+                android:text="添加语音"/>
+        </LinearLayout>
+    </LinearLayout>
+   <!--<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:padding="@dimen/dimen_15_dip" android:id="@+id/recording_voice">-->
+       <!--<LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal" android:id="@+id/ll_addrecording" android:layout_centerVertical="true">-->
+       	 <!--<ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/recording" android:layout_centerVertical="true" android:id="@+id/iv_recording"/>-->
+   	   	 <!--<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="添加语音"  android:layout_marginLeft="@dimen/dimen_10_dip" android:layout_toRightOf="@+id/iv_recording" android:id="@+id/recording_begin" android:layout_gravity="center_vertical"/>-->
+   	   <!--</LinearLayout>-->
+   	   <!--<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"  android:id="@+id/ll_voice_play">-->
+   	   		<!--<LinearLayout-->
+            	<!--android:id="@+id/layout_voice"-->
+            	<!--android:layout_width="wrap_content"-->
+            	<!--android:layout_height="wrap_content"-->
+            	<!--android:layout_alignParentRight="true"-->
+            	<!--android:background="@drawable/chat_left_qp1"-->
+            	<!--android:minWidth="@dimen/dimen_80_dip"-->
+            	<!--android:minHeight="@dimen/dimen_45_dip"-->
+            	<!--android:gravity="center"-->
+            	<!--android:visibility="gone"-->
+            	<!--android:layout_centerVertical="true">-->
+            <!--<ImageView-->
+                <!--android:id="@+id/iv_voice"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:contentDescription="@string/add_avator"-->
+                <!--android:scaleType="fitCenter"-->
+                <!--android:src="@drawable/voice_left3" />-->
+        	<!--</LinearLayout>-->
+        	<!--<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""   android:id="@+id/time_record" android:layout_toLeftOf="@+id/layout_voice" android:layout_centerVertical="true" />-->
+   	   <!--</RelativeLayout>-->
+   <!--</RelativeLayout>-->
+   <View style="@style/viewlinestyle" />
+</LinearLayout>

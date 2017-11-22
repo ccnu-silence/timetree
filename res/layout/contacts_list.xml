@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+     <include  android:id="@id/activity_contacts_main_titlely" layout="@layout/header_layout"/>
+
+    <com.yey.kindergaten.widget.MyWebView
+        android:id="@+id/show_guide_webview"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></com.yey.kindergaten.widget.MyWebView>
+    <ListView
+        android:id="@id/contact_list_lv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        style="@style/contactslistview"
+       >
+    </ListView>
+
+
+</LinearLayout>

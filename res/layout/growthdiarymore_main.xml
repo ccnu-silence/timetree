@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include layout="@layout/header_layout_group" android:id="@+id/head_layout" android:layout_alignParentTop="true"/>
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/iv_growthdiarymore_main" android:layout_centerHorizontal="true" android:background="@drawable/img_person_icon" android:layout_below="@+id/head_layout" android:layout_marginTop="@dimen/dimen_5_dip"/>
+	<TextView  android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="说说" android:layout_marginTop="@dimen/dimen_5_dip" android:layout_below="@+id/iv_growthdiarymore_main"  android:id="@+id/tv_growthdiarymore_content" android:layout_marginLeft="@dimen/dimen_10_dip"/>
+	<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/tv_growthdiarymore_content" android:id="@+id/rl_growthdiarymore_main" android:padding="@dimen/dimen_10_dip">
+	    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/iv_growthdiarymore_voice" android:layout_alignParentLeft="true" android:background="@drawable/play_icon"/>
+	    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/iv_growthdiarymore_discuss" android:layout_alignParentRight="true" android:background="@drawable/comment_discuss"/>
+	</RelativeLayout>
+	<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal"  android:visibility="visible" android:id="@+id/ll_activity_service_friendster_item_input" android:gravity="center_vertical" android:layout_below="@+id/rl_growthdiarymore_main" android:padding="@dimen/dimen_5_dip">  
+      <ImageButton  android:layout_width="0dp" android:layout_height="wrap_content" android:src="@drawable/friendster_biaoqing"  android:background="@null" android:id="@+id/biaoqing_activity_service_friendster_item" android:layout_weight="0.1"   />
+      <com.yey.kindergaten.widget.EmoticonsEditText android:layout_width="0dp" android:layout_height="wrap_content"  android:id="@+id/input_activity_service_friendster_item"  android:layout_weight="0.5" android:background="@drawable/base_edit_input" android:imeOptions="flagNoExtractUi" android:minHeight="@dimen/tab_padding_left_right"/>
+      <Button  android:layout_width="0dp" android:layout_height="@dimen/dimen_38_dip" android:text="发送" android:textSize="@dimen/txtSize_12_sp" android:id="@+id/btn_activity_service_friendster_item" android:layout_weight="0.1" android:background="@drawable/btnsend_friendster" android:layout_marginLeft="@dimen/dimen_3_dip"/>   
+   </LinearLayout>
+      <LinearLayout
+            android:id="@+id/service_publishspeak_facely"
+            android:layout_below="@+id/ll_activity_service_friendster_item_input"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" 
+            android:visibility="gone" 
+            android:background="@drawable/layout_gry_bg"
+            android:orientation="vertical">
+       <android.support.v4.view.ViewPager
+                android:id="@+id/service_publishspeak_face"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_120_dip"  />         
+        </LinearLayout> 
+</RelativeLayout>

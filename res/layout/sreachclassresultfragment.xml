@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    
+    
+     <ScrollView 
+       android:layout_width="match_parent"
+       android:layout_height="match_parent" 
+       android:layout_marginTop="@dimen/dimen_10_dip"
+       >
+       <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"  
+        android:orientation="vertical"  
+        >
+        <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"   android:orientation="vertical" >
+       <View style="@style/viewlinestyle"/>
+      <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/dimen_56_dip">
+        <TextView style="@style/contactsdatacardtext" android:layout_marginLeft="@dimen/dimen_11_dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:text="班级名称" />   
+        <TextView android:id="@+id/sreachclass_classnametv"  style="@style/contactsdatacardvaluetext" android:layout_centerVertical="true" android:layout_alignParentRight="true" android:layout_marginRight="@dimen/dimen_20_dip"  />            
+       </RelativeLayout>
+       <View style="@style/viewlinestyle"/>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/dimen_56_dip">
+        <TextView style="@style/contactsdatacardtext" android:layout_marginLeft="@dimen/dimen_11_dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:text="班级群号" />   
+        <TextView android:id="@+id/sreachclass_classnumtv"  style="@style/contactsdatacardvaluetext" android:layout_centerVertical="true" android:layout_alignParentRight="true" android:layout_marginRight="@dimen/dimen_20_dip"  />            
+       </RelativeLayout>
+       <View style="@style/viewlinestyle"/>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/dimen_56_dip">
+        <TextView style="@style/contactsdatacardtext" android:layout_marginLeft="@dimen/dimen_11_dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:text="年级" />   
+        <TextView android:id="@+id/sreachclass_gradenametv"  style="@style/contactsdatacardvaluetext" android:layout_centerVertical="true" android:layout_alignParentRight="true" android:layout_marginRight="@dimen/dimen_20_dip"  />            
+       </RelativeLayout>
+       <View style="@style/viewlinestyle"/>
+      </LinearLayout>
+      
+        
+         <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"   android:orientation="vertical" android:layout_marginTop="@dimen/dimen_20_dip">
+       <View style="@style/viewlinestyle"/>
+      <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/dimen_56_dip">
+        <TextView style="@style/contactsdatacardtext" android:layout_marginLeft="@dimen/dimen_11_dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:text="所属幼儿园" />   
+        <TextView android:id="@+id/sreachclass_kindertv"  style="@style/contactsdatacardvaluetext" android:layout_centerVertical="true" android:layout_alignParentRight="true" android:layout_marginRight="@dimen/dimen_20_dip"  />            
+       </RelativeLayout>
+       <View style="@style/viewlinestyle"/>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/dimen_56_dip">
+        <TextView style="@style/contactsdatacardtext" android:layout_marginLeft="@dimen/dimen_11_dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:text="班级老师" />   
+        <TextView android:id="@+id/sreachclass_classteachertv"  style="@style/contactsdatacardvaluetext" android:layout_centerVertical="true" android:layout_alignParentRight="true" android:layout_marginRight="@dimen/dimen_20_dip"  />            
+       </RelativeLayout>
+       <View style="@style/viewlinestyle"/>
+      </LinearLayout>
+      
+         
+         <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"   android:orientation="vertical" android:layout_marginTop="@dimen/dimen_20_dip">
+       <View style="@style/viewlinestyle"/>
+<!--       <RelativeLayout android:id="@+id/sreach_codely"  android:layout_width="fill_parent" android:layout_height="@dimen/dimen_56_dip"> -->
+<!--         <TextView style="@style/contactsdatacardtext" android:layout_marginLeft="@dimen/dimen_11_dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:text="班级群二维码" />    -->
+<!--         <TextView android:id="@+id/sreachclass_classcodetv"  style="@style/contactsdatacardvaluetext" android:layout_centerVertical="true" android:layout_alignParentRight="true" android:layout_marginRight="@dimen/dimen_20_dip"  />             -->
+<!--        </RelativeLayout> -->
+<!--        <View style="@style/viewlinestyle"/> -->
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/dimen_56_dip">
+        <TextView style="@style/contactsdatacardtext" android:layout_marginLeft="@dimen/dimen_11_dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:text="群介绍" />   
+        <TextView android:id="@+id/sreachclass_miaoshutv"  style="@style/contactsdatacardvaluetext" android:layout_centerVertical="true" android:layout_alignParentRight="true" android:layout_marginRight="@dimen/dimen_20_dip"  />            
+       </RelativeLayout>
+       <View style="@style/viewlinestyle"/>
+      </LinearLayout>
+      
+         
+       <LinearLayout android:id="@+id/sreachkinder_addtokinderly"   android:layout_width="match_parent" android:layout_height="match_parent"   android:orientation="vertical" android:layout_marginTop="@dimen/dimen_30_dip" android:layout_marginBottom="@dimen/dimen_20_dip" android:background="@drawable/listview_select_item">
+       <View style="@style/viewlinestyle"/>
+        <TextView android:layout_width="fill_parent" android:layout_height="@dimen/dimen_56_dip" android:textColor="@color/purple" android:textSize="@dimen/txtSize_18_sp" android:text="@string/contacts_kinderaddtokinder" android:gravity="center"/>
+       <View style="@style/viewlinestyle"/>
+      </LinearLayout>
+         
+     
+        
+        
+        </LinearLayout>
+    </ScrollView>
+    
+    
+
+</LinearLayout>

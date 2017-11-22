@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tab="http://schemas.android.com/apk/res/com.yey.kindergaten"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    
+      <include  android:id="@id/activity_contacts_main_titlely" layout="@layout/header_layout"/>
+      <LinearLayout
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content" 
+              android:gravity="center"                 
+              android:layout_marginTop="@dimen/dimen_10_dip"    
+              android:layout_marginBottom="@dimen/dimen_10_dip"      
+              android:orientation="vertical">   
+      <TextView 
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="@dimen/dimen_10_dip"
+           android:textColor="@color/black"
+           android:textSize="@dimen/txtSize_18_sp"
+           android:gravity="center_vertical"
+           android:layout_marginLeft="@dimen/dimen_20_dip"
+           android:layout_marginRight="@dimen/dimen_20_dip"
+           android:text="1.输入群号搜索加入群"
+           />
+       <LinearLayout 
+        android:layout_width="match_parent"
+       android:layout_height="@dimen/dimen_40_dip"
+       android:layout_marginTop="@dimen/dimen_20_dip"
+       android:layout_marginLeft="@dimen/dimen_20_dip"
+       android:layout_marginRight="@dimen/dimen_20_dip"
+       android:gravity="center"
+       android:orientation="horizontal" >
+
+          <EditText
+              android:id="@+id/contact_addkind_edittext"
+              android:layout_width="0dp"
+              android:layout_weight="3"
+              android:layout_height="match_parent"
+              android:textSize="@dimen/txtSize_14_sp"
+              android:textColor="@color/contact_mainlvitemtv"
+              android:background="@drawable/commont_white_button"     
+              android:paddingLeft="@dimen/dimen_1_dip"    
+              >
+          </EditText>
+       <TextView
+         android:id="@+id/contact_addkinder_sreachbt"
+         android:layout_width="0dp"
+         android:layout_height="@dimen/dimen_40_dip"      
+         android:layout_marginLeft="@dimen/dimen_20_dip"
+         android:layout_weight="1"
+         android:background="@drawable/commont_white_button"
+         style="@style/contactslisttextitem"
+         android:text="@string/contacts_addfriend_sreach"
+          />
+   </LinearLayout>
+          </LinearLayout>
+          
+      
+      <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/dimen_20_dip"
+        android:layout_marginRight="@dimen/dimen_20_dip"
+        android:layout_marginTop="@dimen/dimen_20_dip"
+        >
+     <TextView 
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:textSize="@dimen/txtSize_16_sp"
+         android:textColor="@color/black"
+         android:paddingTop="@dimen/dimen_10_dip"
+         android:paddingBottom="@dimen/dimen_10_dip"
+         android:text="2.扫描二维码加入群"
+         />
+        
+     <Button 
+         android:id="@+id/addkind_barsreach"
+         android:layout_width="fill_parent"
+         android:layout_height="@dimen/dimen_40_dip"
+         android:textColor="@color/purple"
+         android:textSize="@dimen/txtSize_18_sp"
+         android:background="@drawable/commont_white_button"
+         android:text="立即扫一扫"
+         />
+        
+    </LinearLayout>
+
+</LinearLayout>

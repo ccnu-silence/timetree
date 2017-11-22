@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center" 
+    android:padding="@dimen/dimen_2_dip">
+    <!--<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/voice_photo" android:layout_centerHorizontal="true" android:layout_marginTop="@dimen/dimen_5_dip">-->
+        <ImageView  android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/voice" android:id="@+id/voice_playing"/>        
+    <!--</RelativeLayout>-->
+	<!--<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="是否保存录音" android:layout_below="@+id/voice_photo" android:id="@+id/tv_recordingtime" android:layout_centerHorizontal="true" android:layout_marginTop="@dimen/dimen_10_dip" android:textSize="@dimen/txtSize_18_sp"/>
+	<RelativeLayout android:layout_width="@dimen/dimen_120_dip" android:layout_height="wrap_content" android:layout_below="@+id/tv_recordingtime" android:layout_centerHorizontal="true" android:layout_marginTop="@dimen/dimen_5_dip">
+	    <Button android:layout_width="@dimen/dimen_40_dip" android:layout_height="@dimen/dimen_30_dip" android:layout_alignParentLeft="true" android:text="确定" android:id="@+id/btn_true" android:background="@drawable/button_bg" android:textSize="@dimen/txtSize_12_sp"/>
+	    <Button android:layout_width="@dimen/dimen_40_dip" android:layout_height="@dimen/dimen_30_dip" android:layout_alignParentRight="true" android:text="取消" android:id="@+id/btn_false" android:background="@drawable/button_bg" android:textSize="@dimen/txtSize_12_sp"/>
+	</RelativeLayout>-->
+</RelativeLayout>

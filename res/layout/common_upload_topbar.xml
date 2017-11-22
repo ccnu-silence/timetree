@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:orientation="horizontal"
+        android:background="@color/light_greyv2" >
+    <ImageView android:id="@+id/albumupload_iv" android:layout_width="@dimen/dimen_50_dip" android:layout_height="fill_parent" android:layout_margin="@dimen/dimen_5_dip" android:background="@drawable/icon_image_loading_default"/>
+    <LinearLayout android:id="@id/ll_upload_process" android:layout_width="0.0dp" android:layout_weight="1" android:layout_height="fill_parent" android:orientation="vertical" android:gravity="center_vertical" android:layout_margin="@dimen/dimen_5_dip">
+        <TextView
+            android:id="@+id/upload_filename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"       
+            android:textSize="16sp"
+            android:text="" />
+
+        <ProgressBar
+            android:id="@+id/upload_progress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content" />
+          <TextView
+            android:id="@id/tv_uploadfail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"       
+            android:textSize="16sp"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            android:text="" /> 
+
+    </LinearLayout>
+    
+    <ImageView android:id="@id/retry_upload" android:background="@drawable/selector_title_click"  android:layout_marginLeft="@dimen/dimen_5_dip" android:layout_marginRight="@dimen/dimen_5_dip" android:src="@drawable/common_upload_retry"   android:layout_width="@dimen/dimen_20_dip" android:layout_height="@dimen/dimen_20_dip" android:layout_gravity="center|right" android:adjustViewBounds="true" android:visibility="gone"/>
+    <ImageView android:id="@id/close_upload" android:background="@drawable/selector_title_click"  android:layout_marginLeft="@dimen/dimen_10_dip" android:layout_marginRight="@dimen/dimen_10_dip" android:src="@drawable/common_upload_close"   android:layout_width="@dimen/dimen_20_dip" android:layout_height="@dimen/dimen_20_dip" android:layout_gravity="center|right" android:adjustViewBounds="true" android:visibility="gone"/>  
+    
+    </LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="4"
+    android:layout_marginTop="@dimen/dimen_10_dip"
+    android:layout_marginBottom="@dimen/dimen_10_dip"
+    android:orientation="horizontal" >
+    
+    <TextView 
+        android:id="@+id/tv_picture"
+        android:layout_width="0dp"
+        android:layout_weight="1.0"
+        android:layout_height="wrap_content"
+        android:drawablePadding="@dimen/dimen_10_dip"
+        android:gravity="center"
+        android:drawableTop="@drawable/btn_chat_add_picture_selector"
+        android:text="@string/chat_picture"
+        />
+   
+   
+</LinearLayout>

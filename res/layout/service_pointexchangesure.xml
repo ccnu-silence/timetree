@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+     <include   layout="@layout/header_layout"/>
+
+   
+      <TextView      
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:textSize="@dimen/txtSize_14_sp"
+         android:textColor="@color/contact_mainlvitemtv"
+         android:gravity="center_vertical"
+         android:paddingTop="@dimen/dimen_10_dip"      
+         android:paddingLeft="@dimen/dimen_5_dip"       
+         android:paddingBottom="@dimen/dimen_10_dip"
+         android:text="您确定用100积分兑换一下商品？确认点击下一步." />   
+       <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"      
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:id="@id/service_pointexchangemian_itemiv"
+            android:layout_margin="@dimen/dimen_5_dip"       
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_launcher" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"    
+            android:gravity="center_vertical"
+            android:layout_marginLeft="5dip"   
+            android:orientation="vertical" >
+      
+             <TextView      
+              android:id="@id/service_pointexchangemian_itemgoodstv"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:gravity="center"
+              android:textSize="@dimen/txtSize_12_sp"
+              android:textColor="@color/contact_mainlvitemtv"
+              android:text="32G移动U盘" />
+             <TextView               
+              android:id="@id/service_pointexchangemian_itempointtv"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:gravity="center"
+              android:textSize="@dimen/txtSize_12_sp"
+              android:textColor="@color/contact_mainlvitemtv"
+              android:text="500积分" />
+              <TextView             
+              android:id="@id/service_pointexchangemian_itemgoodsexplaintv"  
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:gravity="center"
+              android:textSize="@dimen/txtSize_12_sp"
+              android:textColor="@color/contact_mainlvitemtv"
+              android:text="商品描述" />
+        </LinearLayout>          
+    </LinearLayout>
+
+       <TextView
+           android:id="@id/service_pointexchange_resulttv"
+           android:layout_width="fill_parent"
+           android:layout_height="fill_parent"
+           android:visibility="gone"
+           android:textColor="@color/contact_mainlvitemtv"
+           android:paddingLeft="@dimen/dimen_5_dip"    
+           android:paddingRight="@dimen/dimen_5_dip"    
+           android:textSize="@dimen/txtSize_14_sp"
+           android:text="我们的工作人员会在2个工作日之内......." />
+ 
+</LinearLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <include layout="@layout/header_layout" ></include>
+    <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+         >
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        
+        android:paddingLeft="@dimen/dimen_5_dip"
+        android:paddingRight="@dimen/dimen_5_dip">
+    <GridView
+        android:id="@+id/id_show_life_work_gv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="3"
+        android:scrollbars="none" >
+
+    </GridView>
+</LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/id_show_edit_ll"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_56_dip"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        android:visibility="gone"
+        android:background="@color/bg_index" >
+     
+     <RelativeLayout          
+            android:layout_weight="5"
+            android:layout_height="match_parent"
+            android:layout_width="0.0dip"    
+            android:paddingTop="@dimen/dimen_5_dip"
+            android:paddingBottom="@dimen/dimen_5_dip"
+            android:paddingLeft="@dimen/dimen_9_dip"
+            android:paddingRight="@dimen/dimen_9_dip" 
+         >
+         <Button
+             android:id="@+id/id_edit_decs_btn"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:layout_alignParentTop="true"
+             android:layout_centerHorizontal="true"
+             android:layout_centerVertical="true"
+             android:background="@drawable/selector_yz_button"
+             android:textColor="@color/base_color_text_black"
+             android:text="编辑描述" />
+        
+     </RelativeLayout>
+    
+     <RelativeLayout          
+            android:layout_weight="5"
+            android:layout_height="match_parent"
+   
+            android:layout_width="0.0dip" 
+             android:paddingTop="@dimen/dimen_5_dip"
+              android:paddingBottom="@dimen/dimen_5_dip"
+             android:paddingLeft="@dimen/dimen_9_dip"
+            android:paddingRight="@dimen/dimen_9_dip"  
+         >
+             <Button
+                 android:id="@+id/id_edit_delete_btn"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:layout_centerHorizontal="true"
+                 android:layout_centerVertical="true"
+                 android:background="@drawable/selector_yz_button"
+                 android:textColor="@color/base_color_text_black"
+                 android:text="删除相片" />
+          
+      </RelativeLayout>
+        
+
+    
+
+    </LinearLayout>
+
+          
+
+</FrameLayout>
+</LinearLayout>

@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_grey"
+    android:orientation="vertical" >
+    <include  android:id="@id/activity_contacts_main_titlely" layout="@layout/header_layout"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:gravity="center" >
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_1_dip" >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+                <!-- 头像 -->
+                <LinearLayout android:background="@drawable/selector_listview_item" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_78_dip" android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+                    <com.yey.kindergaten.widget.CircleImageView
+                        android:id="@id/contact_puacdatacard_iv"
+                        android:layout_marginRight="@dimen/dimen_10_dip"
+                        android:layout_marginLeft="@dimen/dimen_5_dip"
+                        android:layout_width="@dimen/dimen_59_dip"
+                        android:layout_height="@dimen/dimen_59_dip"
+                        app:border_width="0.5dp"
+                        app:border_color="@color/white"
+                        android:src="@drawable/defaulticon" />
+                    <LinearLayout android:layout_width="wrap_content" android:layout_height="@dimen/dimen_78_dip" android:gravity="center" android:orientation="vertical" >
+                        <TextView
+                            android:id="@id/contact_puacdatacard_nametv"
+                            android:textSize="@dimen/txtSize_20_sp"
+                            android:textColor="@color/black"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                             />
+                        <TextView
+                            android:id="@id/contact_puacdatacard_numbertv"
+                            android:textSize="@dimen/txtSize_16_sp"
+                            android:textColor="@color/contact_mainlvitemtv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                             />
+                    </LinearLayout>
+                </LinearLayout>
+                <View style="@style/viewlinestyle" android:visibility="gone" />
+                <!-- 领域 -->
+                <LinearLayout
+                    android:id="@id/contact_puacddatacard_fieldrly"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dimen_56_dip"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:visibility="gone" >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_11_dip"
+                        style="@style/contactsdatacardtext"
+                        android:text="@string/contacts_puacdatacard_field" />
+                    <TextView
+                        android:id="@id/contact_puacdatacard_fieldtv"
+                        android:layout_marginLeft="@dimen/dimen_30_dip"
+                        style="@style/contactsdatacardvaluetext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <View style="@style/viewlinestyle" />
+                <!-- 功能介绍 -->
+                <LinearLayout
+                    android:id="@id/contact_puacdatacard_describerly"
+                    android:layout_width="fill_parent"
+                    android:minHeight="@dimen/dimen_56_dip"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_listview_item"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical" >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/contactsdatacardtext"
+                        android:textColor="@color/base_color_text_black"
+                        android:layout_marginLeft="@dimen/dimen_11_dip"
+                        android:text="@string/contacts_puacdatacard_describe" />
+                    <TextView
+                        android:id="@id/contact_puacdatacard_describertv"
+                        style="@style/contactsdatacardvaluetext"
+                        android:layout_marginTop="@dimen/dimen_5_dip"
+                        android:layout_marginBottom="@dimen/dimen_5_dip"
+                        android:layout_marginLeft="@dimen/dimen_30_dip"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <!-- 教师汇能为你做什么 -->
+                <LinearLayout
+                    android:id="@+id/show_guide_image_all"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_listview_item"
+                    android:gravity="center_vertical"
+                    android:visibility="gone"
+                    android:orientation="vertical">
+                    <View style="@style/viewlinestyle" />
+                    <RelativeLayout
+                        android:id="@id/rl_viewhistoryMessage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/dimen_50_dip" >
+                        <TextView
+                            android:id="@+id/show_guide_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentLeft="true"
+                            android:text="教师汇能为你做什么"
+                            android:layout_marginLeft="@dimen/dimen_11_dip"
+                            android:textSize="@dimen/txtSize_18_sp"
+                            android:textColor="@color/base_color_text_black" />
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="@dimen/dimen_11_dip"
+                            android:src="@drawable/arrow_right" />
+                    </RelativeLayout>
+                </LinearLayout>
+                <View style="@style/viewlinestyle" />
+                <!-- 查看历史消息 -->
+                <LinearLayout
+                    android:id="@id/contact_puacdatacard_lookhistoryly"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_listview_item"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:layout_marginTop="@dimen/dimen_20_dip" >
+                    <View style="@style/viewlinestyle" />
+                    <RelativeLayout
+                        android:id="@id/rl_viewhistoryMessage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/dimen_50_dip" >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentLeft="true"
+                            android:text="@string/contacts_frienddatacard_lookhistory"
+                            android:layout_marginLeft="@dimen/dimen_11_dip"
+                            android:textSize="@dimen/txtSize_18_sp"
+                            android:textColor="@color/base_color_text_black" />
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="@dimen/dimen_11_dip"
+                            android:src="@drawable/arrow_right" />
+                    </RelativeLayout>
+                </LinearLayout>
+                <!-- 分割线 -->
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+                    <View android:id="@id/contact_puacdatacard_viewline" style="@style/viewlinestyle" />
+                </LinearLayout>
+                <!-- 取消订阅 -->
+                <LinearLayout
+                    android:id="@id/contact_puacdatacard_bookly"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/dimen_20_dip"
+                    android:background="@drawable/listview_select_item"
+                    android:orientation="vertical" >
+                    <View style="@style/viewlinestyle" />
+                    <TextView
+                        android:id="@id/contact_puacdatacard_bookbtn"
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/dimen_50_dip"
+                        style="@style/contactsdatacardbutton"
+                        android:gravity="center"
+                        android:background="@drawable/listview_select_item"
+                        android:text="@string/contacts_puacdatacard_cancelbook" />
+                    <View style="@style/viewlinestyle" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+        <include layout="@layout/common_network_disable" />
+        <include layout="@layout/common_loading" />
+        <include layout="@layout/common_error" />
+        <include layout="@layout/common_empty" />
+     </FrameLayout>
+</LinearLayout>

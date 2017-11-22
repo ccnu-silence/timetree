@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/white" >
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <include android:id="@+id/title_layout" layout="@layout/header_layout" />
+        <com.yey.kindergaten.widget.RoundCornerProgressBar
+            android:id="@+id/progress_web"
+            android:layout_width="fill_parent"
+            android:layout_height="3dp"
+            app:backgroundColor="@color/yellow_fff8b4"
+            app:backgroundPadding="0dp"
+            app:backgroundRadius="0dp"
+            app:maxProgress="100"
+            app:progress="0"
+            android:layout_gravity="bottom"
+            app:progressColor="@color/red_ff3600" />
+    </FrameLayout>
+     <FrameLayout 
+    android:layout_below="@id/title_layout"
+    android:id="@+id/framelayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+      <com.yey.kindergaten.widget.MyWebView
+        android:id="@id/commonwebview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/white"
+       />
+        <include layout="@layout/common_network_disable" />
+        <include layout="@layout/common_loading" />
+        <include layout="@layout/common_error" />
+        <include layout="@layout/common_empty" />
+   </FrameLayout>
+</LinearLayout>

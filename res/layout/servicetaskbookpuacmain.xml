@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+      <include  android:id="@id/activity_contacts_main_titlely" layout="@layout/header_layout"/>
+      
+       <RelativeLayout
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"  
+              android:layout_marginLeft="@dimen/dimen_11_dip"  
+              android:layout_marginRight="@dimen/dimen_11_dip"
+              android:layout_marginTop="@dimen/dimen_20_dip"    
+              android:layout_marginBottom="@dimen/dimen_20_dip"  
+              android:gravity="center"         
+              android:orientation="horizontal" >  
+            
+          <Button 
+                android:id="@id/contact_addfriend_sreachbt"
+                android:layout_width="wrap_content"
+                android:layout_alignParentRight="true"               
+                android:layout_height="@dimen/dimen_40_dip"
+                android:background="@drawable/toastselector"
+                android:textColor="@color/white"
+                android:text="搜索"
+                />          
+        
+        <LinearLayout
+              android:layout_width="wrap_content"
+              android:layout_height="@dimen/dimen_40_dip"               
+              android:background="@drawable/addfriend_lineicon" 
+              android:layout_alignParentLeft="true"    
+              android:layout_toLeftOf="@id/contact_addfriend_sreachbt"
+              android:layout_marginRight="@dimen/dimen_10_dip" 
+              android:gravity="center_vertical"           
+              android:orientation="horizontal"                 
+              >
+
+             <ImageView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_11_dip"  
+                android:layout_marginRight="@dimen/dimen_11_dip"  
+                android:src="@drawable/addfriend_sreachicon"/>
+            
+            <EditText
+                android:id="@id/contact_addfriend_edittext"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"     
+                android:background="@null"   
+                android:hint="输入查询条件"         
+                android:ems="9" >
+                <requestFocus />
+            </EditText>
+       </LinearLayout>          
+       </RelativeLayout>
+ 
+    <FrameLayout 
+          android:layout_width="match_parent"
+          android:layout_height="fill_parent"
+          android:layout_marginTop="@dimen/dimen_20_dip"
+          android:layout_marginBottom="@dimen/dimen_10_dip"
+          android:gravity="center"
+          >
+    <LinearLayout 
+    android:id="@id/contact_addfriend_ly"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+  
+    android:gravity="center"
+    android:orientation="vertical" >
+      <View  style="@style/viewlinestyle"/>
+     
+      <ListView
+        android:id="@id/contact_addfriend_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" 
+        style="@style/contactslistview"
+        />
+     </LinearLayout>
+     <ProgressBar 
+              android:id="@id/contact_addfriend_progressbar"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center"
+       />
+       </FrameLayout>
+      
+
+</LinearLayout>

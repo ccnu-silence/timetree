@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/customMenuMessageLayout" android:clickable="true" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="54.5dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/bg_bottom_menu" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.yey.kindergaten.widget.BottomMenuView android:layout_gravity="center_vertical" android:id="@id/menuItemTv1" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <com.yey.kindergaten.widget.BottomMenuView android:layout_gravity="center_vertical" android:id="@id/menuItemTv2" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <com.yey.kindergaten.widget.BottomMenuView android:layout_gravity="center_vertical" android:id="@id/menuItemTv3" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <com.yey.kindergaten.widget.BottomMenuView android:layout_gravity="center_vertical" android:id="@id/menuItemTv4" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    </LinearLayout>
+    <View android:layout_gravity="top" android:background="@drawable/bottom_menu_shadow" android:layout_width="fill_parent" android:layout_height="2.0px" />
+</FrameLayout>

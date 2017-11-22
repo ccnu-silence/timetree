@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#eeeeee"
+    android:orientation="vertical" >
+    <include layout="@layout/header_layout"/>
+    <!-- 网络提示 -->
+    <include android:id="@+id/network_listener_ll" layout="@layout/include_common_network_commind"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical" >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_12_dip"
+                android:orientation="vertical" >
+<!--        <FrameLayout  -->
+<!--            android:layout_width="fill_parent"      -->
+<!--            android:layout_margin="@dimen/dimen_5_dip" -->
+<!--            android:layout_height="@dimen/dimen_100_dip"> -->
+                <!-- 编辑布局 -->
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+                    android:orientation="horizontal" android:id="@+id/ll_publishspeak_input"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true">
+                    <!-- 编辑框 -->
+                    <com.yey.kindergaten.widget.EmoticonsEditText android:layout_margin="@dimen/dimen_5_dip"
+                        android:minHeight="@dimen/dimen_90_dip" android:gravity="top" android:layout_width="0dp"
+                        android:layout_height="match_parent" android:id="@+id/service_publishspeak_ed"
+                        android:layout_weight="0.9"  android:background="@null" android:imeOptions="flagNoExtractUi"
+                        android:hint="说点什么吧..." android:textSize="@dimen/txtSize_15_sp"/>
+                    <!-- 表情按钮 -->
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="@dimen/dimen_5_dip"
+                        android:orientation="vertical"
+                        android:layout_weight="0.1">
+                        <Button
+                            android:id="@+id/service_publishspeak_facebtn"
+                            android:layout_width="@dimen/dimen_25_dip"
+                            android:layout_height="@dimen/dimen_25_dip"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="@dimen/dimen_5_dip"
+                            android:background="@drawable/friendster_biaoqing" />
+                        <Button
+                            android:id="@+id/service_publishspeak_photobtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignLeft="@+id/service_publishspeak_facebtn"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@+id/service_publishspeak_facebtn"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="@dimen/dimen_5_dip"
+                            android:visibility="gone"
+                            android:background="@drawable/friendster_uploading" />
+                    </RelativeLayout>
+                </LinearLayout>
+<!--        </FrameLayout> -->
+                <!-- 表情布局 -->
+                <LinearLayout
+                    android:id="@+id/service_publishspeak_facely"
+                    android:layout_below="@+id/ll_publishspeak_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="visible"
+                    android:background="@drawable/layout_gry_bg"
+                    android:orientation="vertical">
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/service_publishspeak_face"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_120_dip" />
+                </LinearLayout>
+            </RelativeLayout>
+            <!-- 图片展示 -->
+            <LinearLayout
+                android:id="@+id/service_publishspeak_gridviewly"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:padding="@dimen/dimen_5_dip"
+                android:background="@drawable/layout_gry_bg"
+                android:visibility="visible"
+                android:gravity="center">
+                <com.yey.kindergaten.widget.MyGridviewWithScrollView
+                    android:id="@+id/service_publishspeak_gv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="@dimen/dimen_12_dip"
+                    android:layout_marginBottom="@dimen/dimen_15_dip"
+                    android:layout_marginLeft="@dimen/dimen_8_dip"
+                    android:layout_marginRight="@dimen/dimen_8_dip"
+                    android:horizontalSpacing="@dimen/dimen_6_dip"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="@dimen/dimen_6_dip"
+                    android:scrollbars="none"
+                    android:numColumns="4" />
+            </LinearLayout>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_10_dip"
+                android:background="#eeeeee" />
+            <!-- 同步到 -->
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/dimen_46_dip"
+                android:id="@+id/ll_publicspeak_share" android:orientation="horizontal"
+                android:background="@drawable/layout_gry_bg" android:visibility="visible">
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/txtSize_16_sp"
+                    android:textColor="@color/black"
+                    android:text="@string/service_shareto"
+                    android:layout_marginLeft="@dimen/dimen_15_dip"
+                    android:layout_centerVertical="true"/>
+                <TextView
+                    android:id="@+id/sharetips"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/txtSize_16_sp"
+                    android:textColor="@color/black"
+                    android:text=""
+                    android:layout_toRightOf="@id/textView1"
+                    android:layout_marginLeft="@dimen/dimen_15_dip"
+                    android:layout_centerVertical="true"/>
+                <ImageView
+                    android:id="@+id/arrowimage"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dimen_15_dip"
+                    android:src="@drawable/arrow_right" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

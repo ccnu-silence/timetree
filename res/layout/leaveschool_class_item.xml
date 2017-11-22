@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+     android:orientation="vertical"
+     android:layout_height="match_parent">
+    <com.yey.kindergaten.widget.percent.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:padding="@dimen/dimen_10_dip"
+        android:orientation="horizontal"
+        android:weightSum="12"
+        android:background="@drawable/selector_leaveschool_listview_item"
+        android:layout_height="@dimen/dimen_72_dip">
+        <!-- 班级名称 -->
+        <TextView
+            android:layout_weight="6"
+            android:gravity="center_vertical" android:id="@+id/leave_school_cname_tv"
+            android:textSize="@dimen/dimen_20_dip" android:layout_gravity="center_vertical"
+            android:layout_width="0.0dp" android:paddingLeft="@dimen/dimen_5_dip"
+            android:textColor="@color/base_color_text_black" android:layout_height="wrap_content"
+            android:text="class_name"/>
+        <!-- 已离园 -->
+        <LinearLayout
+            android:layout_weight="3"
+            android:layout_width="0.0dp" android:orientation="vertical"
+            android:gravity="center" android:layout_height="match_parent">
+            <TextView
+                android:gravity="center" android:id="@+id/has_not_leaved_child_count_tv"
+                android:textSize="@dimen/dimen_20_dip" android:textColor="@color/red"
+                android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="count"/>
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:textColor="@color/base_color_text_black" android:layout_marginTop="@dimen/dimen_5_dip"
+                android:textSize="@dimen/dimen_16_dip" android:text="未离园"/>
+        </LinearLayout>
+        <View android:layout_width="@dimen/dimen_0.5_dip" android:layout_height="match_parent" android:background="#c5c5c5" />
+        <!-- 未离园 -->
+        <LinearLayout
+            android:layout_weight="3"
+            android:layout_width="0.0dp" android:orientation="vertical"
+            android:gravity="center" android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/has_leaved_child_count_tv"
+                android:textSize="@dimen/dimen_20_dip" android:layout_width="wrap_content"
+                android:textColor="@color/green_500" android:layout_height="wrap_content"
+                android:text="count" android:gravity="center"/>
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:textColor="@color/base_color_text_black" android:layout_marginTop="@dimen/dimen_5_dip"
+                android:textSize="@dimen/dimen_16_dip" android:text="已离园"/>
+        </LinearLayout>
+    </com.yey.kindergaten.widget.percent.PercentLinearLayout>
+    <View android:layout_marginRight="@dimen/dimen_15_dip" android:layout_marginLeft="@dimen/dimen_15_dip"
+        android:layout_width="match_parent" android:layout_height="@dimen/dimen_0.5_dip" android:background="#c5c5c5" />
+</LinearLayout>

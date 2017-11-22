@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+  
+   <include layout="@layout/header_layout"/>
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent" 
+       android:padding="@dimen/dimen_10_dip">
+
+       <EditText
+           android:id="@+id/id_service_schedule_comments_et"
+           android:gravity="top"
+           android:padding="@dimen/dimen_2_dip"
+           android:maxLength="150"
+           android:layout_width="match_parent"
+           android:background="@drawable/layout_gry_bg"
+           android:layout_height="200dp"
+           android:layout_alignParentTop="true"
+           android:layout_centerHorizontal="true"
+           android:hint="最多输入150个文字"
+           android:ems="10" >
+            
+           <requestFocus />
+       </EditText>
+     <TextView
+         android:layout_width="match_parent"
+         android:id="@+id/show_remind_text"
+         android:layout_marginTop="@dimen/dimen_15_dip"
+         android:textSize="@dimen/dimen_15_dip"
+         android:text=" *  该用户暂未使用时光树，消息将以平台免费短信的方式发到对方手机上。"
+         android:textColor="@color/base_color_text_black"
+         android:layout_below="@+id/id_service_schedule_comments_et"
+         android:layout_height="wrap_content" />
+
+   </RelativeLayout>
+
+</LinearLayout>

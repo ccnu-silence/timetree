@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="horizontal" >
+
+    <TextView      
+        android:id="@id/service_pointexchange_hisitem_nametext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/txtSize_18_sp"
+        android:paddingTop="@dimen/dimen_15_dip"
+        android:paddingBottom="@dimen/dimen_15_dip"
+        android:text="移动硬盘" />
+     <TextView       
+        android:id="@id/service_pointexchange_hisitem_counttext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textColor="@color/contact_mainlvitemtv"
+        android:textSize="@dimen/txtSize_18_sp"
+        android:paddingTop="@dimen/dimen_15_dip"
+        android:paddingBottom="@dimen/dimen_15_dip"
+        android:text="200积分" />
+      <TextView       
+        android:id="@id/service_pointexchange_hisitem_timetext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:textColor="@color/contact_mainlvitemtv"
+        android:textSize="@dimen/txtSize_18_sp"
+        android:paddingTop="@dimen/dimen_15_dip"
+        android:paddingBottom="@dimen/dimen_15_dip"
+        android:text="07-01 12:04" />
+
+</LinearLayout>

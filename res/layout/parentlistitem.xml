@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/listview_select_item"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/show_loading_parent_rl"
+        android:padding="@dimen/dimen_11_dip"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_56_dip">
+            <ProgressBar
+                android:id="@+id/progress_parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="136dp"
+                android:layout_marginStart="136dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="正在加载..."
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/progress_parent"
+                android:layout_toEndOf="@+id/progress_parent" />
+
+        </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/show_realname_ll"
+        android:layout_width="match_parent"
+        android:background="@drawable/selector_listview_item"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:orientation="horizontal"
+                >
+                <com.yey.kindergaten.widget.CircleImageView
+                    android:id="@+id/contact_frienditemiv"
+                    android:layout_marginLeft="@dimen/dimen_11_dip"
+                    android:layout_marginTop="@dimen/dimen_5_dip"
+                    android:layout_marginBottom="@dimen/dimen_5_dip"
+                    android:layout_width="@dimen/dimen_44_dip"
+                    android:layout_height="@dimen/dimen_44_dip"
+                    app:border_width="0.5dp"
+                    app:border_color="@color/white"
+                    android:src="@drawable/friendicon" />
+                <TextView
+                    android:id="@+id/contact_frienditemnametv"
+                    android:layout_marginLeft="@dimen/dimen_16_dip"
+                    android:textSize="@dimen/txtSize_17_sp"
+                    android:textColor="@color/black"
+                    android:layout_marginRight="@dimen/dimen_2_dip"
+                    android:layout_width="wrap_content"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:text="asasa"
+                />
+            </LinearLayout>
+            <RelativeLayout android:layout_height="wrap_content" android:layout_width="@dimen/dimen_80_dip"
+                android:layout_alignParentRight="true" android:layout_centerVertical="true" android:id="@+id/birthday_rl"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/birthday_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/dimen_15_dip"
+                    android:background="@drawable/contact_birthday_icon"
+                    android:visibility="visible"
+                />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <TextView   android:id="@id/item_view"  android:layout_marginLeft="66dip" style="@style/viewlinestyle" />
+
+</LinearLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/network_listener_ll"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_40_dip"
+            android:layout_alignParentLeft="true"
+            android:background="#fff9c4"
+            android:visibility="gone"
+            android:layout_alignParentTop="true" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="10dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dimen_10_dip"
+                android:src="@drawable/arrow_right"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/network_listener_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textColor="@color/base_color_text_black"
+                android:textSize="@dimen/txtSize_15_sp"
+                android:text="" />
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dimen_11_dip"
+                android:src="@drawable/btn_chat_fail_resend" />
+            
+        </RelativeLayout>
+

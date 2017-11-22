@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="@color/white"
+    android:orientation="horizontal" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+        <com.yey.kindergaten.widget.CircleImageView android:layout_gravity="center" android:id="@id/login_logo" android:layout_width="@dimen/dimen_90_dip" android:layout_height="@dimen/dimen_90_dip" android:src="@drawable/ic_launcher" app:border_width="@dimen/dimen_1_dip"
+            app:border_color="@color/white" />
+        <TextView
+            android:layout_width="fill_parent" android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal" android:gravity="center_horizontal" android:layout_marginTop="@dimen/dimen_10_dip"
+            android:textSize="@dimen/dimen_18_dip" android:textColor="@color/black"
+            android:text="@string/app_force_upload"/>
+        <TextView
+            android:layout_width="fill_parent" android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal" android:gravity="center_horizontal" android:layout_marginTop="@dimen/dimen_10_dip"
+            android:textSize="@dimen/dimen_18_dip" android:textColor="@color/msg_emote_divider"
+            android:text="@string/app_force_upload_tip"/>
+        <Button
+            android:id="@+id/force_upload_bt" android:layout_width="@dimen/dimen_200_dip" android:layout_height="@dimen/dimen_40_dip" android:layout_marginTop="@dimen/dimen_20_dip"
+            android:layout_gravity="center_horizontal" android:text="@string/app_force_upload_bt" android:textColor="@color/white"
+            style="@style/mainBtn"/>
+    </LinearLayout>
+
+</LinearLayout>

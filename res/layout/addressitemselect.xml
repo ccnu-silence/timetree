@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/white"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal" >
+    <FrameLayout
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:layout_margin="@dimen/dimen_11_dip" >
+        <LinearLayout
+            android:id="@+id/addressitem_bgly"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:orientation="vertical" 
+            android:background="@drawable/addressbook_select" >
+            <RelativeLayout 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dimen_30_dip"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+                    <TextView
+                        android:id="@+id/addressitem_nametv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/txtSize_17_sp"
+                        android:paddingLeft="@dimen/dimen_20_dip" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/txtSize_17_sp"
+                        android:paddingLeft="@dimen/dimen_20_dip" />
+                    <TextView
+                        android:id="@+id/addressitem_phonetv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/dimen_30_dip"
+                        android:textColor="@color/contact_mainlvitemtv"
+                        android:textSize="@dimen/txtSize_17_sp"
+                        android:paddingLeft="@dimen/dimen_20_dip"
+                        android:gravity="center_vertical" />
+                </LinearLayout>
+             
+                <Button android:id="@+id/addressitem_editbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dimen_30_dip"
+                    android:paddingLeft="@dimen/dimen_11_dip"
+                    android:paddingRight="@dimen/dimen_11_dip"
+                    android:background="@drawable/btn_white_select"
+                    android:text="编辑"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:textColor="@color/purple"
+                    android:textSize="@dimen/txtSize_17_sp" />
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/addressitem_addrestv"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_30_dip"
+                android:textColor="@color/contact_mainlvitemtv"
+                android:textSize="@dimen/txtSize_17_sp"
+                android:paddingLeft="@dimen/dimen_20_dip"
+                android:paddingRight="@dimen/dimen_40_dip"
+                android:gravity="center_vertical"
+                android:text="" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_30_dip" 
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/txtSize_17_sp"
+                    android:paddingLeft="@dimen/dimen_20_dip"
+                    android:text="邮编" />
+                <TextView
+                    android:id="@+id/addressitem_postcodetv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/contact_mainlvitemtv"
+                    android:paddingLeft="@dimen/dimen_20_dip"
+                    android:text="" />
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/addressitem_rightiv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/adrress_right"
+            android:layout_gravity="right|bottom" />
+        <ImageView
+            android:id="@+id/addressitem_arrowiv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arrow_right"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="@dimen/dimen_20_dip" />
+    </FrameLayout>
+
+</LinearLayout>
+
+
+
+

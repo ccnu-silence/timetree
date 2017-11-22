@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/light_grey">
+     <include layout="@layout/header_layout" android:id="@+id/header_layout" android:visibility="visible"/>"
+    <FrameLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+       <com.yey.kindergaten.widget.xlist.XListView
+        android:id="@+id/lv_activity_getgroup_item"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" 
+        android:scrollbars="none"
+        android:cacheColorHint="#00000000"
+        android:divider="@null">
+    </com.yey.kindergaten.widget.xlist.XListView>
+       <RelativeLayout android:id="@+id/servicegrouplist_menubtn" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:visibility="gone" android:layout_height="fill_parent"  android:background="@color/popbg" >
+        <LinearLayout android:orientation="horizontal" android:id="@id/first_line_menu" android:layout_width="fill_parent" android:layout_height="wrap_content"  android:background="@color/white">
+           <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_40_dip" android:layout_marginBottom="@dimen/dimen_40_dip" > 
+            <TextView android:id="@+id/servicegrouplist_creategroupbtn" android:gravity="center_horizontal"   android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="添加群" android:drawableTop="@drawable/service_creatgroupicon" android:drawablePadding="@dimen/dimen_10_dip" android:layout_weight="1.0" android:textColor="@color/black" android:textSize="@dimen/txtSize_16_sp" />           
+            <TextView android:id="@+id/servicegrouplist_addgroupbtn" android:gravity="center_horizontal"   android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="加入群" android:drawableTop="@drawable/service_addgroupicon" android:drawablePadding="@dimen/dimen_10_dip" android:layout_weight="1.0" android:textColor="@color/black" android:textSize="@dimen/txtSize_16_sp" />
+        </LinearLayout> 
+        </LinearLayout>     
+    </RelativeLayout>
+        
+    </FrameLayout>
+</LinearLayout>

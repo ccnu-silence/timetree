@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:background="@color/light_grey"
+      android:layout_height="@dimen/dimen_15_dip"></LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/meinfo_uprl"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_70_dip"
+        >
+        <View style="@style/viewlinestyle" android:layout_alignParentTop="true">  </View>
+
+        <TextView
+            android:id="@+id/meinfo_uptitletv"
+            android:layout_marginLeft="@dimen/dimen_16_dip"
+            android:textSize="@dimen/txtSize_17_sp"
+            android:textColor="@color/black"
+            android:layout_marginRight="@dimen/dimen_2_dip"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_height="@dimen/dimen_70_dip"
+            />
+
+        <com.yey.kindergaten.widget.CircleImageView
+            android:id="@+id/meinfo_iv"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/dimen_7_dip"
+            android:layout_marginBottom="@dimen/dimen_7_dip"
+            android:layout_marginRight="@dimen/dimen_27_dip"
+            android:layout_width="@dimen/dimen_56_dip"
+            android:layout_height="@dimen/dimen_56_dip"
+            app:border_width="@dimen/dimen_0.5_dip"
+            app:border_color="@color/white"
+            android:src="@drawable/defaulticon" />
+
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dimen_11_dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arrow_right"
+            />
+        <View   android:layout_alignParentBottom="true" style="@style/viewlinestyle"/>
+    </RelativeLayout>
+
+</LinearLayout>

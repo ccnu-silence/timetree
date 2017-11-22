@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@color/common_background_grey"
+    android:orientation="vertical">
+    <include layout="@layout/header_layout"/>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/common_border_no_shadow" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_50_dip" android:layout_marginTop="@dimen/dimen_20_dip">
+
+        <EditText android:layout_width="0.0dip"  android:layout_height="fill_parent"  android:layout_weight="1.0" android:singleLine="true"  android:hint="请输入验证码" android:textSize="@dimen/txtSize_16_sp" android:textColor="@color/light_grey_v2"  android:layout_gravity="center_vertical" android:background="@color/white" android:paddingLeft="@dimen/dimen_8_dip" android:paddingRight="@dimen/dimen_8_dip" android:id="@+id/edt_activity_login_code" />
+        <Button
+            android:id="@+id/btn_get_phone_code"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_40_dip"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginRight="@dimen/dimen_5_dip"
+            android:textColor="@color/purple"
+            android:padding="@dimen/dimen_2_dip"
+            android:textSize="@dimen/txtSize_15_sp"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="获取验证码"
+            style="@style/mainBtn_yz_1"/>
+    </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/bg_bottom_line" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_50_dip">
+              <EditText android:layout_width="0.0dip" android:inputType="textPassword"  android:layout_height="fill_parent"  android:layout_weight="1.0" android:singleLine="true"  android:hint="@string/setpassword" android:textSize="@dimen/txtSize_16_sp" android:textColor="@color/light_grey_v2"  android:layout_gravity="center_vertical" android:background="@color/white" android:paddingLeft="@dimen/dimen_8_dip" android:paddingRight="@dimen/dimen_8_dip" android:id="@+id/edt_activity_login_set_password" />
+       </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/bg_bottom_line" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_50_dip">
+            <EditText android:layout_width="0.0dip" android:inputType="textPassword"  android:layout_height="fill_parent"  android:layout_weight="1.0" android:singleLine="true"  android:hint="@string/resetpassword" android:textSize="@dimen/txtSize_16_sp" android:textColor="@color/light_grey_v2"  android:layout_gravity="center_vertical" android:background="@color/white" android:paddingLeft="@dimen/dimen_8_dip" android:paddingRight="@dimen/dimen_8_dip" android:id="@+id/edt_activity_login_set_repassword" />
+       </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:layout_marginTop="@dimen/dimen_40_dip"
+        android:background="#c5c5c5"></TextView>
+    <Button  android:text="@string/make_sure"  android:textColor="@color/purple"  android:id="@+id/btn_setpassword_set" android:layout_width="match_parent" android:layout_height="@dimen/dimen_50_dip"    android:background="@drawable/selector_listview_item"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:background="#c5c5c5"></TextView>
+</LinearLayout>

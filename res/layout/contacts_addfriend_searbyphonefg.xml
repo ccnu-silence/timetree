@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >   
+       <LinearLayout 
+        android:layout_width="match_parent"
+       android:layout_height="@dimen/dimen_40_dip"
+       android:layout_marginTop="@dimen/dimen_20_dip"
+       android:layout_marginLeft="@dimen/dimen_20_dip"
+       android:layout_marginRight="@dimen/dimen_20_dip"
+       android:gravity="center"
+       android:orientation="horizontal" >
+
+          <EditText
+              android:id="@id/contact_addfriend_edittext"
+              android:layout_width="0dp"
+              android:layout_weight="3"
+              android:layout_height="match_parent"
+              android:textSize="@dimen/txtSize_14_sp"
+              android:textColor="@color/contact_mainlvitemtv"
+              android:background="@drawable/commont_white_button"     
+              android:paddingLeft="@dimen/dimen_1_dip"    
+              >
+          </EditText>
+       <TextView
+         android:id="@id/contact_addfriend_sreachbt"
+         android:layout_width="0dp"
+         android:layout_height="40dip"      
+         android:layout_marginLeft="20dip"
+         android:layout_weight="1"
+         android:background="@drawable/commont_white_button"
+         style="@style/contactslisttextitem"
+         android:text="@string/contacts_addfriend_sreach"
+          />
+   </LinearLayout>
+    <FrameLayout 
+          android:layout_width="match_parent"
+          android:layout_height="fill_parent"
+          android:layout_marginTop="@dimen/dimen_20_dip"
+          android:gravity="center"
+          >
+    <LinearLayout 
+    android:id="@id/contact_addfriend_ly"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+  
+    android:gravity="center"
+    android:orientation="vertical" >
+      <View  style="@style/viewlinestyle"/>
+     
+      <ListView
+        android:id="@id/contact_addfriend_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" 
+        style="@style/contactslistview"
+        />
+     </LinearLayout>
+     <ProgressBar 
+              android:id="@id/contact_addfriend_progressbar"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center"
+       />
+       </FrameLayout>
+
+</LinearLayout>

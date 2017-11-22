@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/rl_bottom_menu"  android:background="@drawable/bg_message_public_activity_menu_item_selector" android:padding="0.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" >
+    <ImageView android:id="@id/imageMenuTabLine" android:layout_width="1.0px" android:layout_height="fill_parent" android:src="@drawable/message_tabline_bottom" android:scaleType="fitXY" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="@string/empty" />
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="1.0px" android:layout_centerInParent="true">
+        <ImageView android:id="@id/imageMenuExpand" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_3_dip" android:src="@drawable/icon_menuitem_expand_up" android:scaleType="center" android:layout_centerVertical="true" android:contentDescription="@string/empty" />
+        <TextView android:textSize="@dimen/txtSize_12_sp" android:textColor="#ff61615f" android:id="@id/textMenuTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_toRightOf="@id/imageMenuExpand" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/menu_triangeliv"
+        android:layout_width="@dimen/dimen_12_dip"
+        android:layout_height="@dimen/dimen_12_dip"
+        android:src="@drawable/menu_triangle"
+        android:layout_marginRight="@dimen/dimen_5_dip"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dimen_5_dip"
+
+        />
+</RelativeLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:gravity="left"
+    android:descendantFocusability="blocksDescendants"
+    >
+    <include layout="@layout/time_text_view_layout" />
+      <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_5_dip"  android:layout_marginRight="@dimen/dimen_5_dip" android:layout_marginBottom="@dimen/dimen_5_dip">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_5_dip">
+           
+           <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_chat_top" >
+
+        <ImageView
+            android:id="@+id/iv_avatar"
+            android:layout_width="@dimen/base_scrollview_top_height"
+            android:layout_height="@dimen/base_scrollview_top_height"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:contentDescription="@string/add_avator"
+            android:layout_marginLeft="5dip"
+            android:background="@drawable/defaulticon"
+            android:scaleType="fitXY" />
+
+        <com.yey.kindergaten.widget.AutoResizeTextView
+            android:id="@id/textViewMessageTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_toRightOf="@id/iv_avatar"
+            android:background="@drawable/chat_left_qp2"
+            android:clickable="false"
+            android:gravity="left|center"
+            android:lineSpacingExtra="@dimen/dimen_4_dip"
+            android:maxWidth="@dimen/dimen_225_dip"
+            android:minWidth="@dimen/dimen_50_dip"
+            android:minHeight="@dimen/dimen_50_dip"
+            android:paddingLeft="23dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="8dp"
+            android:textColor="#353535"
+            android:textSize="@dimen/txtSize_17_sp" 
+            />
+
+    </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

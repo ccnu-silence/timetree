@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <include layout="@layout/header_layout" android:id="@+id/viewpage_head"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent">
+        <com.yey.kindergaten.widget.HackyViewPager
+            android:id="@+id/id_show_image_vp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <LinearLayout
+            android:id="@+id/id_show_text_rl"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50_dip"
+            android:layout_gravity="bottom"
+            android:paddingTop="@dimen/dimen_2_dip"
+            android:background="@drawable/transparent_black"
+            android:paddingBottom="@dimen/dimen_2_dip"
+            android:visibility="gone"
+            android:orientation="vertical" >
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal" >
+                <TextView
+                    android:id="@+id/id_text_showcount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/dimen_2_dip" >
+                <TextView
+                    android:id="@+id/id_show_desc_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+        </LinearLayout>
+        <com.yey.kindergaten.widget.CirclePageIndicator
+            android:id="@+id/indicator"
+            android:padding="10dip"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent" />
+    </FrameLayout>
+</LinearLayout>

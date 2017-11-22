@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:visibility="gone"
+    android:layout_width="fill_parent"
+    android:layout_height="54dip"
+    android:orientation="horizontal"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@id/include_layout_image_text"
+        android:background="@drawable/listview_select_item"
+        android:layout_height="@dimen/dimen_54_dip">
+    <ImageView
+        android:id="@id/include_layout_image"
+        android:layout_width="@dimen/dimen_44_dip"
+        android:layout_height="@dimen/dimen_44_dip"
+        android:src="@drawable/invite_contact_service"
+        android:layout_marginLeft="@dimen/dimen_11_dip"
+        android:layout_marginTop="@dimen/dimen_5_dip"
+        android:layout_marginBottom="@dimen/dimen_5_dip" />
+
+    <TextView
+        android:id="@id/include_layout_text"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_11_dip"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:text="幼儿园"
+        android:textSize="@dimen/txtSize_17_sp"
+        android:layout_gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/include_layout_image"
+        android:layout_toEndOf="@id/include_layout_image" />
+
+    <TextView
+        android:id="@+id/include_layout_text_second"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen_40_dip"
+        android:textColor="@color/purple"
+        android:gravity="center"
+        android:text="@string/contact_invite_teacher_hint"
+        android:layout_marginRight="@dimen/dimen_11_dip"
+        android:textSize="@dimen/txtSize_18_sp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_0.5_dip"
+        android:background="#c5c5c5"/>
+    <LinearLayout
+        android:id="@+id/item_titlely"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/dimen_54_dip"
+        android:orientation="vertical" >
+        <View  style="@style/viewlinestyle"/>
+        <TextView
+            android:id="@+id/item_titletv"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dimen_30_dip"
+            android:textSize="@dimen/txtSize_15_sp"
+            android:textColor="@color/contact_mainlvtitletv"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dimen_10_dip"
+            android:background="@color/contactextbg"
+            android:text="@string/contacts_public_account" />
+        <View  style="@style/viewlinestyle"/>
+    </LinearLayout>
+</RelativeLayout>

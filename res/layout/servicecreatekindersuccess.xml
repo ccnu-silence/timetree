@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_background_grey"
+    android:orientation="vertical" >
+    
+    <include layout="@layout/header_layout"/>
+
+    <TextView
+        android:id="@+id/creatkinderfinish_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/dimen_140_dip"
+        android:textSize="@dimen/txtSize_18_sp"
+        android:textColor="@color/base_color_text_black"
+        android:background="@drawable/commont_white_button"
+        android:padding="@dimen/dimen_10_dip"
+        android:layout_marginLeft="@dimen/dimen_20_dip"
+        android:layout_marginRight="@dimen/dimen_20_dip"
+        android:layout_marginTop="@dimen/dimen_20_dip"
+        android:layout_gravity="center"
+        />
+
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/dimen_40_dip"
+        android:gravity="center"
+        >
+        
+        
+        <LinearLayout 
+        android:id="@+id/creatkinderfinish_sharely"
+         android:layout_marginLeft="@dimen/dimen_23_dip" android:layout_marginRight="@dimen/dimen_23_dip"
+         style="@style/mainBtn"
+        android:gravity="center"
+
+        >
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/invite_sendPlamfort"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txtSize_17_sp"
+            />
+        </LinearLayout>
+        
+        
+
+
+        <LinearLayout
+            android:id="@+id/ll_kefu"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:visibility="gone"
+            >
+
+           <Button
+               android:id="@+id/btn_call_phone"
+               android:layout_marginLeft="@dimen/dimen_23_dip" android:layout_marginRight="@dimen/dimen_23_dip"
+               style="@style/mainBtn"
+               android:text="联系客服"
+               />
+
+        </LinearLayout>
+        
+    </LinearLayout>
+    
+    
+
+</LinearLayout>

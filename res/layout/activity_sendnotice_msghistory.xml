@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    
+    <include layout="@layout/header_layout"/>
+<RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       
+    >
+  
+    <ListView
+        android:id="@id/id_sendmsg_msghistory_lv"
+        android:divider="@color/border_color_light_grey"
+        android:dividerHeight="0.5dp"  
+        android:listSelector="@drawable/selector_listview_item"
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:layout_height="wrap_content" >
+    </ListView>
+    </RelativeLayout>
+<View android:layout_marginLeft="@dimen/dimen_10_dip" android:layout_marginRight="@dimen/dimen_10_dip" android:layout_height="@dimen/dimen_0.5_dip"  android:layout_width="match_parent" android:background="@color/border_color_light_grey"/>
+</LinearLayout>

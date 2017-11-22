@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/white">
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center" android:layout_marginLeft="@dimen/dimen_10_dip">
+        <ImageView  android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_launcher" android:id="@+id/iv_activity_idsafe_main_change_item"/>
+        <TextView  android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="xxx" android:id="@+id/tv_activity_idsafe_main_change_item" android:textColor="@color/black" android:layout_marginLeft="@dimen/dimen_10_dip"/>
+    </LinearLayout>
+
+</LinearLayout>

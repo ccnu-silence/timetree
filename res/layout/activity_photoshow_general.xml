@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/header_layout"  android:id="@+id/viewpage_head"/>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" >
+            <com.yey.kindergaten.widget.MyGridviewWithScrollView
+                android:id="@+id/show_gridview"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_2_dip"
+                android:columnWidth="@dimen/dimen_100_dip"
+                android:horizontalSpacing="0dp"
+                android:verticalSpacing="0dp"
+                android:gravity="center"
+                android:scrollbars="none"
+                android:scrollbarStyle="insideOverlay"
+                android:stretchMode="columnWidth"
+                android:numColumns="3"/>
+
+            <com.yey.kindergaten.widget.MyListViewWithScrollView
+                android:id="@+id/show_listview"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_2_dip"/>
+
+            <TextView
+                android:id="@+id/tv_more_photo"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_42_dip"
+                android:layout_marginTop="@dimen/dimen_15_dip"
+                android:layout_marginLeft="@dimen/dimen_15_dip"
+                android:layout_marginRight="@dimen/dimen_15_dip"
+                android:layout_marginBottom="@dimen/dimen_15_dip"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@drawable/public_btn_circle_rim_selector"
+                android:textSize="@dimen/dimen_18_dip"
+                android:textColor="#666666"
+                android:text="查看更多照片..."/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

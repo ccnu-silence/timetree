@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/popwindowbg"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_20_dip"
+        android:layout_marginRight="@dimen/dimen_20_dip"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@id/contact_main_centerpopwindowtv1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/contacts_popwind_selectbg"
+            android:textColor="@color/contact_mainlvitemtv"
+            android:textSize="@dimen/txtSize_20_sp"
+            android:paddingTop="@dimen/dimen_8_dip"
+            android:paddingBottom="@dimen/dimen_8_dip"
+            android:gravity="center"
+            android:text="TextView" />
+         <View  
+             android:layout_width="fill_parent"
+             android:layout_height="1dp"
+             android:background="@color/contactbackgroud"
+             />
+         <TextView
+            android:id="@id/contact_main_centerpopwindowtv2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/contacts_popwind_selectbg"
+            android:textColor="@color/contact_mainlvitemtv"         
+            android:textSize="@dimen/txtSize_20_sp"
+            android:paddingTop="@dimen/dimen_8_dip"
+            android:paddingBottom="@dimen/dimen_8_dip"
+            android:gravity="center"
+            android:text="TextView" />
+         <View  
+             android:layout_width="fill_parent"
+             android:layout_height="1dp"
+             android:background="@color/contactbackgroud"
+             />
+          <TextView
+            android:id="@id/contact_main_centerpopwindowtv3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/contacts_popwind_selectbg"
+            android:textColor="@color/contact_mainlvitemtv"          
+            android:textSize="@dimen/txtSize_20_sp"
+            android:paddingTop="@dimen/dimen_8_dip"
+            android:paddingBottom="@dimen/dimen_8_dip"
+            android:gravity="center"
+            android:text="TextView" />
+          <View  
+             android:id="@id/contact_main_centerpopwindowviewline3"
+             android:layout_width="fill_parent"
+             android:layout_height="1dp"
+             android:background="@color/contactbackgroud"
+             />
+           <TextView
+            android:id="@id/contact_main_centerpopwindowtv4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/contacts_popwind_selectbg"
+            android:textColor="@color/contact_mainlvitemtv"       
+            android:textSize="@dimen/txtSize_20_sp"
+            android:paddingTop="@dimen/dimen_8_dip"
+            android:paddingBottom="@dimen/dimen_8_dip"
+            android:gravity="center"
+            android:text="TextView" />
+          
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tab="http://schemas.android.com/apk/res/com.yey.kindergaten"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white" >
+    <include layout="@layout/header_layout"/>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical">
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="@dimen/dimen_53_dip" android:orientation="vertical" android:background="@color/bindaccountTips" android:gravity="center">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bindaccountTips_line1" android:textColor="@color/bindaccountTipsText" android:textSize="@dimen/txtSize_16_sp"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bindaccountTips_line2" android:textColor="@color/bindaccountTipsText" android:textSize="@dimen/txtSize_16_sp"/>
+        </LinearLayout>
+        <View android:layout_width="fill_parent" android:layout_height="1dip" android:background="@drawable/line" />
+
+   <LinearLayout android:id="@+id/activity_title" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="horizontal" android:gravity="center" android:layout_marginTop="@dimen/dimen_10_dip"  android:layout_marginLeft="@dimen/dimen_20_dip" android:layout_marginRight="@dimen/dimen_20_dip">
+             <com.yey.kindergaten.widget.TabButton android:id="@id/tabBtn_left" android:layout_width="0.0dip"  android:layout_height="40.0dip" android:text="@string/bindphone"   android:layout_weight="1" tab:normal_bg_res="@drawable/tab_btn_left_big_normal" tab:selected_bg_res="@drawable/tab_btn_left_big_selected"/>
+             <com.yey.kindergaten.widget.TabButton android:id="@id/tabBtn_right" android:layout_width="0.0dip"  android:layout_height="40.0dip" android:text="@string/bindEmail"   android:layout_weight="1" tab:normal_bg_res="@drawable/tab_btn_right_big_normal" tab:selected_bg_res="@drawable/tab_btn_right_big_selected"/>
+    </LinearLayout>
+     <FrameLayout
+         android:id="@+id/fl_createsuccess_contain"
+         android:background="#ffffff"
+         android:layout_marginTop="@dimen/dimen_10_dip"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"/>
+    </LinearLayout>
+
+</LinearLayout>

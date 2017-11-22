@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" xmlns:app="http://schemas.android.com/apk/res/com.yey.kindergaten">
+
+    <RelativeLayout
+        android:background="@drawable/listview_select_item"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_56_dip" >
+        
+        <com.yey.kindergaten.widget.CircleImageView
+        android:id="@+id/id_inflater_service_showheadiv_cv"
+        android:layout_width="@dimen/dimen_50_dip"
+        android:layout_height="@dimen/dimen_50_dip"       
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        app:border_width="@dimen/dimen_0.5_dip"
+        app:border_color="@color/white"
+        android:layout_marginLeft="@dimen/dimen_11_dip" />
+        
+        <TextView
+        android:id="@+id/id_inflater_service_showname_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dimen_19_dip"
+        android:layout_toRightOf="@+id/id_inflater_service_showheadiv_cv"
+        android:text="TextView"
+        android:textColor="@color/service_write_schedule_tv"
+        android:textSize="@dimen/txtSize_17_sp" />
+
+        <TextView
+            android:id="@+id/id_inflater_service_photonum_tc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/id_inflater_service_showname_tv"
+            android:textColor="@color/service_write_schedule_show_tv"
+            android:layout_marginRight="@dimen/dimen_21_dip"
+            android:text="TextView" />
+  <View  style="@style/viewlinestyle" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+</LinearLayout>

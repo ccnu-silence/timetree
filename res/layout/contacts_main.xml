@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tab="http://schemas.android.com/apk/res/com.yey.kindergaten"
+    android:layout_width="fill_parent" android:layout_height="fill_parent"
+    android:background="@color/white" android:orientation="vertical" >
+    <include android:id="@+id/activity_contacts_main_titlely"  layout="@layout/header_layout"/>
+    
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <LinearLayout
+            android:layout_width="match_parent" android:layout_height="match_parent"
+            android:background="@color/white" android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="fill_parent" android:layout_height="wrap_content"
+                android:gravity="center" android:orientation="vertical">
+                <RadioGroup
+                    android:id="@+id/radioGroup"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="horizontal" android:gravity="center">
+                    <RadioButton
+                        android:id="@+id/radioButton1"
+                        style="@style/contactradiobutton" android:text="老师"/>
+<!--                <RadioButton                            -->
+<!--                    android:id="@+id/radioButton2"      -->
+<!--                    style="@style/contactradiobutton"   -->
+<!--                    android:text="好友" />              -->
+                    <RadioButton
+                        android:id="@+id/radioButton3"
+                        android:text="家长" style="@style/contactradiobutton" />
+                    <RadioButton
+                        android:id="@+id/radioButton4"
+                        android:text="公众号" style="@style/contactradiobutton" />
+                </RadioGroup>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="2dip" android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/smovetextview"
+                        android:layout_width="0.0dp" android:layout_height="2dip"
+                        android:layout_weight="1" android:background="@color/purple"
+                        android:textColor="#FFFF0000" />
+<!--                <TextView -->
+<!--                    android:layout_width="0.0dp"    -->
+<!--                    android:layout_height="2dip"    -->
+<!--                    android:layout_weight="1" />    -->
+                    <TextView
+                        android:layout_width="0.0dp"
+                        android:layout_height="2dip" android:layout_weight="1" />
+                    <TextView
+                        android:layout_width="0.0dp" android:layout_height="2dip"
+                        android:layout_weight="1" />
+                </LinearLayout>
+                <View android:layout_width="fill_parent" android:layout_height="0.5dip" android:background="@color/purple"/>
+            </LinearLayout>
+            <android.support.v4.view.ViewPager
+                android:id="@+id/contacts_main_viewpage"
+                android:gravity="center" android:layout_width="match_parent"
+                android:layout_height="match_parent" android:background="@color/white"/>
+        </LinearLayout>
+
+        <RelativeLayout android:visibility="gone" android:id="@+id/contacts_main_menu_btn" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:background="@color/popbg">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:background="@color/white">
+                <LinearLayout android:orientation="horizontal" android:id="@+id/first_line_menu" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/homemenu_margintop" android:background="@color/white">
+                    <LinearLayout android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical" android:gravity="center" >
+                        <com.yey.kindergaten.widget.MyImageView android:id="@+id/id_sendspeak_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_twitte"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/home_ppw_shuoshuo" android:textColor="@color/pullmenu_txt" android:textSize="@dimen/txtSize_17_sp" android:layout_marginTop="@dimen/dimen_10_dip" />
+                    </LinearLayout>
+                    <LinearLayout android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical" android:gravity="center" >
+                        <com.yey.kindergaten.widget.MyImageView android:id="@+id/id_writesc_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_todo"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/home_ppw_daytral" android:textColor="@color/pullmenu_txt" android:textSize="@dimen/txtSize_17_sp" android:layout_marginTop="@dimen/dimen_10_dip" />
+                    </LinearLayout>
+                    <LinearLayout android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical" android:gravity="center" >
+                        <com.yey.kindergaten.widget.MyImageView android:id="@+id/id_sendmsg_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_notice"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/home_ppw_sendmsg" android:textColor="@color/pullmenu_txt" android:textSize="@dimen/txtSize_17_sp" android:layout_marginTop="@dimen/dimen_10_dip" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/second_line_menu" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/homemenu_margintop" android:layout_below="@id/first_line_menu" android:background="@color/white" >
+                    <LinearLayout android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dimen_40_dip" android:layout_weight="1" android:orientation="vertical" android:gravity="center" >
+                        <com.yey.kindergaten.widget.MyImageView android:id="@+id/id_addfriend_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_addfriends"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/home_ppw_add" android:textColor="@color/pullmenu_txt" android:textSize="@dimen/txtSize_17_sp" android:layout_marginTop="@dimen/dimen_10_dip" />
+                    </LinearLayout>
+                    <LinearLayout android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dimen_40_dip" android:layout_weight="1" android:orientation="vertical" android:gravity="center" >
+                        <com.yey.kindergaten.widget.MyImageView android:id="@+id/id_creategroup_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/service_creatgroupicon"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/home_ppw_creategroup" android:textColor="@color/pullmenu_txt" android:textSize="@dimen/txtSize_17_sp" android:layout_marginTop="@dimen/dimen_10_dip" />
+                    </LinearLayout>
+                    <LinearLayout android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dimen_40_dip" android:layout_weight="1" android:orientation="vertical" android:gravity="center" >
+                        <com.yey.kindergaten.widget.MyImageView android:id="@+id/btn_top_barcode_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_barcode"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/home_ppw_barcode" android:textColor="@color/pullmenu_txt" android:textSize="@dimen/txtSize_17_sp" android:layout_marginTop="@dimen/dimen_10_dip" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </FrameLayout>
+</LinearLayout> 

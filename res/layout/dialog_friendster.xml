@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal"  android:visibility="visible" android:id="@+id/ll_activity_service_friendster_item_input"  android:background="@drawable/base_comment_emo_bar" android:gravity="center_vertical" android:minHeight="@dimen/dimen_45_dip" android:layout_above="@+id/service_publishspeak_facely">  
+      <com.yey.kindergaten.widget.EmoticonsEditText android:layout_width="0dp" android:layout_height="wrap_content"  android:id="@+id/input_activity_service_friendster_item"  android:layout_weight="0.5" android:background="@drawable/base_edit_input" android:imeOptions="flagNoExtractUi"  android:minHeight="@dimen/dimen_25_dip" android:padding="@dimen/dimen_5_dip"  android:layout_marginLeft="@dimen/dimen_6_dip"  android:layout_marginRight="@dimen/dimen_6_dip"/>
+      <ImageButton  android:layout_width="0dp" android:layout_height="wrap_content" android:src="@drawable/friendster_biaoqing"  android:background="@null" android:id="@+id/biaoqing_activity_service_friendster_item" android:layout_weight="0.1"   />
+      <Button  android:layout_width="0dp" android:layout_height="@dimen/dimen_33_dip" android:text="发送" android:textSize="@dimen/txtSize_12_sp" android:id="@+id/btn_activity_service_friendster_item" android:layout_weight="0.1" android:background="@drawable/btnsend_friendster" android:layout_marginRight="@dimen/dimen_6_dip"/>   
+   </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/service_click_notification"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+     
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent" >
+
+            <ImageView
+                android:id="@+id/id_inflater_showimg_theme_notification"
+                android:layout_width="@dimen/dimen_60_dip"
+                android:layout_height="@dimen/dimen_60_dip"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/dimen_10_dip"
+                android:layout_marginBottom="@dimen/dimen_5_dip"
+                android:layout_marginLeft="@dimen/dimen_10_dip"
+                android:src="@drawable/service_schedule_theme" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="@dimen/dimen_8_dip"
+                android:layout_marginLeft="@dimen/dimen_10_dip"
+                android:layout_toRightOf="@+id/id_inflater_showimg_theme_notification"
+                android:text="日程内容"
+                android:textColor="@color/base_color_text_black"
+                android:textSize="@dimen/txtSize_14_sp" />
+
+            <TextView
+                android:id="@+id/id_inflater_showimg_time_notification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/textView2"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dimen_10_dip"
+                android:text="TextView"
+                android:textColor="@color/base_color_text_black"
+                android:textSize="@dimen/txtSize_12_sp" />
+
+            <TextView
+                android:id="@+id/id_inflater_showimg_content_notification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView2"
+                android:layout_below="@+id/textView2"
+                android:layout_marginTop="@dimen/dimen_10_dip"
+                android:text="TextView"
+                android:textColor="@color/base_color_text_black"
+                android:textSize="@dimen/txtSize_17_sp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

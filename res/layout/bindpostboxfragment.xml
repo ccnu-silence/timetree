@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/white">
+     <LinearLayout android:orientation="vertical" android:background="@drawable/common_border_no_shadow" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_150_dip"  android:layout_marginTop="@dimen/dimen_23_dip" >
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/bg_bottom_line" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_50_dip">
+            <com.yey.kindergaten.widget.CustomAutoCompleteTextView
+                  android:id="@+id/id_write_emil_et" 
+                  android:layout_width="0.0dip" 
+                  android:layout_height="fill_parent"
+                  android:layout_marginLeft="0.0dip" 
+                  android:layout_weight="1.0" 
+                  android:singleLine="true"  
+                  android:dropDownAnchor="@id/id_write_emil_et"
+                  android:dropDownHeight="@dimen/dimen_100_dip"
+                  android:textColorHint="#ff818181"
+                  android:hint="@string/bindEmailTips" 
+                  android:dropDownVerticalOffset="@dimen/dimen_1_dip"	
+                  android:textSize="@dimen/txtSize_16_sp" 
+                  android:textColor="@color/light_grey_v2"  
+                  android:layout_gravity="center_vertical" 
+                  android:background="@null"
+                  android:selectAllOnFocus="true" 
+                  android:paddingLeft="@dimen/dimen_8_dip" 
+                  android:paddingRight="@dimen/dimen_8_dip"/>
+       </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/bg_bottom_line" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_50_dip">
+            <EditText  android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="0.0dip" android:layout_weight="1.0" android:singleLine="true"  android:hint="@string/bindEmail_question" android:textSize="@dimen/txtSize_16_sp" android:textColor="@color/light_grey_v2"  android:layout_gravity="center_vertical" android:background="@color/white" android:paddingLeft="@dimen/dimen_8_dip" android:paddingRight="@dimen/dimen_8_dip"/>
+       </LinearLayout>
+       <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/bg_bottom_line" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_50_dip">
+            <EditText android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="0.0dip" android:layout_weight="1.0" android:singleLine="true"  android:hint="@string/bindEmail_answer" android:textSize="@dimen/txtSize_16_sp" android:textColor="@color/light_grey_v2"  android:layout_gravity="center_vertical" android:background="@color/white" android:paddingLeft="@dimen/dimen_8_dip" android:paddingRight="@dimen/dimen_8_dip"/>
+       </LinearLayout>
+    </LinearLayout>
+     <Button  android:layout_marginLeft="@dimen/dimen_23_dip" android:layout_marginRight="@dimen/dimen_23_dip" android:text="@string/bindEmail"  android:id="@+id/btn_activity_login_create_create" android:layout_marginTop="@dimen/dimen_10_dip" style="@style/mainBtn"/>
+   <!--  <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_5_dip" >
+        <EditText android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@+id/edt_bindphonefragment_postbox" android:hint="需要绑定的电子邮箱地址"/>
+        <EditText android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@+id/edt_bindphonefragment_question" android:layout_below="@+id/edt_bindphonefragment_postbox"  android:hint="选择一个密保问题"/>
+        <EditText android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@+id/edt_bindphonefragment_answer"  android:layout_below="@+id/edt_bindphonefragment_question" android:hint="选择一个密保问题"/>
+        <Button android:layout_height="wrap_content" android:layout_width="fill_parent" android:text="绑定邮箱"  android:layout_below="@+id/edt_bindphonefragment_answer"/>
+    </RelativeLayout> -->
+</LinearLayout>

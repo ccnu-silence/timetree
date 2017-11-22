@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <include
+        android:id="@+id/titlely"
+        layout="@layout/header_layout" />
+
+
+    <TextView
+        android:id="@+id/mecard_nametv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mecard_ciciv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        android:text="已不再年轻"
+        android:textColor="@color/contact_mainlvitemtv"
+        android:textSize="@dimen/txtSize_18_sp" />
+
+    <com.yey.kindergaten.widget.CircleImageView
+        android:id="@+id/mecard_ciciv"
+        android:layout_width="@dimen/dimen_70_dip"
+        android:layout_height="@dimen/dimen_70_dip"
+        android:layout_below="@+id/titlely"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/defaulticon"
+        app:border_color="@color/white"
+        app:border_width="0.5dp" />
+
+    <TextView
+        android:id="@+id/mecard_accounttv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mecard_nametv"
+         android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:text="57346470"
+        android:textColor="@color/black"
+        android:textSize="@dimen/txtSize_17_sp" />
+
+    <TextView
+        android:id="@+id/mecard_miaoshutv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/me_card_bariv"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="扫描上面的二维码加入群"
+        android:textColor="@color/contact_mainlvitemtv"
+        android:textSize="@dimen/txtSize_17_sp" />
+<View   android:layout_height="0.5dip"   android:layout_centerHorizontal="true" android:layout_width="@dimen/dimen_180_dip" android:background="#c5c5c5" android:layout_marginTop="@dimen/dimen_10_dip" android:layout_below="@+id/mecard_accounttv" />
+    <ImageView
+        android:id="@+id/me_card_bariv"
+        android:layout_width="@dimen/dimen_210_dip"
+        android:layout_height="@dimen/dimen_210_dip"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/mecard_accounttv"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/down_to_phone_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/mecard_miaoshutv"
+        android:textColor="@color/purple"   
+        android:textSize="@dimen/txtSize_18_sp"
+        android:layout_marginTop="@dimen/dimen_20_dip"
+        android:text="分享时光树" />
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content"
+        android:layout_gravity="center" android:textColor="@color/contact_mainlvitemtv"
+        android:gravity="center_horizontal" android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dimen_20_dip" android:layout_below="@+id/down_to_phone_tv"
+        android:text="http://sgs.yey.com/" android:textSize="@dimen/dimen_12_dip"/>
+
+</RelativeLayout>

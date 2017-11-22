@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:id="@+id/public_account_ll"
+    android:background="@color/light_grey" >
+
+    <!-- 标题栏 -->
+    <include layout="@layout/header_layout" android:id="@+id/f_header"/>
+
+    <!-- 查看历史消息 -->
+    <LinearLayout
+        android:id="@+id/ll_loadMoreHistoryMsg"
+        android:layout_width="fill_parent" android:layout_height="@dimen/dimen_40_dip"
+        android:gravity="center" android:visibility="gone"
+        android:background="@color/bg_light_gray" android:orientation="horizontal">
+        <TextView
+            android:id="@+id/video_item_label" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:text="查看更多历史消息"/>
+    </LinearLayout>
+
+    <!-- 公众号消息列表 -->
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1">
+        <com.yey.kindergaten.widget.xlist.XListView
+            android:id="@id/publicAccount_Message_lv"
+            android:layout_width="match_parent" android:layout_height="match_parent"
+            android:cacheColorHint="@android:color/transparent" android:divider="@null"
+            android:fadingEdgeLength="0dp" android:fastScrollEnabled="true"
+            android:listSelector="@color/transparent" android:transcriptMode="normal" />
+       <!--  <ListView android:id="@id/publicAccount_Message_lv"  android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="#00000000" android:cacheColorHint="#00000000" android:divider="#00000000" android:stackFromBottom="true" android:transcriptMode="alwaysScroll"/> -->
+    </LinearLayout>
+
+    <!-- 公众号菜单 -->
+    <LinearLayout android:id="@+id/btm_menulayout" android:orientation="horizontal"
+        android:background="@drawable/bg_bottom_menu" android:layout_width="fill_parent"
+        android:visibility="gone"
+        android:layout_height="54.5dip">
+    </LinearLayout>
+</LinearLayout>

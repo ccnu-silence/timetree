@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include layout="@layout/header_layout" />
+    <TextView
+        android:id="@+id/select_role_tip"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="如果您是家长，请直接联系\n幼儿园老师获取账号！"
+        android:textSize="@dimen/dimen_16_dip"
+        android:textColor="#333333"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/dimen_13_dip"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/id_select_role"
+        android:visibility="gone"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+        <!-- 园长注册 -->
+        <RelativeLayout
+            android:paddingLeft="@dimen/dimen_13_dip"
+            android:id="@+id/id_select_role_master_rl"
+            android:layout_marginTop="@dimen/dimen_13_dip"
+            android:layout_marginLeft="@dimen/dimen_15_dip"
+            android:layout_marginRight="@dimen/dimen_13_dip"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_150_dip"
+            android:orientation="vertical"
+            android:background="@drawable/select_role_background">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_height="wrap_content"
+                android:id="@+id/relativeLayout">
+            </RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#777777"
+                android:textSize="@dimen/txtSize_16_sp"
+                android:layout_marginLeft="@dimen/dimen_13_dip"
+                android:layout_gravity="center_vertical"
+                android:lineSpacingExtra="@dimen/dimen_4_dip"
+                android:text="专业轻松的管理工具，\n让您一部手机管理幼儿园。"
+                android:id="@+id/textView12"
+                android:layout_marginTop="@dimen/dimen_8_dip"
+                android:layout_toRightOf="@id/login_logo"
+                android:layout_below="@+id/textView11"
+                android:layout_toEndOf="@id/login_logo" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:textSize="@dimen/txtSize_19_sp"
+                android:textColor="#333333"
+                android:text="我是园长"
+                android:id="@+id/textView11"
+                android:layout_alignTop="@id/login_logo"
+                android:layout_alignLeft="@+id/textView12"
+                android:layout_alignStart="@+id/textView12" />
+            <com.yey.kindergaten.widget.CircleImageView android:layout_gravity="center|center_vertical" android:id="@id/login_logo" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:background="@drawable/register_select_role_master"
+                app:border_width="@dimen/dimen_0.5_dip"
+                app:border_color="@color/white"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <!-- 老师注册 -->
+        <RelativeLayout
+            android:paddingLeft="@dimen/dimen_13_dip"
+            android:id="@+id/id_select_role_teacher_rl"
+            android:layout_marginTop="@dimen/dimen_15_dip"
+            android:layout_marginLeft="@dimen/dimen_13_dip"
+            android:layout_marginRight="@dimen/dimen_13_dip"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_150_dip"
+            android:orientation="vertical"
+            android:background="@drawable/select_role_background">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_height="wrap_content"
+                android:id="@+id/relativeLayout1">
+            </RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#777777"
+                android:textSize="@dimen/txtSize_16_sp"
+                android:layout_marginLeft="@dimen/dimen_13_dip"
+                android:layout_gravity="center_vertical"
+                android:lineSpacingExtra="@dimen/dimen_4_dip"
+                android:text="方便实用的班级管理，\n让您的工作更轻松。"
+                android:id="@+id/textView2"
+                android:layout_below="@+id/textView"
+                android:layout_marginTop="@dimen/dimen_8_dip"
+                android:layout_toRightOf="@id/login_logo"
+                android:layout_toEndOf="@id/login_logo" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:textSize="@dimen/txtSize_19_sp"
+                android:textColor="#333333"
+                android:text="我是老师"
+                android:id="@+id/textView"
+                android:layout_alignTop="@id/login_logo"
+                android:layout_alignLeft="@+id/textView2"
+                android:layout_alignStart="@+id/textView2" />
+            <com.yey.kindergaten.widget.CircleImageView android:layout_gravity="center|center_vertical" android:id="@id/login_logo" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:background="@drawable/register_select_role_teacher"
+                app:border_width="@dimen/dimen_0.5_dip"
+                app:border_color="@color/white"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <!-- 家长注册 -->
+        <RelativeLayout
+            android:paddingLeft="@dimen/dimen_13_dip"
+            android:id="@+id/id_select_role_parent_rl"
+            android:layout_marginTop="@dimen/dimen_15_dip"
+            android:layout_marginLeft="@dimen/dimen_13_dip"
+            android:layout_marginRight="@dimen/dimen_13_dip"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_150_dip"
+            android:orientation="vertical"
+            android:background="@drawable/select_role_background">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_height="wrap_content"
+                android:id="@+id/relativeLayout2">
+            </RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#777777"
+                android:textSize="@dimen/txtSize_16_sp"
+                android:layout_marginLeft="@dimen/dimen_13_dip"
+                android:layout_gravity="center_vertical"
+                android:lineSpacingExtra="@dimen/dimen_4_dip"
+                android:text="便捷的家园沟通工具，\n轻松了解孩子在园情况。"
+                android:id="@+id/textView3"
+                android:layout_below="@+id/textView4"
+                android:layout_marginTop="@dimen/dimen_8_dip"
+                android:layout_toRightOf="@id/login_logo"
+                android:layout_toEndOf="@id/login_logo" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:textSize="@dimen/txtSize_19_sp"
+                android:textColor="#333333"
+                android:text="我是家长"
+                android:id="@+id/textView4"
+                android:layout_alignTop="@id/login_logo"
+                android:layout_alignLeft="@+id/textView3"
+                android:layout_alignStart="@+id/textView3" />
+            <com.yey.kindergaten.widget.CircleImageView android:layout_gravity="center|center_vertical" android:id="@id/login_logo" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:background="@drawable/register_select_role_parent"
+                app:border_width="@dimen/dimen_0.5_dip"
+                app:border_color="@color/white"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!-- 忘记密码 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/id_select_type"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+        <!-- 手机找回 -->
+        <RelativeLayout
+            android:paddingLeft="@dimen/dimen_13_dip"
+            android:layout_marginTop="@dimen/dimen_13_dip"
+            android:layout_marginLeft="@dimen/dimen_15_dip"
+            android:layout_marginRight="@dimen/dimen_13_dip"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_150_dip"
+            android:orientation="vertical"
+            android:id="@+id/id_select_type_yourself_rl"
+            android:background="@drawable/select_role_background">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#777777"
+                android:textSize="@dimen/txtSize_16_sp"
+                android:layout_marginLeft="@dimen/dimen_13_dip"
+                android:layout_gravity="center_vertical"
+                android:lineSpacingExtra="@dimen/dimen_4_dip"
+                android:text="账号为手机号，\n而且账号绑定了手机号。"
+                android:id="@+id/textView15"
+                android:layout_marginTop="@dimen/dimen_8_dip"
+                android:layout_toRightOf="@id/login_logo"
+                android:layout_below="@+id/textView14"
+                android:layout_toEndOf="@id/login_logo" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:textSize="@dimen/txtSize_19_sp"
+                android:textColor="#333333"
+                android:text="手机找回"
+                android:id="@+id/textView14"
+                android:layout_alignTop="@id/login_logo"
+                android:layout_alignLeft="@+id/textView15"
+                android:layout_alignStart="@+id/textView15" />
+            <com.yey.kindergaten.widget.CircleImageView android:layout_gravity="center|center_vertical" android:id="@id/login_logo" android:layout_width="@dimen/dimen_65_dip" android:layout_height="@dimen/dimen_65_dip"
+                android:background="@drawable/select_type_phone"
+                app:border_width="@dimen/dimen_0.5_dip"
+                app:border_color="@color/white"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <!-- 客服找回 -->
+        <RelativeLayout
+            android:paddingLeft="@dimen/dimen_13_dip"
+            android:id="@+id/id_select_type_mate_rl"
+            android:layout_marginTop="@dimen/dimen_15_dip"
+            android:layout_marginLeft="@dimen/dimen_13_dip"
+            android:layout_marginRight="@dimen/dimen_13_dip"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_150_dip"
+            android:orientation="vertical"
+            android:background="@drawable/select_role_background">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#777777"
+                android:textSize="@dimen/txtSize_16_sp"
+                android:layout_marginLeft="@dimen/dimen_13_dip"
+                android:layout_gravity="center_vertical"
+                android:lineSpacingExtra="@dimen/dimen_4_dip"
+                android:text="账号不是手机号，\n或者手机号不可用。"
+                android:id="@+id/textView18"
+                android:layout_below="@+id/textView17"
+                android:layout_marginTop="@dimen/dimen_8_dip"
+                android:layout_toRightOf="@id/login_logo"
+                android:layout_toEndOf="@id/login_logo" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:textSize="@dimen/txtSize_19_sp"
+                android:textColor="#333333"
+                android:text="客服找回"
+                android:id="@+id/textView17"
+                android:layout_alignTop="@id/login_logo"
+                android:layout_alignLeft="@+id/textView18"
+                android:layout_alignStart="@+id/textView18" />
+            <com.yey.kindergaten.widget.CircleImageView android:layout_gravity="center|center_vertical" android:id="@id/login_logo" android:layout_width="@dimen/dimen_65_dip" android:layout_height="@dimen/dimen_65_dip"
+                android:background="@drawable/select_type_mate"
+                app:border_width="@dimen/dimen_0.5_dip"
+                app:border_color="@color/white"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

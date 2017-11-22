@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@color/white" >
+    <EditText android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="0.6" android:id="@+id/input_activity_service_friendster_item" android:layout_marginTop="@dimen/dimen_3_dip"  />
+      <ImageButton android:focusable="false" android:layout_width="0dp" android:layout_height="wrap_content" android:src="@drawable/chatting_setmode_biaoqing_btn" android:layout_weight="0.2" android:background="@null" android:id="@+id/biaoqing_activity_service_friendster_item" android:layout_marginTop="@dimen/dimen_3_dip"/>
+      <Button android:focusable="false" android:layout_width="0dp" android:layout_height="wrap_content" android:text="发送" android:layout_weight="0.2" android:id="@+id/btn_activity_service_friendster_item"/>
+
+</LinearLayout>

@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" 
+    android:layout_height="@dimen/dimen_56_dip"
+    android:padding="@dimen/dimen_10_dip"
+>
+
+    <ImageView
+        android:id="@+id/id_inflater_service_schedule_theme_"
+        android:layout_width="@dimen/dimen_34_dip"
+        android:layout_height="@dimen/dimen_34_dip"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dimen_38_dip"
+        android:layout_toRightOf="@+id/id_infalter_service_schedule_time_"
+        android:src="@drawable/service_schedule_theme" />
+
+    <TextView
+        android:id="@+id/id_inflater_service_schedule_content_"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dimen_19_dip"
+        android:textSize="@dimen/txtSize_17_sp"
+        android:layout_toRightOf="@+id/id_inflater_service_schedule_theme_"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/id_infalter_service_schedule_time_"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/dimen_10_dip"
+        android:textSize="@dimen/txtSize_17_sp"
+        android:layout_centerVertical="true"
+        android:textColor="@color/service_schedule_time"/>
+    
+</RelativeLayout>

@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/light" >
+
+<ScrollView 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:scrollbars="none"
+    >
+
+ <RelativeLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+    >
+
+
+      <RelativeLayout
+         android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_marginTop="@dimen/dimen_43_dip"
+        android:layout_height="@dimen/dimen_56_dip" >
+        <TextView
+            android:id="@+id/id_show_msg_count_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/txtSize_17_sp"
+            android:text="@string/sendmsg_leftmsg_count"           
+            android:textColor="@color/service_write_schedule_tv" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_0.5_dip"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:background="@color/border_color_light_grey" />
+     
+    </RelativeLayout>
+   <LinearLayout
+       android:id="@+id/linearLayout6"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+          android:minHeight="@dimen/dimen_150_dip"
+       android:layout_alignParentLeft="true"
+       android:layout_below="@+id/linearLayout1"
+       android:layout_marginTop="@dimen/dimen_10_dip"
+       android:layout_marginBottom="@dimen/dimen_10_dip" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+           >
+
+            <EditText
+                android:id="@+id/id_showmoban_content_et"
+                style="@style/chat_text_name_style"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:minHeight="@dimen/dimen_150_dip"
+                android:padding="@dimen/dimen_5_dip"
+                android:gravity="top"
+                android:hint="通知大家什么？"
+                android:textColor="@color/black"
+                android:textSize="@dimen/dimen_15_dip" />
+
+        </RelativeLayout>
+    </LinearLayout>
+   <View     android:layout_width="match_parent"  android:layout_height="@dimen/dimen_0.5_dip" android:background="@color/border_color_light_grey"/>
+    <RelativeLayout
+        android:id="@+id/sendnotif_select_time_rl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_56_dip"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/selector_listview_item"
+        android:layout_below="@+id/linearLayout6"
+ >
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="19dp"
+            android:textSize="@dimen/txtSize_17_sp"
+            android:text="@string/sendmsg_sendtime"
+            android:textColor="@color/dark" />
+<View     android:layout_width="match_parent"  android:layout_height="@dimen/dimen_0.5_dip" android:background="@color/border_color_light_grey"/>
+
+        <TextView
+            android:id="@+id/sendnotify_show_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView3"
+            android:layout_alignBottom="@+id/textView3"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dimen_55_dip"
+            android:text="TextView"
+            android:textColor="@color/service_write_schedule_tv"
+            android:textSize="@dimen/txtSize_17_sp" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="@dimen/dimen_20_dip"
+            android:layout_height="@dimen/dimen_20_dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dimen_15_dip"
+
+            android:src="@drawable/arrow_right" />
+
+    </RelativeLayout>
+<View     android:layout_width="match_parent"  android:layout_height="@dimen/dimen_0.5_dip" android:background="@color/border_color_light_grey"/>
+    <RelativeLayout
+        android:id="@+id/sendnotify_select_people_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen_56_dip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/sendnotif_select_time_rl"
+         android:background="@drawable/selector_listview_item"
+         >
+  <View     android:layout_width="match_parent"  android:layout_height="@dimen/dimen_0.5_dip" android:background="@color/border_color_light_grey"/>
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+             android:layout_marginLeft="@dimen/dimen_19_dip"
+             android:textSize="@dimen/txtSize_17_sp"
+            android:text="@string/sendmsg_getmsg_people"
+
+            android:textColor="@color/dark" />
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="@dimen/dimen_20_dip"
+                    android:layout_height="@dimen/dimen_20_dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dimen_16_dip"
+                    android:src="@drawable/arrow_right" />
+
+                <TextView
+                    android:id="@id/id_sendmsg_namecount_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/imageView1"
+                    android:layout_marginRight="@dimen/dimen_20_dip"
+                    android:layout_toLeftOf="@+id/imageView1"
+                    android:text="5人"
+                    android:textColor="@color/service_write_schedule_tv"
+                    android:textSize="@dimen/txtSize_17_sp" />
+
+    </RelativeLayout>
+<View     android:layout_width="match_parent"  android:layout_height="@dimen/dimen_0.5_dip" android:background="@color/border_color_light_grey"/>
+<RelativeLayout
+           android:id="@+id/sendnotify_select_moban_rl"
+          android:layout_width="match_parent"
+           android:layout_below="@+id/sendnotify_select_people_rl"
+            android:background="@drawable/selector_listview_item"
+           android:layout_height="@dimen/dimen_56_dip" >
+<View     android:layout_width="match_parent"  android:layout_height="@dimen/dimen_0.5_dip" android:background="@color/border_color_light_grey"/>
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_19_dip"
+            android:textSize="@dimen/txtSize_17_sp"
+            android:text="@string/sendmsg_msgcontent"
+            android:textColor="@color/dark" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_0.5_dip"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:background="@color/border_color_light_grey" />
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="@dimen/dimen_20_dip"
+                    android:layout_height="@dimen/dimen_20_dip"
+                    android:layout_alignBottom="@+id/textView2"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/dimen_14_dip"
+                    android:src="@drawable/arrow_right" />
+          
+     </RelativeLayout>
+
+<RelativeLayout
+           android:id="@+id/sendnotify_show_history_rl"
+          android:layout_width="match_parent"
+           android:layout_below="@+id/sendnotify_select_moban_rl"
+              android:background="@drawable/selector_listview_item"
+             android:layout_marginTop="@dimen/dimen_28_dip"
+           android:layout_height="@dimen/dimen_58_dip" >
+<View     android:layout_width="match_parent"  android:layout_height="@dimen/dimen_0.5_dip" android:background="@color/border_color_light_grey"/>
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_19_dip"
+            android:textSize="@dimen/txtSize_17_sp"
+            android:text="历史通知"
+            android:textColor="@color/dark" />
+            
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="@dimen/dimen_20_dip"
+                android:layout_height="@dimen/dimen_20_dip"
+                android:layout_alignBottom="@+id/textView2"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dimen_16_dip"
+                android:src="@drawable/arrow_right" />
+   
+     </RelativeLayout>
+  </RelativeLayout>   
+</ScrollView>
+
+  <include layout="@layout/header_layout" />
+
+</RelativeLayout>

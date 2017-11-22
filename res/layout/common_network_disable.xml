@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="top|center" android:orientation="vertical" android:id="@id/common_network_disable" android:background="@color/common_background_grey" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:background="@drawable/network_wifi" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="60.0dip" />
+    <TextView android:textSize="@dimen/font_size_large" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/network_unavailable_remark" />
+    <TextView android:textSize="@dimen/font_size_normal" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/network_check" />
+    <ToggleButton android:id="@id/network_disable_button_relink" android:layout_width="150.0dip" android:layout_marginTop="20.0dip" android:checked="true" android:textOn="@string/network_relink" android:textOff="@string/network_linking" style="@style/mainBtn" />
+</LinearLayout>

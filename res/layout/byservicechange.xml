@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/white">
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical"  android:layout_marginTop="@dimen/dimen_10_dip" android:layout_marginLeft="@dimen/dimen_10_dip" android:layout_marginRight="@dimen/dimen_10_dip">
+    	<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="如您在重置密码过程中遇到问题，请联系我们的客服：" android:layout_marginTop="@dimen/dimen_10_dip" android:textColor="@color/black" android:textSize="@dimen/txtSize_18_sp"/>
+    	<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="客服QQ：4006011063" android:layout_marginTop="@dimen/dimen_10_dip" android:textColor="@color/black" android:textSize="@dimen/txtSize_18_sp"/>
+    	<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="客服电话：400-6011-063" android:layout_marginTop="@dimen/dimen_10_dip" android:textColor="@color/black" android:textSize="@dimen/txtSize_18_sp"/>
+    </LinearLayout>
+
+</LinearLayout>

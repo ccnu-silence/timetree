@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/id_click_inflater"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res/com.yey.kindergaten">
+
+    <com.yey.kindergaten.widget.CircleImageView
+        android:id="@+id/id_inflater_service_showheadiv_cv"
+        android:layout_width="@dimen/dimen_40_dip"
+        android:layout_height="@dimen/dimen_40_dip"       
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        app:border_width="@dimen/dimen_0.5_dip"
+        app:border_color="@color/white"
+        android:layout_marginLeft="@dimen/dimen_32_dip" />
+
+    <ImageView
+        android:id="@+id/id_inflater_service_showchecked_iv"
+        android:layout_width="@dimen/dimen_15_dip"
+        android:layout_height="@dimen/dimen_15_dip"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/dimen_22_dip"
+        android:src="@drawable/checkbox_selector" />
+
+    <TextView
+        android:id="@+id/id_inflater_service_showname_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dimen_19_dip"
+        android:layout_toRightOf="@+id/id_inflater_service_showheadiv_cv"
+        android:text="TextView"
+        android:textColor="@color/service_write_schedule_tv"
+        android:textSize="@dimen/txtSize_17_sp" />
+
+    <RelativeLayout
+        android:id="@+id/id_service_select_people_shown"
+        android:layout_width="wrap_content"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@color/white"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" >
+
+        <ProgressBar
+            android:id="@+id/progressBar1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/progressBar1"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/base_color_text_black"
+            android:textSize="@dimen/txtSize_17_sp"
+            android:text="正在加载,请稍后..."
+            android:layout_marginTop="@dimen/dimen_15_dip"
+           />
+
+    </RelativeLayout>
+
+</RelativeLayout>

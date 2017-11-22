@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+  <include    layout="@layout/header_layout"/>
+  
+    <FrameLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    <ListView
+        android:id="@id/service_addressbook_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        style="@style/contactslistview"
+        android:layout_marginBottom="@dimen/dimen_5_dip"
+        />
+    <TextView  
+        android:id="@+id/pointexchange_addressbooknodatatv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:text="暂无数据"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/txtSize_20_sp"
+        />
+    
+    </FrameLayout>
+  
+
+</LinearLayout>

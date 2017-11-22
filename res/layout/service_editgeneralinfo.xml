@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tab="http://schemas.android.com/apk/res/com.yey.kindergaten"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+      <ScrollView 
+       android:layout_width="match_parent"
+       android:layout_height="match_parent" 
+       android:layout_marginTop="@dimen/dimen_10_dip"
+       >
+       <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"  
+        android:orientation="vertical"  
+        >
+        <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"   android:orientation="vertical" >
+       <View style="@style/viewlinestyle"/>
+       <RelativeLayout android:id="@+id/serviceedit_namely"  android:layout_width="fill_parent" android:layout_height="@dimen/dimen_50_dip">
+        <TextView   style="@style/contactsdatacardtext" android:layout_marginLeft="@dimen/dimen_11_dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:text="群名称" />   
+        <EditText   android:id="@+id/serviceedit_nametv"   style="@style/contactsdatacardvaluetext" android:minWidth="@dimen/dimen_60_dip" android:layout_centerVertical="true" android:layout_alignParentRight="true" android:layout_marginRight="@dimen/dimen_30_dip"  android:background="@null" android:enabled="false"  android:gravity="right"/>            
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_right" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginRight="@dimen/dimen_11_dip"/>
+        </RelativeLayout>
+         <View style="@style/viewlinestyle"/>
+       <RelativeLayout   android:layout_width="fill_parent" android:layout_height="@dimen/dimen_50_dip">
+        <TextView   style="@style/contactsdatacardtext" android:layout_marginLeft="@dimen/dimen_11_dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:text="群号" />   
+        <TextView android:id="@+id/serviceedit_gnumtv"   style="@style/contactsdatacardvaluetext" android:layout_centerVertical="true" android:layout_alignParentRight="true" android:layout_marginRight="@dimen/dimen_30_dip"  />            
+        </RelativeLayout>
+      </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"   android:orientation="vertical" >    
+       <View style="@style/viewlinestyle"/>
+        <RelativeLayout android:id="@+id/serviceedit_addcodely" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_50_dip">
+        <TextView style="@style/contactsdatacardtext" android:layout_marginLeft="@dimen/dimen_11_dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:text="加入群口令" />   
+        <EditText android:id="@+id/serviceedit_addcodetv" style="@style/contactsdatacardvaluetext" android:minWidth="@dimen/dimen_80_dip" android:layout_centerVertical="true" android:layout_alignParentRight="true" android:layout_marginRight="@dimen/dimen_30_dip"  android:background="@null"  android:enabled="false" android:gravity="right"/>            
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_right" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginRight="@dimen/dimen_11_dip"/>
+       </RelativeLayout>
+       <View style="@style/viewlinestyle"/>
+         <RelativeLayout android:id="@+id/serviceedit_groupmemberly" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_50_dip">
+        <TextView style="@style/contactsdatacardtext" android:layout_marginLeft="@dimen/dimen_11_dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:text="群成员" />   
+        <TextView android:id="@+id/serviceedit_groupmember"   style="@style/contactsdatacardvaluetext" android:layout_centerVertical="true" android:layout_alignParentRight="true" android:layout_marginRight="@dimen/dimen_30_dip"  />            
+         <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_right" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginRight="@dimen/dimen_11_dip"/>
+       </RelativeLayout>
+       <View style="@style/viewlinestyle"/>
+         <LinearLayout android:id="@+id/tabBtn_middlely" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+        <RelativeLayout  android:layout_width="fill_parent" android:layout_height="@dimen/dimen_50_dip">
+        <TextView style="@style/contactsdatacardtext" android:layout_marginLeft="@dimen/dimen_11_dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:text="允许新人加入群" />        
+        <com.yey.kindergaten.widget.TabButton android:id="@+id/tabBtn_middle" android:layout_width="wrap_content" android:layout_alignParentRight="true"  android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_5_dip" android:layout_marginBottom="@dimen/dimen_5_dip" android:layout_centerVertical="true"  android:layout_marginRight="@dimen/dimen_30_dip"  tab:normal_bg_res="@drawable/ic_push_off" tab:selected_bg_res="@drawable/ic_push_on"/>          
+       </RelativeLayout>
+       <View style="@style/viewlinestyle"/>
+       </LinearLayout>
+         <RelativeLayout android:id="@+id/serviceedit_barcodely" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_50_dip">
+        <TextView style="@style/contactsdatacardtext" android:layout_marginLeft="@dimen/dimen_11_dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:text="群二维码" />   
+        <TextView  style="@style/contactsdatacardvaluetext" android:layout_centerVertical="true" android:layout_alignParentRight="true" android:layout_marginRight="@dimen/dimen_20_dip"  />            
+       <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_right" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginRight="@dimen/dimen_11_dip"/>
+       </RelativeLayout>
+       <View style="@style/viewlinestyle"/>
+        <RelativeLayout  android:id="@+id/serviceedit_miaoshuly" android:layout_width="fill_parent" android:minHeight="@dimen/dimen_50_dip" android:layout_height="wrap_content">
+        <TextView style="@style/contactsdatacardtext" android:layout_marginLeft="@dimen/dimen_11_dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:text="群介绍" />   
+        <TextView  android:id="@+id/serviceedit_miaoshutv"   style="@style/contactsdatacardvaluetext" android:layout_centerVertical="true" android:layout_alignParentRight="true" android:layout_marginRight="@dimen/dimen_30_dip"  />            
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_right" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginRight="@dimen/dimen_11_dip"/>
+        </RelativeLayout>
+       <View style="@style/viewlinestyle"/>
+      </LinearLayout>
+      
+         
+<!--        <LinearLayout  android:id="@+id/nextly" android:layout_width="match_parent" android:layout_height="match_parent"   android:orientation="vertical" android:layout_marginTop="@dimen/dimen_30_dip" android:layout_marginBottom="@dimen/dimen_20_dip"> -->
+<!--       <View style="@style/viewlinestyle"/> -->
+<!--         <TextView android:layout_width="fill_parent" android:layout_height="@dimen/dimen_56_dip" android:gravity="center" android:textSize="@dimen/txtSize_18_sp" android:textColor="@color/purple" android:text="下一步"/> -->
+<!--        <View style="@style/viewlinestyle"/> -->
+<!--       </LinearLayout> -->
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

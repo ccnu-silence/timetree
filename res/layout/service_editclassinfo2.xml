@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    
+    
+     <LinearLayout android:id="@+id/service_invitationly"  android:layout_width="fill_parent" android:layout_height="@dimen/dimen_50_dip" android:layout_alignParentBottom="true" android:background="@color/white" android:orientation="vertical">
+    
+        <View  style="@style/viewlinestyle"/>
+      <TextView  android:layout_width="match_parent" android:layout_height="match_parent" android:textSize="@dimen/txtSize_17_sp" android:textColor="@color/white" android:text="邀请加入群" android:gravity="center" android:background="@drawable/btn_colorpuper_selector"/>
+    
+    </LinearLayout>
+    
+    
+    
+     <ScrollView 
+       android:layout_above="@id/service_invitationly"
+       android:layout_width="fill_parent"
+       android:layout_height="match_parent"  
+       >
+       <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"  
+        android:orientation="vertical"  
+        >
+          <FrameLayout 
+               android:layout_width="fill_parent"
+               android:layout_height="@dimen/dimen_200_dip" 
+               android:background="@drawable/group_cover"
+               >
+                
+           <LinearLayout 
+               android:layout_width="fill_parent"
+               android:layout_height="wrap_content"  
+               android:layout_gravity="center"   
+               android:gravity="center_horizontal"                                   
+               android:orientation="vertical"  >
+               
+            <com.yey.kindergaten.widget.CircleImageView
+                android:id="@id/contact_puacitemiv"          
+                android:layout_width="@dimen/dimen_56_dip"
+                android:layout_height="@dimen/dimen_56_dip"
+                android:src="@drawable/group_defaluteicon"
+                app:border_width="0.5dp" 
+                app:border_color="@color/white" 
+                />
+              <LinearLayout 
+               android:layout_width="wrap_content"
+               android:layout_height="match_parent"           
+               android:layout_marginTop="@dimen/dimen_10_dip"
+               android:gravity="center"
+               android:orientation="vertical"  >
+               
+                  <TextView 
+                      android:id="@+id/serviceedit_classnametv"
+                      android:textSize="@dimen/txtSize_17_sp"
+                      android:textColor="@color/black"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"  
+                    />
+                  <TextView android:id="@+id/serviceedit_classnumtv"  
+                      android:textSize="@dimen/txtSize_17_sp"
+                      android:textColor="@color/black"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"  
+                       />            
+             </LinearLayout>
+               </LinearLayout>
+          </FrameLayout>
+          
+        <TextView android:id="@+id/group_miaoshu" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingTop="@dimen/dimen_10_dip" android:paddingBottom="@dimen/dimen_10_dip" android:paddingLeft="@dimen/dimen_11_dip" android:paddingRight="@dimen/dimen_11_dip" android:textSize="@dimen/txtSize_16_sp" />
+        <View style="@style/meinfoviewlinestyle" />  
+          
+      <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="center_vertical"  android:orientation="vertical">
+         <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/dimen_51_dip" android:orientation="vertical" >
+             <TextView android:layout_marginLeft="@dimen/dimen_11_dip" android:textColor="@color/black"  android:layout_alignParentLeft="true" android:layout_centerVertical="true"  android:layout_width="wrap_content" android:layout_height="wrap_content"  android:text="群名字" android:textSize="@dimen/txtSize_17_sp"/>   
+             <TextView android:id="@+id/serviceedit_nametv"  android:layout_alignParentRight="true" android:layout_marginRight="@dimen/dimen_30_dip" android:layout_centerVertical="true"  style="@style/meinfotextstyle"  android:layout_height="@dimen/dimen_50_dip" android:minWidth="@dimen/dimen_80_dip" android:gravity="right|center_vertical" /> 
+             <ImageView  android:id="@+id/arrowiv_name" style="@style/arrowRightStyle"/>
+          </RelativeLayout>         
+         <View style="@style/meinfoviewlinestyle" />  
+      </LinearLayout>
+          
+     
+      
+          
+        <LinearLayout android:id="@+id/tabBtn_middlely"  android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="center_vertical"  android:orientation="vertical">
+         <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/dimen_51_dip" android:orientation="vertical" >
+             <TextView android:layout_marginLeft="@dimen/dimen_11_dip" android:textColor="@color/black"  android:layout_alignParentLeft="true" android:layout_centerVertical="true"  android:layout_width="wrap_content" android:layout_height="wrap_content"  android:text="允许加入群" android:textSize="@dimen/txtSize_17_sp"/>   
+             <LinearLayout 
+                 android:layout_width="@dimen/dimen_slip64_dip"
+                 android:layout_height="@dimen/dimen_slip33_dip" 
+                 android:layout_alignParentRight="true"
+                 android:layout_alignParentLeft="true"
+                 android:layout_centerVertical="true"
+                 android:gravity="right|center_vertical"
+                  >
+
+               <com.yey.kindergaten.widget.SlipButton
+                 android:id="@+id/slipButton"
+                 android:layout_marginRight="@dimen/dimen_30_dip"
+                 android:layout_width="@dimen/dimen_slip64_dip"
+                 android:layout_height="@dimen/dimen_slip33_dip"
+                />
+               </LinearLayout>
+        </RelativeLayout>         
+         <View style="@style/meinfoviewlinestyle" />  
+      </LinearLayout>
+          
+     
+
+     
+       <LinearLayout android:id="@+id/serviceedit_addcodely" android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="center_vertical"  android:orientation="vertical">
+         <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/dimen_51_dip" android:orientation="vertical" >
+             <TextView android:layout_marginLeft="@dimen/dimen_11_dip" android:textColor="@color/black"  android:layout_alignParentLeft="true" android:layout_centerVertical="true"  android:layout_width="wrap_content" android:layout_height="wrap_content"  android:text="@string/pleaseset_addcode" android:textSize="@dimen/txtSize_17_sp"/>   
+             <TextView android:id="@+id/serviceedit_addcodetv"  android:layout_alignParentRight="true" android:layout_marginRight="@dimen/dimen_30_dip" android:layout_centerVertical="true"  style="@style/meinfotextstyle"  android:layout_height="@dimen/dimen_50_dip" android:minWidth="@dimen/dimen_80_dip" android:gravity="center_vertical|right"   /> 
+              <ImageView android:id="@+id/arrowiv_code"  style="@style/arrowRightStyle"/>
+         </RelativeLayout>         
+         <View style="@style/meinfoviewlinestyle" />  
+      </LinearLayout>
+      
+       <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="center_vertical"  android:orientation="vertical">
+         <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/dimen_51_dip" android:orientation="vertical" >
+             <TextView android:layout_marginLeft="@dimen/dimen_11_dip" android:textColor="@color/black"  android:layout_alignParentLeft="true" android:layout_centerVertical="true"  android:layout_width="wrap_content" android:layout_height="wrap_content"  android:text="年级" android:textSize="@dimen/txtSize_17_sp"/>   
+             <TextView android:id="@+id/serviceedit_gradev"  android:layout_alignParentRight="true" android:layout_marginRight="@dimen/dimen_30_dip" android:layout_centerVertical="true"  style="@style/meinfotextstyle"  android:layout_height="@dimen/dimen_50_dip"  /> 
+             <ImageView android:id="@+id/arrowiv_class"  style="@style/arrowRightStyle"/>
+         </RelativeLayout>         
+         <View style="@style/meinfoviewlinestyle" />  
+      </LinearLayout>
+       
+       <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="center_vertical"  android:orientation="vertical">
+         <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/dimen_51_dip" android:orientation="vertical" >
+             <TextView android:layout_marginLeft="@dimen/dimen_11_dip" android:textColor="@color/black"  android:layout_alignParentLeft="true" android:layout_centerVertical="true"  android:layout_width="wrap_content" android:layout_height="wrap_content"  android:text="幼儿园" android:textSize="@dimen/txtSize_17_sp"/>   
+             <TextView android:id="@+id/serviceedit_kindnametv"  android:layout_alignParentRight="true" android:layout_marginRight="@dimen/dimen_30_dip" android:layout_centerVertical="true"  style="@style/meinfotextstyle"  android:layout_height="@dimen/dimen_50_dip"  /> 
+        </RelativeLayout>         
+         <View style="@style/meinfoviewlinestyle" />  
+      </LinearLayout>
+        
+      
+       <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="center_vertical"  android:orientation="vertical">
+         <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/dimen_51_dip" android:orientation="vertical" >
+             <TextView android:id="@+id/serviceedit_classteacher" android:textColor="@color/black"  android:layout_marginLeft="@dimen/dimen_11_dip"  android:layout_alignParentLeft="true" android:layout_centerVertical="true"  android:layout_width="wrap_content" android:layout_height="wrap_content"  android:text="班级老师" android:textSize="@dimen/txtSize_17_sp"/>   
+             <TextView android:id="@+id/serviceedit_classteachertv"   android:layout_toRightOf="@id/serviceedit_classteacher" android:layout_marginLeft="@dimen/dimen_20_dip" android:gravity="center_vertical|right" android:layout_alignParentRight="true" android:layout_marginRight="@dimen/dimen_30_dip" android:layout_centerVertical="true"  style="@style/meinfotextstyle"  android:layout_height="@dimen/dimen_50_dip"  android:singleLine="true"/> 
+        </RelativeLayout>         
+         <View style="@style/meinfoviewlinestyle" />  
+      </LinearLayout>
+      
+
+       
+       <LinearLayout android:id="@+id/serviceedit_groupmemberly"  android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="center_vertical"  android:orientation="vertical">
+         <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/dimen_51_dip" android:orientation="vertical" >
+             <TextView android:layout_marginLeft="@dimen/dimen_11_dip"  android:layout_alignParentLeft="true" android:layout_centerVertical="true"  android:layout_width="wrap_content" 
+                 android:layout_height="wrap_content" android:textColor="@color/black"   android:text="成员" android:textSize="@dimen/txtSize_17_sp"/>   
+           
+        <TextView android:id="@+id/serviceedit_classmembertv" 
+                  android:layout_alignParentRight="true" 
+                  android:layout_marginRight="@dimen/dimen_30_dip"
+                   android:minWidth="@dimen/dimen_50_dip"
+                  android:gravity="center_vertical|right"
+                  android:layout_centerVertical="true"  style="@style/meinfotextstyle" 
+                  android:layout_height="@dimen/dimen_50_dip"   /> 
+         <ImageView   style="@style/arrowRightStyle"/>
+         </RelativeLayout>         
+         <View style="@style/meinfoviewlinestyle" />  
+      </LinearLayout>
+      
+     
+      
+      <LinearLayout   android:id="@+id/serviceedit_barcodely"  android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="center_vertical"  android:orientation="vertical">
+         <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/dimen_51_dip" android:orientation="vertical" >
+             <TextView android:layout_marginLeft="@dimen/dimen_11_dip"  android:layout_alignParentLeft="true" android:layout_centerVertical="true"  android:layout_width="wrap_content" 
+                 android:layout_height="wrap_content" android:textColor="@color/black"  android:text="二维码" android:textSize="@dimen/txtSize_17_sp"/>   
+           <LinearLayout   android:layout_width="wrap_content" android:layout_height="wrap_content"  
+               android:layout_marginRight="@dimen/dimen_30_dip" android:layout_alignParentRight="true" android:orientation="vertical" >
+          <ImageView 
+                  android:layout_width="@dimen/dimen_40_dip"
+                  android:layout_height="@dimen/dimen_40_dip"      
+                  android:layout_marginTop="@dimen/dimen_5_dip"
+                  android:layout_marginBottom="@dimen/dimen_5_dip"
+                   android:src="@drawable/meinfo_codeicon"
+                          />          
+         </LinearLayout>   
+         <ImageView   style="@style/arrowRightStyle"/>
+         </RelativeLayout>         
+         <View style="@style/meinfoviewlinestyle" />  
+      </LinearLayout>
+              
+       <LinearLayout  android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="center_vertical"  android:orientation="vertical" android:layout_marginBottom="@dimen/dimen_10_dip">
+         <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/dimen_51_dip" android:orientation="vertical" >
+             <TextView android:id="@+id/serviceedit_kindmiaoshu" android:layout_marginLeft="@dimen/dimen_11_dip"  android:layout_alignParentLeft="true" android:layout_centerVertical="true"  android:layout_width="wrap_content" 
+                 android:layout_height="wrap_content" android:textColor="@color/black"  android:text="群介绍" android:textSize="@dimen/txtSize_17_sp"/>   
+             <TextView android:id="@+id/serviceedit_kindmiaoshutv"   android:layout_alignParentRight="true"  android:layout_toRightOf="@id/serviceedit_kindmiaoshu" android:layout_marginRight="@dimen/dimen_30_dip" android:layout_marginLeft="@dimen/dimen_11_dip" android:gravity="center_vertical|right" android:layout_centerVertical="true"  style="@style/meinfotextstyle"  android:layout_height="@dimen/dimen_50_dip" android:minWidth="@dimen/dimen_80_dip"  /> 
+              <ImageView  android:id="@+id/arrowiv_miaoshu" style="@style/arrowRightStyle"/>
+        </RelativeLayout>         
+         <View style="@style/meinfoviewlinestyle" />  
+      </LinearLayout>
+       
+   
+      
+      
+
+        </LinearLayout>
+    </ScrollView>
+       
+
+</RelativeLayout>

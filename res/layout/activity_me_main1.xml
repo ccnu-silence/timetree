@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_index">
+    <include layout="@layout/header_layout"/>
+    <!-- 个人资料 -->
+    <RelativeLayout
+        android:id="@+id/me_self_info"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:background="@drawable/me_title_background"
+        android:layout_height="@dimen/dimen_108_dip" >
+        <com.yey.kindergaten.widget.CircleImageView
+            android:id="@+id/me_info_iv"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_6_dip"
+            android:layout_marginTop="@dimen/dimen_23_dip"
+            android:layout_marginBottom="@dimen/dimen_23_dip"
+            android:layout_marginRight="@dimen/dimen_15_dip"
+            android:layout_width="@dimen/dimen_62_dip"
+            android:layout_height="@dimen/dimen_62_dip"
+            app:border_width="@dimen/dimen_1_dip"
+            app:border_color="@color/white"
+            android:src="@drawable/defaulticon" />
+        <TextView
+            android:id="@+id/me_info_titletv"
+            android:layout_toRightOf="@+id/me_info_iv"
+            android:textSize="@dimen/txtSize_17_sp"
+            android:text="兰燕妮   家长"
+            android:textColor="@color/black"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dimen_2_dip"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_height="@dimen/dimen_70_dip" />
+        <ImageView
+            android:id="@+id/me_info_tag"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dimen_11_dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/me_title_right_bar" />
+        <View android:layout_alignParentBottom="true" style="@style/viewlinestyle"/>
+    </RelativeLayout>
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+        <ScrollView android:id="@+id/activity_contacts_main_scrollview" android:layout_width="match_parent" android:layout_height="wrap_content" >
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" >
+                <!-- 上半部 -->
+                <com.yey.kindergaten.widget.MyListViewWithScrollView android:id="@+id/activity_me_main_lvup"
+                    android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/contactslistview"/>
+                <View style="@style/viewlinestyle"/>
+                <!-- 中部 -->
+                <LinearLayout android:id="@+id/me_main_addservice" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical"  android:gravity="center"  android:layout_marginTop="@dimen/dimen_16_dip">
+                    <View style="@style/viewlinestyle"/>
+                    <com.yey.kindergaten.widget.MyListViewWithScrollView	android:id="@+id/activity_me_main_lvmiddle"
+                        android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/contactslistview"/>
+                    <View style="@style/viewlinestyle"/>
+                </LinearLayout>
+                <!-- 下半部 -->
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical"  android:gravity="center"  android:layout_marginTop="@dimen/dimen_16_dip">
+                    <View style="@style/viewlinestyle"/>
+                    <com.yey.kindergaten.widget.MyListViewWithScrollView	android:id="@+id/activity_me_main_lvdown"
+                        android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/contactslistview"/>
+                    <View style="@style/viewlinestyle"/>
+                </LinearLayout>
+                <!-- 退出登录 -->
+                <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:gravity="center" >
+                    <Button android:id="@+id/btn_me_signout" android:layout_height="@dimen/dimen_44_dip" android:background="@drawable/listview_select_item"  style="@style/signOutBtn"   android:layout_marginLeft="@dimen/dimen_1_dip"  android:layout_marginRight="@dimen/dimen_1_dip" android:layout_marginTop="@dimen/dimen_16_dip"  android:layout_marginBottom="@dimen/dimen_11_dip"  android:text="@string/signout"/>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+        <!-- menu菜单（弹出框） -->
+        <RelativeLayout android:id="@+id/menu_btn" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent"  android:background="@color/popbg"  android:visibility="gone">
+            <LinearLayout android:orientation="vertical"  android:layout_width="fill_parent" android:layout_height="wrap_content"  android:background="@color/white">
+                <LinearLayout android:orientation="horizontal" android:id="@+id/first_line_menu" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/homemenu_margintop" android:background="@color/white">
+                    <LinearLayout  android:layout_width="0.0dp" android:layout_height="wrap_content"   android:layout_weight="1" android:orientation="vertical" android:gravity="center" >
+                        <com.yey.kindergaten.widget.MyImageView  android:id="@+id/id_sendspeak_iv"   android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_twitte"/>
+                        <TextView   android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/home_ppw_shuoshuo"  android:textColor="@color/pullmenu_txt" android:textSize="@dimen/txtSize_17_sp" android:layout_marginTop="@dimen/dimen_10_dip" />
+                    </LinearLayout>
+                    <LinearLayout  android:layout_width="0.0dp" android:layout_height="wrap_content"   android:layout_weight="1" android:orientation="vertical" android:gravity="center" >
+                        <com.yey.kindergaten.widget.MyImageView android:id="@+id/id_writesc_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_todo"/>
+                        <TextView   android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/home_ppw_daytral"  android:textColor="@color/pullmenu_txt" android:textSize="@dimen/txtSize_17_sp" android:layout_marginTop="@dimen/dimen_10_dip" />
+                    </LinearLayout>
+                    <LinearLayout  android:layout_width="0.0dp" android:layout_height="wrap_content"   android:layout_weight="1" android:orientation="vertical" android:gravity="center" >
+                        <com.yey.kindergaten.widget.MyImageView android:id="@+id/id_sendmsg_iv"  android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_notice"/>
+                        <TextView   android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/home_ppw_sendmsg"  android:textColor="@color/pullmenu_txt" android:textSize="@dimen/txtSize_17_sp" android:layout_marginTop="@dimen/dimen_10_dip" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/second_line_menu" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/homemenu_margintop" android:layout_below="@id/first_line_menu" android:background="@color/white" >
+
+                    <LinearLayout  android:layout_width="0.0dp" android:layout_height="wrap_content"  android:layout_marginBottom="@dimen/dimen_40_dip" android:layout_weight="1" android:orientation="vertical" android:gravity="center" >
+                        <com.yey.kindergaten.widget.MyImageView  android:id="@+id/id_addfriend_iv"   android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_addfriends"/>
+                        <TextView   android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/home_ppw_add"  android:textColor="@color/pullmenu_txt" android:textSize="@dimen/txtSize_17_sp" android:layout_marginTop="@dimen/dimen_10_dip" />
+                    </LinearLayout>
+
+                    <LinearLayout  android:layout_width="0.0dp" android:layout_height="wrap_content"  android:layout_marginBottom="@dimen/dimen_40_dip" android:layout_weight="1" android:orientation="vertical" android:gravity="center" >
+                        <com.yey.kindergaten.widget.MyImageView android:id="@+id/id_creategroup_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/service_creatgroupicon"/>
+                        <TextView   android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/home_ppw_creategroup"  android:textColor="@color/pullmenu_txt" android:textSize="@dimen/txtSize_17_sp" android:layout_marginTop="@dimen/dimen_10_dip" />
+                    </LinearLayout>
+
+                    <LinearLayout  android:layout_width="0.0dp" android:layout_height="wrap_content"  android:layout_marginBottom="@dimen/dimen_40_dip" android:layout_weight="1" android:orientation="vertical" android:gravity="center" >
+                        <com.yey.kindergaten.widget.MyImageView android:id="@+id/btn_top_barcode_iv"  android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_barcode"/>
+                        <TextView   android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/home_ppw_barcode"  android:textColor="@color/pullmenu_txt" android:textSize="@dimen/txtSize_17_sp" android:layout_marginTop="@dimen/dimen_10_dip" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/menu_btn_parent" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:visibility="gone"  android:background="@color/popbg" >
+            <LinearLayout android:orientation="vertical"  android:layout_width="fill_parent" android:layout_height="wrap_content"  android:background="@color/white">
+                <LinearLayout android:orientation="horizontal" android:id="@+id/first1_line_menu" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_30_dip"  android:background="@color/white">
+                    <LinearLayout  android:layout_width="0.0dp" android:layout_height="wrap_content"   android:layout_weight="1" android:orientation="vertical" android:gravity="center" >
+                        <com.yey.kindergaten.widget.MyImageView  android:id="@+id/id_sendspeak_tv_teacheriv"   android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_twitte"/>
+                        <TextView   android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/home_ppw_shuoshuo"  android:textColor="@color/pullmenu_txt" android:textSize="@dimen/txtSize_17_sp" android:layout_marginTop="@dimen/dimen_10_dip" />
+                    </LinearLayout>
+                    <LinearLayout  android:layout_width="0.0dp" android:layout_height="wrap_content"  android:layout_marginBottom="@dimen/dimen_40_dip" android:layout_weight="1" android:orientation="vertical" android:gravity="center" >
+                        <com.yey.kindergaten.widget.MyImageView  android:id="@+id/id_addfriend_tv_teacheriv"   android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_addfriends"/>
+                        <TextView   android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/home_ppw_add"  android:textColor="@color/pullmenu_txt" android:textSize="@dimen/txtSize_17_sp" android:layout_marginTop="@dimen/dimen_10_dip" />
+                    </LinearLayout>
+                    <LinearLayout  android:layout_width="0.0dp" android:layout_height="wrap_content"  android:layout_marginBottom="@dimen/dimen_40_dip" android:layout_weight="1" android:orientation="vertical" android:gravity="center" >
+                        <com.yey.kindergaten.widget.MyImageView android:id="@+id/btn_top_barcode_teacheriv"  android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_barcode"/>
+                        <TextView   android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/home_ppw_barcode"  android:textColor="@color/pullmenu_txt" android:textSize="@dimen/txtSize_17_sp" android:layout_marginTop="@dimen/dimen_10_dip" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </FrameLayout>
+</LinearLayout>

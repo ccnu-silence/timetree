@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical" >
+ <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen_89_dip"
+    android:orientation="vertical"
+    android:gravity="center"
+    >
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_85_dip" 
+        >
+
+        <LinearLayout        
+            android:id="@id/service_taskmian_lvitemlv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/dimen_11_dip"
+            android:layout_centerVertical="true" 
+            android:gravity="center"
+            >
+            <ImageView
+                android:id="@id/service_taskmain_itemiv"                             
+                android:layout_width="@dimen/dimen_62_dip"
+                android:layout_height="@dimen/dimen_62_dip"
+                android:src="@drawable/taskpic" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_toRightOf="@id/service_taskmian_lvitemlv1"
+            android:layout_width="wrap_content"          
+            android:layout_height="wrap_content"       
+            android:layout_marginLeft="@dimen/dimen_11_dip"  
+            android:layout_centerVertical="true"   
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@id/service_taskmain_itemnametv"
+                android:textSize="@dimen/txtSize_17_sp"
+                android:textColor="@color/black"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="@dimen/dimen_15_dip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/service_taskname" />
+
+            <LinearLayout 
+                android:layout_width="wrap_content"   android:layout_marginBottom="@dimen/dimen_13_dip" 
+                android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:orientation="horizontal">
+            <TextView
+                android:id="@id/service_taskmain_itempointtv"       
+                android:textSize="@dimen/txtSize_17_sp"
+                android:textColor="@color/pointfen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20" />
+            
+             <TextView            
+                android:textSize="@dimen/txtSize_14_sp"
+                android:textColor="@color/contact_mainlvitemtv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_5_dip"
+                android:text="积分" />
+            </LinearLayout>
+
+        </RelativeLayout>        
+          <LinearLayout
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dimen_11_dip"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"      
+            android:layout_centerHorizontal="true"    
+            android:gravity="center"    
+            android:layout_gravity="bottom"      
+            android:orientation="vertical" >
+
+            <FrameLayout   android:layout_width="wrap_content" android:layout_height="match_parent"  >
+              
+            <Button
+                android:id="@id/service_taskmain_itemgetbtn"      
+                android:layout_gravity="bottom"         
+                android:layout_marginBottom="@dimen/dimen_13_dip"    
+                android:layout_width="wrap_content"           
+                android:layout_height="@dimen/dimen_40_dip"
+                android:background="@drawable/toastselector"
+                android:textColor="@color/white"                                
+                android:textSize="@dimen/txtSize_14_sp"         
+                android:layout_marginTop="@dimen/dimen_10_dip"
+                android:paddingLeft="@dimen/dimen_5_dip"        
+                android:paddingRight="@dimen/dimen_5_dip"       
+                android:text="@string/service_get" />
+            
+             <TextView
+                android:id="@id/service_taskmain_itemgetbtn"      
+                android:layout_gravity="bottom"            
+                android:layout_marginBottom="@dimen/dimen_13_dip"     
+                android:textSize="@dimen/txtSize_20_sp"
+                android:textColor="@color/contact_mainlvitemtv"      
+                android:layout_marginTop="@dimen/dimen_10_dip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"         
+                android:visibility="gone"   
+                android:text="已完成" />
+            
+            </FrameLayout>
+        </LinearLayout>          
+        
+
+    </RelativeLayout>
+  </LinearLayout>
+</LinearLayout>

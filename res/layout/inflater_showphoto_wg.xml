@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal" >
+     
+        <com.yey.kindergaten.widget.SquareLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/grid_item_border" >
+        
+            <ImageView
+                android:id="@id/selectphoto_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@color/contactbackgroud" />
+            <TextView
+                android:id="@id/classphoto_gv_count_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#88000000"
+                android:textColor="#FFFFFF"
+                android:singleLine="true"
+                android:layout_alignParentBottom="true"
+                android:textSize="@dimen/txtSize_10_sp"
+                android:gravity="center_horizontal"
+                android:visibility="gone" />
+            <View
+                android:id="@+id/press"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/item_press_bg" />
+        </com.yey.kindergaten.widget.SquareLayout>
+       
+        <ImageView
+            android:id="@id/selectphoto_unselect"
+            android:layout_width="@dimen/dimen_25_dip"
+            android:layout_height="@dimen/dimen_25_dip"
+            android:layout_marginTop="@dimen/dimen_10_dip"
+            android:layout_marginRight="@dimen/dimen_5_dip"
+            android:background="@drawable/album_nochoice"
+            android:layout_gravity="top|right"
+            android:visibility="gone" />
+
+        <ImageView
+             android:id="@id/selectphoto_select"
+             android:layout_width="@dimen/dimen_25_dip"
+             android:layout_height="@dimen/dimen_25_dip"
+             android:layout_marginRight="@dimen/dimen_5_dip"
+             android:layout_marginTop="@dimen/dimen_10_dip"
+             android:layout_gravity="top|right"
+             android:background="@drawable/album_choice"
+             android:visibility="gone"/>
+        <RelativeLayout
+            android:id="@+id/progress_rl"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                android:layout_width="@dimen/dimen_50_dip"
+                android:layout_height="@dimen/dimen_50_dip"
+                android:layout_centerInParent="true"
+                android:visibility="visible" />
+        </RelativeLayout>
+    </FrameLayout>
+
+
+</RelativeLayout>

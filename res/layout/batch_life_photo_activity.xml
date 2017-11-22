@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <!-- 标题 -->
+    <include layout="@layout/header_layout"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/light_grey" >
+            <View style="@style/viewlinestyle" />
+            <!-- 描述 -->
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/dimen_15_dip"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:minHeight="@dimen/dimen_100_dip" >
+                <EditText
+                    android:id="@+id/id_input_photo_decs_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_white"
+                    android:gravity="top"
+                    android:textSize="@dimen/txtSize_17_sp"
+                    android:hint="请输入描述内容"
+                    android:padding="@dimen/dimen_5_dip" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/linearLayout3"
+                android:visibility="visible"
+                android:layout_height="@dimen/dimen_40_dip"
+                android:layout_width="fill_parent"
+                android:layout_below="@+id/linearLayout1"
+                android:layout_marginTop="@dimen/dimen_15_dip"
+                android:background="@color/white">
+                <TextView
+                    android:layout_height="fill_parent"
+                    android:layout_width="fill_parent"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/gray"
+                    android:layout_marginLeft="@dimen/dimen_10_dip"
+                    android:text="温馨提示：一直最多只能选20张照片"/>
+            </LinearLayout>
+            <!-- 缩略图 -->
+            <RelativeLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="match_parent"
+                android:minHeight="@dimen/dimen_85_dip"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:paddingTop="@dimen/dimen_10_dip"
+                android:paddingLeft="@dimen/dimen_10_dip"
+                android:paddingRight="@dimen/dimen_10_dip"
+                android:layout_below="@+id/linearLayout3"
+                android:layout_marginTop="@dimen/dimen_15_dip"
+                android:background="@color/white">
+                <com.yey.kindergaten.widget.MyGridviewWithScrollView
+                    android:id="@+id/id_show_select_image_gv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dimen_1_dip"
+                    android:numColumns="4"
+                    android:scrollbars="none" />
+                <View android:visibility="gone" android:id="@+id/show_batch_line" style="@style/viewlinestyle" android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+            <!-- 添加小朋友 -->
+            <RelativeLayout
+                android:id="@+id/id_batch_select_child_rl"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_56_dip"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/listview_select_item"
+                android:layout_below="@+id/linearLayout2"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dimen_15_dip"
+                android:paddingRight="@dimen/dimen_15_dip"
+                android:layout_marginTop="@dimen/dimen_15_dip" >
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="@dimen/dimen_34_dip"
+                    android:layout_height="@dimen/dimen_30_dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/lifephoto_select_child" />
+                <TextView
+                    android:id="@+id/id_show_child_count_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/child_sum_number"
+                    android:textSize="@dimen/txtSize_17_sp" />
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/imageView1"
+                    android:layout_marginLeft="@dimen/dimen_5_dip"
+                    android:layout_toRightOf="@+id/imageView1"
+                    android:text="@string/add_batch_child"
+                    android:textSize="@dimen/txtSize_17_sp" />
+                 <View style="@style/viewlinestyle" android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+            <!-- 照片质量 -->
+            <RelativeLayout
+                android:id="@+id/id_select_image_quality_rl"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_56_dip"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/listview_select_item"
+                android:layout_below="@+id/id_batch_select_child_rl"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dimen_15_dip"
+                android:paddingRight="@dimen/dimen_15_dip" >
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="@dimen/dimen_34_dip"
+                    android:layout_height="@dimen/dimen_30_dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/chat_add_picture_normal" />
+                <TextView
+                    android:id="@+id/id_image_quality_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/image_quality_type"
+                    android:textColor="@color/purple"
+                    android:textSize="@dimen/txtSize_17_sp" />
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_5_dip"
+                    android:layout_toRightOf="@+id/imageView1"
+                    android:layout_centerVertical="true"
+                    android:text="@string/select_image_quality"
+                    android:textSize="@dimen/txtSize_17_sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/header_layout"/>
+    <com.yey.kindergaten.widget.PullToRefreshHeaderView
+        android:id="@+id/pull_torefresh_contact"
+        android:background="@android:color/white"
+        android:layout_width="fill_parent"
+        android:paddingRight="@dimen/dimen_2_dip"
+        android:paddingLeft="@dimen/dimen_1_dip" android:orientation="vertical"
+        android:layout_height="fill_parent">
+        <ScrollView android:id="@+id/activity_contacts_main_scrollview" android:layout_width="match_parent" android:layout_height="wrap_content" >
+            <!-- ScrollView内部只能有一个子元素 -->
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" >
+                <!-- 幼儿园公众号二级分类 -->
+                <com.yey.kindergaten.widget.MyListViewWithScrollView
+                    android:id="@+id/publicaccount_listview1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/contactslistview" />
+                <!-- 公众号列表 -->
+                <com.yey.kindergaten.widget.MyListViewWithScrollView
+                    android:id="@+id/publicaccount_listview2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/contactslistview"/>
+            </LinearLayout>
+        </ScrollView>
+    </com.yey.kindergaten.widget.PullToRefreshHeaderView>
+
+</LinearLayout>

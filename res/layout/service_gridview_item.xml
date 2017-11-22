@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" 
+    android:gravity="center">
+    <FrameLayout 
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     >
+     <RelativeLayout 
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:gravity="center">
+    <ImageView
+        android:id="@id/service_gridviewitemiv"     
+        android:layout_width="@dimen/dimen_101_dip"
+        android:layout_height="@dimen/dimen_76_dip"
+        android:scaleType="fitXY"
+        android:src="@drawable/common_defalut_photo_loading" />
+    <com.yey.kindergaten.widget.CircleProgressBar
+        android:layout_width="@dimen/dimen_40_dip"
+        android:layout_height="@dimen/dimen_40_dip"
+        android:id="@+id/service_circleprogressbar"  
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone"/>    		
+    </RelativeLayout>
+    </FrameLayout>
+</LinearLayout>

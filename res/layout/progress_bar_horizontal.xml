@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="@color/light_grey"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:padding="@dimen/dimen_3_dip"
+            android:layout_width="match_parent"
+            android:gravity="right"
+            android:layout_height="@dimen/dimen_30_dip">
+            <ImageView
+                android:id="@+id/close_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/umeng_update_button_close_bg_selector"/>
+            </LinearLayout>
+        <TextView
+            android:id="@+id/show_progress_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#5c5a5a"
+            android:text="正在上传" />
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:id="@+id/show_progress_pb"
+            android:layout_width="250dip"
+            android:layout_height="30dip" />
+
+
+    </LinearLayout>
+     
+
+</LinearLayout>

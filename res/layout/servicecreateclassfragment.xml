@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_background_grey"
+    android:orientation="vertical" >
+    
+
+       <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"  
+        android:orientation="vertical"  
+        >
+
+     <RelativeLayout
+         android:layout_width="fill_parent"
+         android:layout_height="@dimen/dimen_60_dip"
+         android:visibility="gone"
+         android:id="@+id/linearLayout">
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:textSize="@dimen/txtSize_16_sp"
+             android:textColor="@color/purple"
+             android:text="输入幼儿园编号和园长手机号查找幼儿园"
+             android:layout_centerVertical="true"
+             android:layout_centerHorizontal="true" />
+
+         </RelativeLayout>
+     <LinearLayout android:layout_marginTop="@dimen/dimen_20_dip" android:layout_below="@+id/linearLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical"
+         android:id="@+id/linearLayout3">
+        <RelativeLayout android:id="@+id/createclass_classrl" android:background="@color/white"   android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View style="@style/viewlinestyle"/>
+
+          <EditText android:id="@+id/createclass_classtv" android:textCursorDrawable="@drawable/edittext_cursor_drawable" android:cursorVisible="true" android:maxLength="10"
+              android:hint="@string/search_kindergaten" android:layout_height="@dimen/dimen_50_dip" android:layout_width="wrap_content" android:minWidth="@dimen/dimen_80_dip"
+              android:layout_centerVertical="true"
+              android:paddingLeft="@dimen/dimen_11_dip"
+              android:textColor="@color/contact_mainlvitemtv" android:textSize="@dimen/txtSize_16_sp" android:background="@null"
+              android:layout_alignParentLeft="true"
+              android:layout_alignParentStart="true"
+              android:layout_alignParentRight="true"
+              android:layout_alignParentEnd="true" />
+          </RelativeLayout>
+          <View style="@style/viewlinestyle"/>
+          
+            <RelativeLayout
+             android:layout_width="match_parent"
+             android:visibility="gone"
+             android:layout_height="@dimen/dimen_51_dip"
+             android:orientation="vertical" >
+
+             <TextView
+                 android:id="@+id/textView1"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignParentLeft="true"
+                 android:layout_centerVertical="true"
+                 android:layout_marginLeft="@dimen/dimen_11_dip"
+                 android:textColor="@color/black"
+                 android:text="@string/set_addcode"
+                 android:textSize="@dimen/txtSize_16_sp" />
+            
+                <LinearLayout 
+                  android:layout_width="@dimen/dimen_slip64_dip"
+                 android:layout_height="@dimen/dimen_slip33_dip"  
+                 android:layout_alignParentRight="true"
+                 android:layout_alignParentLeft="true"
+                 android:layout_centerVertical="true"
+                 android:gravity="right|center_vertical"
+                  >
+
+               <com.yey.kindergaten.widget.SlipButton
+                 android:id="@+id/slipButton"
+                 android:layout_marginRight="@dimen/dimen_30_dip"
+                 android:layout_width="@dimen/dimen_slip64_dip"
+                 android:layout_height="@dimen/dimen_slip33_dip"
+                />
+               </LinearLayout>
+         </RelativeLayout>
+         
+      <LinearLayout android:id="@+id/createkind_codely" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+        <RelativeLayout android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:background="@drawable/listview_select_item">
+          <TextView android:id="@+id/createkind_code" android:layout_height="@dimen/dimen_50_dip" android:layout_width="wrap_content" android:layout_alignParentLeft="true"   android:layout_centerVertical="true" android:gravity="center_vertical" android:layout_marginLeft="@dimen/dimen_11_dip" android:textColor="@color/black" android:textSize="@dimen/txtSize_16_sp"/>
+          <EditText android:id="@+id/createclass_codetv" android:hint="@string/pleaseset_addcode" android:maxLength="10" android:layout_toRightOf="@id/createkind_code" android:layout_marginLeft="@dimen/dimen_20_dip" android:layout_height="@dimen/dimen_50_dip" android:layout_width="wrap_content"   android:minWidth="@dimen/dimen_80_dip" android:layout_alignParentRight="true"    android:layout_centerVertical="true"  android:layout_marginRight="@dimen/dimen_30_dip" android:textColor="@color/contact_mainlvitemtv" android:textSize="@dimen/txtSize_16_sp" android:background="@null" android:gravity="right|center"/>
+          </RelativeLayout>
+      </LinearLayout>
+    </LinearLayout>
+
+           <TextView android:id="@+id/mecreatekinder_finish" android:layout_height="@dimen/dimen_50_dip" android:layout_width="fill_parent"   android:gravity="center" android:textColor="@color/purple" android:textSize="@dimen/txtSize_18_sp" android:text="搜索幼儿园" android:background="@drawable/selector_listview_item"
+               android:layout_marginTop="@dimen/dimen_40_dip"
+               android:layout_below="@+id/linearLayout3"
+               android:layout_alignParentRight="true"
+               android:layout_alignParentEnd="true" />
+
+           <RelativeLayout  android:visibility="gone" android:background="@color/white" android:id="@+id/createclass_graderl" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_50_dip"
+               android:layout_below="@+id/linearLayout3">
+
+           <EditText android:visibility="gone" android:id="@+id/createclass_gradetv"
+               android:minWidth="@dimen/dimen_80_dip" android:background="@null" android:maxLength="11" android:layout_height="@dimen/dimen_50_dip" android:layout_width="wrap_content"
+               android:hint="@string/master_phonenuber"  android:textCursorDrawable="@drawable/edittext_cursor_drawable" android:layout_centerVertical="true"
+               android:textColor="@color/contact_mainlvitemtv" android:textSize="@dimen/txtSize_16_sp"
+               android:layout_alignParentLeft="true"
+               android:layout_alignParentStart="true"
+               android:paddingLeft="@dimen/dimen_11_dip"
+               android:layout_alignParentRight="true"
+               android:layout_alignParentEnd="true" />
+           <View style="@style/viewlinestyle" android:layout_alignParentBottom="true"></View>
+           </RelativeLayout>
+
+   <LinearLayout
+               android:id="@+id/have_result_kindergaten_ll"
+               android:orientation="vertical"
+               android:layout_width="fill_parent"
+               android:layout_height="fill_parent"
+               android:visibility="gone"
+               android:layout_below="@+id/mecreatekinder_finish"
+               android:layout_alignParentLeft="true"
+               android:layout_alignParentStart="true">
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_marginTop="@dimen/dimen_30_dip"
+      android:background="@drawable/common_border_no_shadow"
+      android:padding="@dimen/dimen_5_dip"
+      android:layout_height="wrap_content">
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:gravity="center_vertical"
+          android:textSize="@dimen/txtSize_17_sp"
+          android:text="晶晶大拇指幼儿园"
+          android:layout_marginLeft="@dimen/dimen_5_dip"
+          android:id="@+id/kingdergaten_name"
+          android:layout_gravity="center_horizontal"
+          android:layout_centerVertical="true"
+          android:layout_alignParentLeft="true"
+          android:layout_alignParentStart="true" />
+      <TextView android:id="@+id/jion_kindergaten_tv" android:layout_height="wrap_content" android:layout_width="wrap_content"   android:gravity="center" android:textColor="@color/white" android:textSize="@dimen/txtSize_18_sp" android:text="加入" android:background="@drawable/selector_main_button"
+          android:layout_gravity="center_horizontal"
+          android:layout_centerVertical="true"
+          android:layout_alignParentRight="true"
+          android:layout_alignParentEnd="true" />
+      </RelativeLayout>
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:id="@+id/no_result_kindergaten_ll"
+               android:orientation="vertical"
+               android:layout_width="fill_parent"
+               android:layout_height="fill_parent"
+               android:layout_below="@+id/mecreatekinder_finish"
+               android:visibility="gone"
+               android:layout_alignParentLeft="true"
+               android:layout_alignParentStart="true">
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:textSize="@dimen/txtSize_17_sp"
+                   android:layout_marginTop="@dimen/dimen_40_dip"
+                   android:text="抱歉，没有与输入编号相对应的幼儿园"
+                   android:layout_gravity="center_horizontal" />
+               <TextView android:id="@+id/jump_kindergaten_tv" android:layout_height="@dimen/dimen_50_dip" android:layout_width="@dimen/dimen_100_dip"   android:gravity="center" android:textColor="@color/white" android:textSize="@dimen/txtSize_18_sp" android:text="跳过" android:background="@drawable/selector_main_button"
+                   android:layout_marginTop="@dimen/dimen_10_dip"
+                   android:layout_below="@+id/linearLayout3"
+                   android:layout_alignParentRight="true"
+                   android:layout_gravity="center_horizontal"
+                   android:layout_alignParentEnd="true" />
+           </LinearLayout>
+
+           <LinearLayout
+               android:id="@+id/show_loding"
+               android:orientation="horizontal"
+               android:layout_width="fill_parent"
+               android:layout_height="fill_parent"
+               android:visibility="gone"
+               android:layout_below="@+id/mecreatekinder_finish"
+               android:layout_alignParentLeft="true"
+               android:layout_alignParentStart="true">
+               <include layout="@layout/common_loading"  android:visibility="visible"></include>
+               </LinearLayout>
+       </RelativeLayout>
+</LinearLayout>

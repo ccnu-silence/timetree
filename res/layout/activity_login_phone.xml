@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/white">
+    <include layout="@layout/header_layout"/>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical" android:layout_marginLeft="@dimen/dimen_10_dip">
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginTop="@dimen/dimen_10_dip" >
+            <TextView  android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="您的账号已绑定手机号:" android:textColor="@color/black"/>
+            <TextView  android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:id="@+id/tv_activity_login_phone_phone" android:textColor="@color/black"/>
+        </LinearLayout>
+        <TextView  android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="请输入手机收到的验证码，然后点下一步。" android:layout_marginTop="@dimen/dimen_10_dip" android:textColor="@color/black"/>
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginRight="@dimen/dimen_10_dip">
+            <EditText android:layout_width="0dp" android:layout_height="wrap_content" android:id="@+id/edt_activity_login_phone_code" android:layout_weight="0.7" android:layout_marginTop="@dimen/dimen_2_dip"/>
+            <Button android:layout_width="0dp" android:layout_height="wrap_content" android:id="@+id/btn_activity_login_phone_send" android:layout_weight="0.3" android:text="发送验证码" android:textSize="@dimen/txtSize_12_sp"/>
+        </LinearLayout>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="手机接收验证码会有延迟，请留意。" android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical" android:layout_marginLeft="@dimen/dimen_10_dip" android:layout_marginTop="@dimen/dimen_10_dip" android:layout_marginRight="@dimen/dimen_10_dip">
+    	<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="如果绑定的手机号现在已经不再使用，请联系我们的客服，让客服帮您重置密码。" android:layout_marginTop="@dimen/dimen_10_dip" android:textColor="@color/black"/>
+    	<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="客服QQ：4006011063" android:layout_marginTop="@dimen/dimen_10_dip" android:textColor="@color/black"/>
+    	<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="客服电话：400-6011-063" android:layout_marginTop="@dimen/dimen_10_dip" android:textColor="@color/black"/>
+    	<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="成功重置密码后请在“设置”-“账号安全”-“绑定手机”中重新绑定为您的当前号码。" android:layout_marginTop="@dimen/dimen_10_dip" android:textColor="@color/black"/>
+    </LinearLayout>
+</LinearLayout>

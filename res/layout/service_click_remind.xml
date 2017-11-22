@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="@dimen/dimen_10_dip">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_300_dip"
+        android:background="@drawable/service"
+        >
+        <LinearLayout
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="11"
+            android:orientation="vertical"
+            >
+            <RelativeLayout
+                android:id="@+id/imageiv_rl"
+                android:layout_width="match_parent"
+                android:layout_weight="4"
+                android:layout_height="0.0dip">
+                <ImageView
+                    android:layout_width="@dimen/dimen_90_dip"
+                    android:layout_height="@dimen/dimen_90_dip"
+                    android:src="@drawable/icon_joinkindergater"
+                    android:id="@+id/show_service_remind_icon"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.0dip"
+                android:layout_weight="4">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/base_color_text_black"
+                    android:textSize="@dimen/txtSize_19_sp"
+                    android:text="Large Text"
+                    android:id="@+id/show_service_remind_dialog_text"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.0dip"
+                android:padding="@dimen/dimen_10_dip"
+                android:layout_gravity="bottom"
+                android:layout_weight="3">
+                <Button
+                    android:id="@+id/click_to_shut_down_dialog"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="登记幼儿园"
+                    style="@style/mainBtn"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_40_dip">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dimen_5_dip"
+                android:id="@+id/close_service_dialog_remind"
+                android:src="@drawable/icon_service_close"
+                android:layout_gravity="right|top"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+    </FrameLayout>
+
+
+</LinearLayout>

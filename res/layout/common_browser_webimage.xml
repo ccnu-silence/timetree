@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include android:id="@+id/titlelayout" layout="@layout/header_layout" />
+    <!-- 下载进度条 -->
+    <include android:id="@+id/uploadlayout" layout="@layout/common_upload_topbar"
+        android:layout_below="@+id/titlelayout"
+        android:layout_alignParentLeft="true"
+        android:visibility="gone"
+        android:layout_alignParentStart="true"
+        android:layout_height="@dimen/dimen_50_dip"
+        android:layout_width="match_parent"/>
+    <!-- 修改相册名称 -->
+    <LinearLayout
+        android:id="@+id/show_edit_albumname"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:weightSum="10"
+        android:paddingLeft="@dimen/dimen_5_dip"
+        android:paddingRight="@dimen/dimen_5_dip"
+        android:paddingTop="@dimen/dimen_9_dip"
+        android:paddingBottom="@dimen/dimen_9_dip"
+        android:background="@color/white"
+        android:layout_below="@+id/uploadlayout"
+        android:layout_height="@dimen/dimen_56_dip">
+        <EditText
+            android:id="@+id/show_albumname_edit"
+            android:layout_width="0dip"
+            android:background="@drawable/layout_gry_bg"
+            android:paddingLeft="@dimen/dimen_5_dip"
+            android:hint="修改相册名称"
+            android:layout_marginRight="@dimen/dimen_12_dip"
+            android:layout_weight="7.5"
+            android:layout_height="match_parent" />
+        <Button
+            android:id="@+id/save_ablum_name_btn"
+            android:layout_width="0dip"
+            android:layout_weight="2.5"
+            android:textColor="@color/service_write_schedule_index_tv"
+            android:text="保存"
+            android:background="@drawable/selector_save_ablum_name"
+            android:layout_height="match_parent"/>
+        </LinearLayout>
+    <!-- 照片列表 -->
+    <com.yey.kindergaten.widget.OptimizeGridView
+        android:id="@+id/classphoto"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:columnWidth="@dimen/dimen_100_dip"
+        android:gravity="center"
+        android:listSelector="@android:color/transparent"
+        android:visibility="gone"
+        android:horizontalSpacing="0dp"
+        android:verticalSpacing="0dp"
+        android:numColumns="3"
+        android:layout_below="@+id/show_edit_albumname"
+        android:layout_above="@+id/id_show_edit_ll"
+        android:scrollbars="none"
+        android:scrollbarStyle="insideOverlay"
+        android:stretchMode="columnWidth" />
+    <!-- 班级相册没用到 -->
+    <com.yey.kindergaten.widget.PullToRefreshView
+        android:id="@+id/main_pull_refresh_view"
+        android:background="@android:color/white"
+        android:layout_width="fill_parent"
+        android:paddingRight="@dimen/dimen_2_dip"
+        android:paddingLeft="@dimen/dimen_1_dip"
+        android:layout_below="@+id/show_edit_albumname"
+        android:layout_above="@+id/id_show_edit_ll"
+        android:layout_height="fill_parent">
+        <com.yey.kindergaten.widget.OptimizeGridView
+            android:id="@+id/gridview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:columnWidth="@dimen/dimen_100_dip"
+            android:gravity="center"
+            android:listSelector="@android:color/transparent"
+            android:horizontalSpacing="0dp"
+            android:verticalSpacing="0dp"
+            android:numColumns="3"
+            android:scrollbars="none"
+            android:scrollbarStyle="insideOverlay"
+            android:stretchMode="columnWidth" />
+    </com.yey.kindergaten.widget.PullToRefreshView>
+    <!-- 编辑描述，删除相册 -->
+    <LinearLayout
+        android:id="@+id/id_show_edit_ll"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_56_dip"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        android:background="@color/bg_index" >
+        <RelativeLayout
+            android:layout_weight="5"
+            android:layout_height="match_parent"
+            android:layout_width="0.0dip"    
+            android:paddingTop="@dimen/dimen_5_dip"
+            android:paddingBottom="@dimen/dimen_5_dip"
+            android:paddingLeft="@dimen/dimen_9_dip"
+            android:paddingRight="@dimen/dimen_9_dip" >
+            <Button
+                android:id="@+id/id_edit_decs_btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/selector_yz_button"
+                android:textColor="@color/base_color_text_black"
+                android:text="编辑描述(0)" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_weight="5"
+            android:layout_height="match_parent"
+            android:layout_width="0.0dip" 
+            android:paddingTop="@dimen/dimen_5_dip"
+            android:paddingBottom="@dimen/dimen_5_dip"
+            android:paddingLeft="@dimen/dimen_9_dip"
+            android:paddingRight="@dimen/dimen_9_dip"  >
+            <Button
+                android:id="@+id/id_edit_delete_btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/selector_yz_button"
+                android:textColor="@color/base_color_text_black"
+                android:text="删除相片(0)" />
+      </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>
